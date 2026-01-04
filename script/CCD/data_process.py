@@ -1,7 +1,7 @@
 import numpy as np
 import os
 import cv2
-import shutil
+import ast
 
 def extract_frames(video_path, output_dir, start_frame=0, num_frames=50):
     """从视频中提取帧"""
@@ -41,6 +41,9 @@ def process_video(videos_info, crash_info, is_train=True):
     
     os.makedirs(img_dir, exist_ok=True)
     os.makedirs(label_dir, exist_ok=True)
+    
+    print(f"\n处理{'训练' if is_train else '测试'}集...")
+    print(f"视频总数: {len(videos_info)}")
 
     for vid_info in videos_info:
         feature_path = os.path.join(features_dir, vid_info['feature_path'])
@@ -49,6 +52,8 @@ def process_video(videos_info, crash_info, is_train=True):
             continue
 
         vid_id = os.path.splitext(os.path.basename(vid_info['feature_path']))[0]
+        print(f"\n处理视频 {vid_id}:")
+        
         # 生成唯一的视频ID
         if vid_info['feature_path'].startswith('positive/'):
             unique_vid_id = f"pos_{vid_id}"
@@ -70,18 +75,29 @@ def process_video(videos_info, crash_info, is_train=True):
             print(f"未知类别: {vid_info['feature_path']}")
             continue
 
-        print(f"尝试打开视频: {video_path}，存在: {os.path.exists(video_path)}")
+        print(f"读取视频: {video_path}")
+        print(f"视频文件存在: {os.path.exists(video_path)}")
+        
         if not extract_frames(video_path, video_frames_dir):
             print(f"无法处理视频: {video_path}")
             continue
         
         # 从特征文件中读取数据
-        data = np.load(feature_path)
-        det = data['det']  # (50, 19, 6) 表示50帧，每帧19个边界框，每个边界框6个值(x1, y1, x2, y2, prob, cls)
+        print(f"读取特征文件: {feature_path}")
+        try:
+            data = np.load(feature_path)
+            det = data['det']  # (50, 19, 6) 表示50帧，每帧19个边界框，每个边界框6个值
+            print(f"特征数据形状: {det.shape}")
+            print(f"第一帧示例数据:")
+            print(det[0])  # 打印第一帧的所有检测框
+        except Exception as e:
+            print(f"读取特征文件出错: {str(e)}")
+            continue
 
         # 处理每一帧
         for frame_idx in range(det.shape[0]):
             frame_num = f"{frame_idx:06d}"
+            print(f"\n处理帧 {frame_num}:")
             
             # 创建标签文件名
             label_filename = f"{unique_vid_id}_{frame_num}.txt"
@@ -89,11 +105,17 @@ def process_video(videos_info, crash_info, is_train=True):
             
             # 获取当前帧的检测框
             frame_detections = det[frame_idx]  # (19, 6)
+            valid_detections = 0
+            filtered_by_conf = 0
+            filtered_by_coords = 0
+            filtered_by_range = 0
             
             # 获取事故帧信息
             if vid_id in crash_info:
                 is_crash = crash_info[vid_id][frame_idx]
+                print(f"当前帧碰撞标签: {is_crash}")
             else:
+                print(f"警告：视频 {vid_id} 在crash_info中未找到")
                 is_crash = 0
             
             # 建议单独保存帧级事故标签
@@ -105,13 +127,16 @@ def process_video(videos_info, crash_info, is_train=True):
             with open(label_path, 'w') as f:
                 for box_idx in range(frame_detections.shape[0]):
                     x1, y1, x2, y2, prob, cls = frame_detections[box_idx]
+                    print(f"检测框 {box_idx}: 坐标=({x1:.1f},{y1:.1f},{x2:.1f},{y2:.1f}) 置信度={prob:.2f} 类别={int(cls)}")
                     
-                    # 只处理置信度高的检测框
-                    if prob < 0.5:
-                        continue
+                    # # 只处理置信度高的检测框
+                    # if prob < 0.5:
+                    #     filtered_by_conf += 1
+                    #     continue
                         
                     # 确保坐标有效
                     if x1 < 0 or y1 < 0 or x2 <= x1 or y2 <= y1:
+                        filtered_by_coords += 1
                         continue
                     
                     # 归一化坐标
@@ -123,7 +148,20 @@ def process_video(videos_info, crash_info, is_train=True):
                     # 确保坐标在有效范围内
                     if 0 <= x_center <= 1 and 0 <= y_center <= 1 and 0 <= width <= 1 and 0 <= height <= 1:
                         # YOLO格式：<class> <x_center> <y_center> <width> <height>
-                        f.write(f"{int(cls)} {x_center:.6f} {y_center:.6f} {width:.6f} {height:.6f}\n")
+                        line = f"{int(cls)} {x_center:.6f} {y_center:.6f} {width:.6f} {height:.6f}"
+                        print(f"写入YOLO格式: {line}")
+                        f.write(line + "\n")
+                        valid_detections += 1
+                    else:
+                        filtered_by_range += 1
+            
+            print(f"帧 {frame_num} 统计:")
+            print(f"- 有效检测框: {valid_detections}")
+            # print(f"- 因置信度过滤: {filtered_by_conf}")
+            print(f"- 因无效坐标过滤: {filtered_by_coords}")
+            print(f"- 因范围过滤: {filtered_by_range}")
+
+    print("\n数据处理完成！")
 
 def process_dataset_file(dataset_file):
     """处理数据集文件，返回视频信息列表"""
@@ -143,19 +181,19 @@ def process_dataset_file(dataset_file):
 def create_dataset_yaml():
     """创建YOLO数据集配置文件"""
     yaml_content = """
-path: F:/data/CarCrash  # 数据集根目录
-train: images/train  # 训练集图像相对路径
-val: images/val  # 验证集图像相对路径
+    path: F:/data/CarCrash  # 数据集根目录
+    train: images/train  # 训练集图像相对路径
+    val: images/val  # 验证集图像相对路径
 
-# 类别名称
-names:
-  0: car
-  1: truck
-  2: bus
-  3: motorcycle
-  4: bicycle
-  5: person
-"""
+    # 类别名称
+    names:
+    0: car
+    1: truck
+    2: bus
+    3: motorcycle
+    4: bicycle
+    5: person
+    """
     
     with open('F:/data/CarCrash/dataset.yaml', 'w') as f:
         f.write(yaml_content)
@@ -164,11 +202,34 @@ def load_crash_annotations(crash_txt_path):
     crash_info = {}
     with open(crash_txt_path, 'r') as f:
         for line in f:
-            parts = line.strip().split()
-            vidname = parts[0]
-            binlabels = [int(x) for x in parts[1].split(',') if x != '']
-            crash_info[vidname] = binlabels
-            print(crash_info)
+            # Skip empty lines and comments
+            line = line.strip()
+            if not line or line.startswith('//'):
+                continue
+            
+            try:
+                # First, split by '],' to isolate the binary sequence part
+                # This handles the case where we have other commas in the rest of the line
+                first_part, rest = line.split('],', 1)
+                
+                # From the first part, get video ID and the binary sequence
+                vidname, binseq = first_part.split('[', 1)
+                vidname = vidname.strip(',')  # Remove the comma if present
+                
+                # Convert the binary sequence string to a list of integers
+                binlabels = [int(x.strip()) for x in binseq.split(',')]
+                
+                if len(binlabels) != 50:
+                    print(f"警告：视频 {vidname} 的标签长度不是50，实际长度：{len(binlabels)}")
+                    continue
+                print(f"视频 {vidname} 的标签：{binlabels}")
+                crash_info[vidname] = binlabels
+                
+            except Exception as e:
+                print(f"处理视频行时出错: {line[:100]}...")
+                print(f"错误信息: {str(e)}")
+                continue
+                
     return crash_info
 
 if __name__ == "__main__":
@@ -184,4 +245,4 @@ if __name__ == "__main__":
     # 创建数据集配置文件
     create_dataset_yaml()
     print("数据集转换完成！")
-    
+
