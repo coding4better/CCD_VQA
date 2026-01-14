@@ -1,0 +1,4942 @@
+{
+  "description": "仅使用 Dynamic Change ≥ 0.6 筛选",
+  "threshold": 0.6,
+  "total_count": 987,
+  "videos": [
+    {
+      "video_name": "000156.mp4",
+      "dynamic_change": 1.4541015625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001111.mp4",
+      "dynamic_change": 1.4521484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001048.mp4",
+      "dynamic_change": 1.44921875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000016.mp4",
+      "dynamic_change": 1.279296875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000108.mp4",
+      "dynamic_change": 1.251953125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000853.mp4",
+      "dynamic_change": 1.24609375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000290.mp4",
+      "dynamic_change": 1.2265625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001368.mp4",
+      "dynamic_change": 1.220703125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000650.mp4",
+      "dynamic_change": 1.21875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000754.mp4",
+      "dynamic_change": 1.2177734375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001008.mp4",
+      "dynamic_change": 1.1796875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001481.mp4",
+      "dynamic_change": 1.16796875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001312.mp4",
+      "dynamic_change": 1.1591796875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000870.mp4",
+      "dynamic_change": 1.1533203125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001181.mp4",
+      "dynamic_change": 1.1533203125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000164.mp4",
+      "dynamic_change": 1.14453125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000828.mp4",
+      "dynamic_change": 1.14453125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000873.mp4",
+      "dynamic_change": 1.1435546875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000744.mp4",
+      "dynamic_change": 1.140625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000098.mp4",
+      "dynamic_change": 1.13671875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001231.mp4",
+      "dynamic_change": 1.13671875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000099.mp4",
+      "dynamic_change": 1.134765625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000351.mp4",
+      "dynamic_change": 1.134765625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001193.mp4",
+      "dynamic_change": 1.1279296875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000376.mp4",
+      "dynamic_change": 1.1259765625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001059.mp4",
+      "dynamic_change": 1.1220703125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000890.mp4",
+      "dynamic_change": 1.12109375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000840.mp4",
+      "dynamic_change": 1.1181640625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001035.mp4",
+      "dynamic_change": 1.1171875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000733.mp4",
+      "dynamic_change": 1.1142578125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001162.mp4",
+      "dynamic_change": 1.0986328125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000084.mp4",
+      "dynamic_change": 1.095703125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001418.mp4",
+      "dynamic_change": 1.0888671875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000037.mp4",
+      "dynamic_change": 1.08203125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000927.mp4",
+      "dynamic_change": 1.078125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000886.mp4",
+      "dynamic_change": 1.0751953125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000831.mp4",
+      "dynamic_change": 1.068359375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000778.mp4",
+      "dynamic_change": 1.0673828125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000609.mp4",
+      "dynamic_change": 1.06640625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000411.mp4",
+      "dynamic_change": 1.0654296875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000829.mp4",
+      "dynamic_change": 1.0654296875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000491.mp4",
+      "dynamic_change": 1.0634765625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000984.mp4",
+      "dynamic_change": 1.0634765625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000162.mp4",
+      "dynamic_change": 1.05859375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001260.mp4",
+      "dynamic_change": 1.05859375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001203.mp4",
+      "dynamic_change": 1.056640625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001341.mp4",
+      "dynamic_change": 1.056640625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000292.mp4",
+      "dynamic_change": 1.0556640625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001253.mp4",
+      "dynamic_change": 1.0556640625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000663.mp4",
+      "dynamic_change": 1.0546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000811.mp4",
+      "dynamic_change": 1.048828125,
+      "scene_complexity": 13
+    },
+    {
+      "video_name": "000155.mp4",
+      "dynamic_change": 1.0478515625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000872.mp4",
+      "dynamic_change": 1.0478515625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000441.mp4",
+      "dynamic_change": 1.046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000520.mp4",
+      "dynamic_change": 1.04296875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000679.mp4",
+      "dynamic_change": 1.04296875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000762.mp4",
+      "dynamic_change": 1.041015625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000763.mp4",
+      "dynamic_change": 1.037109375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001282.mp4",
+      "dynamic_change": 1.0361328125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000474.mp4",
+      "dynamic_change": 1.03515625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000837.mp4",
+      "dynamic_change": 1.033203125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000405.mp4",
+      "dynamic_change": 1.02734375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000266.mp4",
+      "dynamic_change": 1.021484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001101.mp4",
+      "dynamic_change": 1.0205078125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000413.mp4",
+      "dynamic_change": 1.01953125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000835.mp4",
+      "dynamic_change": 1.0185546875,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "001001.mp4",
+      "dynamic_change": 1.0166015625,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000919.mp4",
+      "dynamic_change": 1.0107421875,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001237.mp4",
+      "dynamic_change": 1.0068359375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000946.mp4",
+      "dynamic_change": 1.005859375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001013.mp4",
+      "dynamic_change": 1.005859375,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001089.mp4",
+      "dynamic_change": 1.005859375,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001234.mp4",
+      "dynamic_change": 1.005859375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001349.mp4",
+      "dynamic_change": 1.005859375,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000046.mp4",
+      "dynamic_change": 1.0,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001091.mp4",
+      "dynamic_change": 1.0,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000469.mp4",
+      "dynamic_change": 0.99951171875,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001479.mp4",
+      "dynamic_change": 0.99462890625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000180.mp4",
+      "dynamic_change": 0.99267578125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000838.mp4",
+      "dynamic_change": 0.9921875,
+      "scene_complexity": 13
+    },
+    {
+      "video_name": "000896.mp4",
+      "dynamic_change": 0.99169921875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000139.mp4",
+      "dynamic_change": 0.9912109375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000541.mp4",
+      "dynamic_change": 0.98876953125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000994.mp4",
+      "dynamic_change": 0.98876953125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000804.mp4",
+      "dynamic_change": 0.98779296875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000554.mp4",
+      "dynamic_change": 0.9873046875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000228.mp4",
+      "dynamic_change": 0.98681640625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001288.mp4",
+      "dynamic_change": 0.98486328125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001357.mp4",
+      "dynamic_change": 0.98388671875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000891.mp4",
+      "dynamic_change": 0.978515625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000178.mp4",
+      "dynamic_change": 0.97802734375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000768.mp4",
+      "dynamic_change": 0.97802734375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001160.mp4",
+      "dynamic_change": 0.97705078125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001275.mp4",
+      "dynamic_change": 0.9765625,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "001342.mp4",
+      "dynamic_change": 0.9765625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000557.mp4",
+      "dynamic_change": 0.97509765625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000122.mp4",
+      "dynamic_change": 0.974609375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000655.mp4",
+      "dynamic_change": 0.9736328125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000532.mp4",
+      "dynamic_change": 0.9716796875,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "001308.mp4",
+      "dynamic_change": 0.97119140625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001313.mp4",
+      "dynamic_change": 0.9697265625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001445.mp4",
+      "dynamic_change": 0.96875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001406.mp4",
+      "dynamic_change": 0.96728515625,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000983.mp4",
+      "dynamic_change": 0.966796875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001285.mp4",
+      "dynamic_change": 0.966796875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001057.mp4",
+      "dynamic_change": 0.9658203125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000294.mp4",
+      "dynamic_change": 0.96533203125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000882.mp4",
+      "dynamic_change": 0.9638671875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000024.mp4",
+      "dynamic_change": 0.96337890625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000129.mp4",
+      "dynamic_change": 0.96337890625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000777.mp4",
+      "dynamic_change": 0.962890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000784.mp4",
+      "dynamic_change": 0.9599609375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000398.mp4",
+      "dynamic_change": 0.9580078125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001249.mp4",
+      "dynamic_change": 0.95654296875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000166.mp4",
+      "dynamic_change": 0.9560546875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001441.mp4",
+      "dynamic_change": 0.955078125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000639.mp4",
+      "dynamic_change": 0.95458984375,
+      "scene_complexity": 11
+    },
+    {
+      "video_name": "001420.mp4",
+      "dynamic_change": 0.95361328125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000471.mp4",
+      "dynamic_change": 0.953125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000389.mp4",
+      "dynamic_change": 0.9521484375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001431.mp4",
+      "dynamic_change": 0.94970703125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000729.mp4",
+      "dynamic_change": 0.9482421875,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000756.mp4",
+      "dynamic_change": 0.9482421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000316.mp4",
+      "dynamic_change": 0.94775390625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000515.mp4",
+      "dynamic_change": 0.94775390625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000725.mp4",
+      "dynamic_change": 0.9462890625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001458.mp4",
+      "dynamic_change": 0.9462890625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000387.mp4",
+      "dynamic_change": 0.94482421875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000440.mp4",
+      "dynamic_change": 0.94384765625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000949.mp4",
+      "dynamic_change": 0.94384765625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000049.mp4",
+      "dynamic_change": 0.94287109375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001151.mp4",
+      "dynamic_change": 0.94287109375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000715.mp4",
+      "dynamic_change": 0.9423828125,
+      "scene_complexity": 14
+    },
+    {
+      "video_name": "000356.mp4",
+      "dynamic_change": 0.94189453125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001350.mp4",
+      "dynamic_change": 0.94091796875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000586.mp4",
+      "dynamic_change": 0.93994140625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001329.mp4",
+      "dynamic_change": 0.93896484375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000432.mp4",
+      "dynamic_change": 0.9384765625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000823.mp4",
+      "dynamic_change": 0.9384765625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000993.mp4",
+      "dynamic_change": 0.93701171875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000360.mp4",
+      "dynamic_change": 0.9345703125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001159.mp4",
+      "dynamic_change": 0.93310546875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001417.mp4",
+      "dynamic_change": 0.9326171875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000424.mp4",
+      "dynamic_change": 0.931640625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001266.mp4",
+      "dynamic_change": 0.9306640625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000177.mp4",
+      "dynamic_change": 0.93017578125,
+      "scene_complexity": 13
+    },
+    {
+      "video_name": "000925.mp4",
+      "dynamic_change": 0.9267578125,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "001127.mp4",
+      "dynamic_change": 0.9267578125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000371.mp4",
+      "dynamic_change": 0.92236328125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001020.mp4",
+      "dynamic_change": 0.92138671875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001345.mp4",
+      "dynamic_change": 0.92138671875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000066.mp4",
+      "dynamic_change": 0.9208984375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000780.mp4",
+      "dynamic_change": 0.9208984375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001456.mp4",
+      "dynamic_change": 0.9208984375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000918.mp4",
+      "dynamic_change": 0.91943359375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001079.mp4",
+      "dynamic_change": 0.91943359375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001134.mp4",
+      "dynamic_change": 0.91943359375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001412.mp4",
+      "dynamic_change": 0.91650390625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000212.mp4",
+      "dynamic_change": 0.9150390625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000339.mp4",
+      "dynamic_change": 0.91455078125,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "001097.mp4",
+      "dynamic_change": 0.912109375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001185.mp4",
+      "dynamic_change": 0.912109375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001208.mp4",
+      "dynamic_change": 0.91015625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000535.mp4",
+      "dynamic_change": 0.90966796875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001283.mp4",
+      "dynamic_change": 0.9091796875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000745.mp4",
+      "dynamic_change": 0.90869140625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000832.mp4",
+      "dynamic_change": 0.90869140625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000458.mp4",
+      "dynamic_change": 0.90771484375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001337.mp4",
+      "dynamic_change": 0.90771484375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001067.mp4",
+      "dynamic_change": 0.904296875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000737.mp4",
+      "dynamic_change": 0.90380859375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000968.mp4",
+      "dynamic_change": 0.90234375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001274.mp4",
+      "dynamic_change": 0.90234375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001309.mp4",
+      "dynamic_change": 0.90087890625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000907.mp4",
+      "dynamic_change": 0.900390625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000858.mp4",
+      "dynamic_change": 0.89990234375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001126.mp4",
+      "dynamic_change": 0.89990234375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000583.mp4",
+      "dynamic_change": 0.8984375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001303.mp4",
+      "dynamic_change": 0.8974609375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000092.mp4",
+      "dynamic_change": 0.89697265625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000466.mp4",
+      "dynamic_change": 0.89697265625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001426.mp4",
+      "dynamic_change": 0.89599609375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000307.mp4",
+      "dynamic_change": 0.89453125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000805.mp4",
+      "dynamic_change": 0.89453125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000770.mp4",
+      "dynamic_change": 0.89404296875,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001394.mp4",
+      "dynamic_change": 0.89306640625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000077.mp4",
+      "dynamic_change": 0.892578125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000343.mp4",
+      "dynamic_change": 0.892578125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000818.mp4",
+      "dynamic_change": 0.892578125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001236.mp4",
+      "dynamic_change": 0.89208984375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000619.mp4",
+      "dynamic_change": 0.88818359375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000969.mp4",
+      "dynamic_change": 0.8876953125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000204.mp4",
+      "dynamic_change": 0.88720703125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000728.mp4",
+      "dynamic_change": 0.88720703125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001014.mp4",
+      "dynamic_change": 0.88623046875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000213.mp4",
+      "dynamic_change": 0.8857421875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000522.mp4",
+      "dynamic_change": 0.8857421875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001006.mp4",
+      "dynamic_change": 0.88525390625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000091.mp4",
+      "dynamic_change": 0.88427734375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000203.mp4",
+      "dynamic_change": 0.88427734375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000234.mp4",
+      "dynamic_change": 0.88427734375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001144.mp4",
+      "dynamic_change": 0.8837890625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000044.mp4",
+      "dynamic_change": 0.88232421875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000305.mp4",
+      "dynamic_change": 0.88232421875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000638.mp4",
+      "dynamic_change": 0.88232421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000208.mp4",
+      "dynamic_change": 0.8818359375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000146.mp4",
+      "dynamic_change": 0.88134765625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000306.mp4",
+      "dynamic_change": 0.8798828125,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000374.mp4",
+      "dynamic_change": 0.8798828125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001455.mp4",
+      "dynamic_change": 0.8779296875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001415.mp4",
+      "dynamic_change": 0.876953125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000276.mp4",
+      "dynamic_change": 0.87646484375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000813.mp4",
+      "dynamic_change": 0.87646484375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000271.mp4",
+      "dynamic_change": 0.8759765625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000642.mp4",
+      "dynamic_change": 0.8759765625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001204.mp4",
+      "dynamic_change": 0.8759765625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000732.mp4",
+      "dynamic_change": 0.875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000879.mp4",
+      "dynamic_change": 0.8740234375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001073.mp4",
+      "dynamic_change": 0.873046875,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "001304.mp4",
+      "dynamic_change": 0.873046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000198.mp4",
+      "dynamic_change": 0.8720703125,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000839.mp4",
+      "dynamic_change": 0.87109375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000852.mp4",
+      "dynamic_change": 0.87109375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001336.mp4",
+      "dynamic_change": 0.8701171875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000410.mp4",
+      "dynamic_change": 0.86962890625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000484.mp4",
+      "dynamic_change": 0.86962890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000970.mp4",
+      "dynamic_change": 0.86962890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000851.mp4",
+      "dynamic_change": 0.86865234375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001028.mp4",
+      "dynamic_change": 0.8671875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000827.mp4",
+      "dynamic_change": 0.86669921875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001408.mp4",
+      "dynamic_change": 0.865234375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001466.mp4",
+      "dynamic_change": 0.86474609375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000176.mp4",
+      "dynamic_change": 0.8642578125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001222.mp4",
+      "dynamic_change": 0.86376953125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000010.mp4",
+      "dynamic_change": 0.86328125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000999.mp4",
+      "dynamic_change": 0.86279296875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000195.mp4",
+      "dynamic_change": 0.861328125,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "001278.mp4",
+      "dynamic_change": 0.861328125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001322.mp4",
+      "dynamic_change": 0.861328125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000400.mp4",
+      "dynamic_change": 0.86083984375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001173.mp4",
+      "dynamic_change": 0.8603515625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001242.mp4",
+      "dynamic_change": 0.8603515625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000483.mp4",
+      "dynamic_change": 0.85986328125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000695.mp4",
+      "dynamic_change": 0.85986328125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001082.mp4",
+      "dynamic_change": 0.85986328125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001016.mp4",
+      "dynamic_change": 0.859375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001171.mp4",
+      "dynamic_change": 0.8583984375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001482.mp4",
+      "dynamic_change": 0.85693359375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000444.mp4",
+      "dynamic_change": 0.8564453125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000133.mp4",
+      "dynamic_change": 0.85546875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001250.mp4",
+      "dynamic_change": 0.85546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000025.mp4",
+      "dynamic_change": 0.85498046875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000116.mp4",
+      "dynamic_change": 0.85498046875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000561.mp4",
+      "dynamic_change": 0.85498046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000988.mp4",
+      "dynamic_change": 0.8544921875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000062.mp4",
+      "dynamic_change": 0.8525390625,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000898.mp4",
+      "dynamic_change": 0.8525390625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000527.mp4",
+      "dynamic_change": 0.8515625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001099.mp4",
+      "dynamic_change": 0.85107421875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000815.mp4",
+      "dynamic_change": 0.8505859375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000618.mp4",
+      "dynamic_change": 0.85009765625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001460.mp4",
+      "dynamic_change": 0.85009765625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000148.mp4",
+      "dynamic_change": 0.84912109375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001359.mp4",
+      "dynamic_change": 0.84912109375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000186.mp4",
+      "dynamic_change": 0.8486328125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001142.mp4",
+      "dynamic_change": 0.8486328125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001316.mp4",
+      "dynamic_change": 0.8486328125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000862.mp4",
+      "dynamic_change": 0.84814453125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000614.mp4",
+      "dynamic_change": 0.84716796875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000245.mp4",
+      "dynamic_change": 0.84619140625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000344.mp4",
+      "dynamic_change": 0.84619140625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000909.mp4",
+      "dynamic_change": 0.84619140625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001281.mp4",
+      "dynamic_change": 0.84619140625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000633.mp4",
+      "dynamic_change": 0.8447265625,
+      "scene_complexity": 11
+    },
+    {
+      "video_name": "000319.mp4",
+      "dynamic_change": 0.84375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000785.mp4",
+      "dynamic_change": 0.84375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000021.mp4",
+      "dynamic_change": 0.8427734375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000255.mp4",
+      "dynamic_change": 0.8427734375,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "001301.mp4",
+      "dynamic_change": 0.8427734375,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000878.mp4",
+      "dynamic_change": 0.84228515625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000338.mp4",
+      "dynamic_change": 0.84130859375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001467.mp4",
+      "dynamic_change": 0.84130859375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001149.mp4",
+      "dynamic_change": 0.84033203125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001390.mp4",
+      "dynamic_change": 0.84033203125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000914.mp4",
+      "dynamic_change": 0.83984375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000602.mp4",
+      "dynamic_change": 0.83935546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000926.mp4",
+      "dynamic_change": 0.8388671875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001167.mp4",
+      "dynamic_change": 0.8388671875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000097.mp4",
+      "dynamic_change": 0.837890625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000005.mp4",
+      "dynamic_change": 0.83642578125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001363.mp4",
+      "dynamic_change": 0.83642578125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000917.mp4",
+      "dynamic_change": 0.8359375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000235.mp4",
+      "dynamic_change": 0.83544921875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000094.mp4",
+      "dynamic_change": 0.83447265625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001200.mp4",
+      "dynamic_change": 0.833984375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000273.mp4",
+      "dynamic_change": 0.8330078125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000335.mp4",
+      "dynamic_change": 0.8330078125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000566.mp4",
+      "dynamic_change": 0.8330078125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001038.mp4",
+      "dynamic_change": 0.8330078125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001380.mp4",
+      "dynamic_change": 0.8330078125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000279.mp4",
+      "dynamic_change": 0.83251953125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000229.mp4",
+      "dynamic_change": 0.83154296875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000100.mp4",
+      "dynamic_change": 0.8310546875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000431.mp4",
+      "dynamic_change": 0.8310546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000250.mp4",
+      "dynamic_change": 0.830078125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000427.mp4",
+      "dynamic_change": 0.830078125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000861.mp4",
+      "dynamic_change": 0.830078125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001391.mp4",
+      "dynamic_change": 0.830078125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000293.mp4",
+      "dynamic_change": 0.82958984375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001217.mp4",
+      "dynamic_change": 0.82861328125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000134.mp4",
+      "dynamic_change": 0.828125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001027.mp4",
+      "dynamic_change": 0.828125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001041.mp4",
+      "dynamic_change": 0.828125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001252.mp4",
+      "dynamic_change": 0.828125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000073.mp4",
+      "dynamic_change": 0.82763671875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000555.mp4",
+      "dynamic_change": 0.8271484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000795.mp4",
+      "dynamic_change": 0.8271484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001036.mp4",
+      "dynamic_change": 0.8271484375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000281.mp4",
+      "dynamic_change": 0.82666015625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001229.mp4",
+      "dynamic_change": 0.82666015625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000185.mp4",
+      "dynamic_change": 0.826171875,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001356.mp4",
+      "dynamic_change": 0.826171875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001370.mp4",
+      "dynamic_change": 0.82470703125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000607.mp4",
+      "dynamic_change": 0.82373046875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001396.mp4",
+      "dynamic_change": 0.82373046875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001489.mp4",
+      "dynamic_change": 0.82373046875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000653.mp4",
+      "dynamic_change": 0.8232421875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000402.mp4",
+      "dynamic_change": 0.82275390625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000167.mp4",
+      "dynamic_change": 0.822265625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000881.mp4",
+      "dynamic_change": 0.8212890625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001367.mp4",
+      "dynamic_change": 0.8203125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000722.mp4",
+      "dynamic_change": 0.81982421875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000572.mp4",
+      "dynamic_change": 0.8193359375,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000843.mp4",
+      "dynamic_change": 0.8193359375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000078.mp4",
+      "dynamic_change": 0.81884765625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001373.mp4",
+      "dynamic_change": 0.81884765625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000076.mp4",
+      "dynamic_change": 0.818359375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000772.mp4",
+      "dynamic_change": 0.818359375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000578.mp4",
+      "dynamic_change": 0.8173828125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001024.mp4",
+      "dynamic_change": 0.8173828125,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000088.mp4",
+      "dynamic_change": 0.81640625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000792.mp4",
+      "dynamic_change": 0.81640625,
+      "scene_complexity": 11
+    },
+    {
+      "video_name": "000699.mp4",
+      "dynamic_change": 0.81591796875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000888.mp4",
+      "dynamic_change": 0.81591796875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000978.mp4",
+      "dynamic_change": 0.8154296875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001413.mp4",
+      "dynamic_change": 0.8154296875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000465.mp4",
+      "dynamic_change": 0.81494140625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000517.mp4",
+      "dynamic_change": 0.81494140625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000753.mp4",
+      "dynamic_change": 0.81494140625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001040.mp4",
+      "dynamic_change": 0.81494140625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000493.mp4",
+      "dynamic_change": 0.81396484375,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000600.mp4",
+      "dynamic_change": 0.81396484375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000833.mp4",
+      "dynamic_change": 0.81396484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000478.mp4",
+      "dynamic_change": 0.8134765625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000746.mp4",
+      "dynamic_change": 0.8125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001383.mp4",
+      "dynamic_change": 0.81201171875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000079.mp4",
+      "dynamic_change": 0.810546875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000941.mp4",
+      "dynamic_change": 0.810546875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001401.mp4",
+      "dynamic_change": 0.810546875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001168.mp4",
+      "dynamic_change": 0.81005859375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000375.mp4",
+      "dynamic_change": 0.80810546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000810.mp4",
+      "dynamic_change": 0.80810546875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001268.mp4",
+      "dynamic_change": 0.80810546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000017.mp4",
+      "dynamic_change": 0.80712890625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000726.mp4",
+      "dynamic_change": 0.806640625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000716.mp4",
+      "dynamic_change": 0.80615234375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000769.mp4",
+      "dynamic_change": 0.80615234375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000278.mp4",
+      "dynamic_change": 0.8056640625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000704.mp4",
+      "dynamic_change": 0.80517578125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000013.mp4",
+      "dynamic_change": 0.80419921875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000045.mp4",
+      "dynamic_change": 0.80419921875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000334.mp4",
+      "dynamic_change": 0.8037109375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000529.mp4",
+      "dynamic_change": 0.8037109375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000580.mp4",
+      "dynamic_change": 0.8037109375,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000676.mp4",
+      "dynamic_change": 0.80322265625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000854.mp4",
+      "dynamic_change": 0.80322265625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000982.mp4",
+      "dynamic_change": 0.80322265625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001054.mp4",
+      "dynamic_change": 0.80322265625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001077.mp4",
+      "dynamic_change": 0.80322265625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001422.mp4",
+      "dynamic_change": 0.80322265625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000913.mp4",
+      "dynamic_change": 0.802734375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000362.mp4",
+      "dynamic_change": 0.80224609375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000761.mp4",
+      "dynamic_change": 0.80224609375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000299.mp4",
+      "dynamic_change": 0.8017578125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000330.mp4",
+      "dynamic_change": 0.8017578125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000912.mp4",
+      "dynamic_change": 0.8017578125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000809.mp4",
+      "dynamic_change": 0.80126953125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000171.mp4",
+      "dynamic_change": 0.80078125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000635.mp4",
+      "dynamic_change": 0.80078125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000033.mp4",
+      "dynamic_change": 0.798828125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000174.mp4",
+      "dynamic_change": 0.79736328125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001411.mp4",
+      "dynamic_change": 0.79736328125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000353.mp4",
+      "dynamic_change": 0.796875,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001150.mp4",
+      "dynamic_change": 0.796875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000160.mp4",
+      "dynamic_change": 0.7958984375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000628.mp4",
+      "dynamic_change": 0.7958984375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000849.mp4",
+      "dynamic_change": 0.79541015625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001072.mp4",
+      "dynamic_change": 0.79541015625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000437.mp4",
+      "dynamic_change": 0.794921875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000620.mp4",
+      "dynamic_change": 0.794921875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000874.mp4",
+      "dynamic_change": 0.794921875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001343.mp4",
+      "dynamic_change": 0.794921875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000656.mp4",
+      "dynamic_change": 0.79443359375,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000739.mp4",
+      "dynamic_change": 0.79443359375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001364.mp4",
+      "dynamic_change": 0.7939453125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000063.mp4",
+      "dynamic_change": 0.79345703125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000782.mp4",
+      "dynamic_change": 0.79345703125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001010.mp4",
+      "dynamic_change": 0.79296875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001495.mp4",
+      "dynamic_change": 0.79248046875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000243.mp4",
+      "dynamic_change": 0.79150390625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000358.mp4",
+      "dynamic_change": 0.79150390625,
+      "scene_complexity": 14
+    },
+    {
+      "video_name": "000589.mp4",
+      "dynamic_change": 0.7900390625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000253.mp4",
+      "dynamic_change": 0.78955078125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000390.mp4",
+      "dynamic_change": 0.78857421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000349.mp4",
+      "dynamic_change": 0.787109375,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000671.mp4",
+      "dynamic_change": 0.787109375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000775.mp4",
+      "dynamic_change": 0.787109375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000414.mp4",
+      "dynamic_change": 0.78662109375,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000479.mp4",
+      "dynamic_change": 0.78662109375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001424.mp4",
+      "dynamic_change": 0.78662109375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000487.mp4",
+      "dynamic_change": 0.7861328125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001290.mp4",
+      "dynamic_change": 0.78564453125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000627.mp4",
+      "dynamic_change": 0.78515625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000714.mp4",
+      "dynamic_change": 0.78515625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001488.mp4",
+      "dynamic_change": 0.78515625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001030.mp4",
+      "dynamic_change": 0.78466796875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001106.mp4",
+      "dynamic_change": 0.78466796875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001230.mp4",
+      "dynamic_change": 0.78466796875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000475.mp4",
+      "dynamic_change": 0.78369140625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000790.mp4",
+      "dynamic_change": 0.78369140625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000001.mp4",
+      "dynamic_change": 0.783203125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000549.mp4",
+      "dynamic_change": 0.78271484375,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001354.mp4",
+      "dynamic_change": 0.78271484375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000246.mp4",
+      "dynamic_change": 0.7822265625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001280.mp4",
+      "dynamic_change": 0.7822265625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000019.mp4",
+      "dynamic_change": 0.78125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000272.mp4",
+      "dynamic_change": 0.78125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001094.mp4",
+      "dynamic_change": 0.78076171875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001118.mp4",
+      "dynamic_change": 0.78076171875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001362.mp4",
+      "dynamic_change": 0.7802734375,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000002.mp4",
+      "dynamic_change": 0.779296875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000742.mp4",
+      "dynamic_change": 0.779296875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000856.mp4",
+      "dynamic_change": 0.779296875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000101.mp4",
+      "dynamic_change": 0.77880859375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000893.mp4",
+      "dynamic_change": 0.77880859375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000801.mp4",
+      "dynamic_change": 0.7783203125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000885.mp4",
+      "dynamic_change": 0.7783203125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000248.mp4",
+      "dynamic_change": 0.77783203125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000826.mp4",
+      "dynamic_change": 0.77783203125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000249.mp4",
+      "dynamic_change": 0.77734375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000262.mp4",
+      "dynamic_change": 0.77734375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000531.mp4",
+      "dynamic_change": 0.77734375,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "000481.mp4",
+      "dynamic_change": 0.77685546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001289.mp4",
+      "dynamic_change": 0.77685546875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000448.mp4",
+      "dynamic_change": 0.7763671875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000710.mp4",
+      "dynamic_change": 0.7763671875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000934.mp4",
+      "dynamic_change": 0.7763671875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000901.mp4",
+      "dynamic_change": 0.775390625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000734.mp4",
+      "dynamic_change": 0.77490234375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001194.mp4",
+      "dynamic_change": 0.77490234375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000462.mp4",
+      "dynamic_change": 0.7744140625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000143.mp4",
+      "dynamic_change": 0.77392578125,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "000502.mp4",
+      "dynamic_change": 0.77392578125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000263.mp4",
+      "dynamic_change": 0.7734375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000986.mp4",
+      "dynamic_change": 0.7734375,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "001500.mp4",
+      "dynamic_change": 0.7734375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000421.mp4",
+      "dynamic_change": 0.7724609375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000524.mp4",
+      "dynamic_change": 0.77197265625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001080.mp4",
+      "dynamic_change": 0.77197265625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000145.mp4",
+      "dynamic_change": 0.77099609375,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000218.mp4",
+      "dynamic_change": 0.7705078125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000865.mp4",
+      "dynamic_change": 0.7705078125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001179.mp4",
+      "dynamic_change": 0.7705078125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000205.mp4",
+      "dynamic_change": 0.76953125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000894.mp4",
+      "dynamic_change": 0.76953125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000275.mp4",
+      "dynamic_change": 0.7685546875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000675.mp4",
+      "dynamic_change": 0.7685546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000798.mp4",
+      "dynamic_change": 0.76806640625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000998.mp4",
+      "dynamic_change": 0.76708984375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000956.mp4",
+      "dynamic_change": 0.7666015625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001135.mp4",
+      "dynamic_change": 0.7666015625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001011.mp4",
+      "dynamic_change": 0.76611328125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000464.mp4",
+      "dynamic_change": 0.765625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000617.mp4",
+      "dynamic_change": 0.765625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000370.mp4",
+      "dynamic_change": 0.76513671875,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "000525.mp4",
+      "dynamic_change": 0.76513671875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000135.mp4",
+      "dynamic_change": 0.7646484375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000151.mp4",
+      "dynamic_change": 0.7646484375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001327.mp4",
+      "dynamic_change": 0.7646484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000261.mp4",
+      "dynamic_change": 0.76416015625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000311.mp4",
+      "dynamic_change": 0.76416015625,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000090.mp4",
+      "dynamic_change": 0.7626953125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000363.mp4",
+      "dynamic_change": 0.7626953125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000673.mp4",
+      "dynamic_change": 0.7626953125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000036.mp4",
+      "dynamic_change": 0.76220703125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000369.mp4",
+      "dynamic_change": 0.76220703125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001104.mp4",
+      "dynamic_change": 0.76220703125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001444.mp4",
+      "dynamic_change": 0.76220703125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000175.mp4",
+      "dynamic_change": 0.76171875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000508.mp4",
+      "dynamic_change": 0.76171875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000816.mp4",
+      "dynamic_change": 0.76171875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000040.mp4",
+      "dynamic_change": 0.76123046875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001005.mp4",
+      "dynamic_change": 0.76123046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001202.mp4",
+      "dynamic_change": 0.76123046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000342.mp4",
+      "dynamic_change": 0.7607421875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000394.mp4",
+      "dynamic_change": 0.7607421875,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000703.mp4",
+      "dynamic_change": 0.7607421875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000992.mp4",
+      "dynamic_change": 0.7607421875,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000720.mp4",
+      "dynamic_change": 0.76025390625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001049.mp4",
+      "dynamic_change": 0.76025390625,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000043.mp4",
+      "dynamic_change": 0.759765625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000317.mp4",
+      "dynamic_change": 0.7587890625,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "001244.mp4",
+      "dynamic_change": 0.7587890625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000264.mp4",
+      "dynamic_change": 0.75830078125,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000416.mp4",
+      "dynamic_change": 0.75830078125,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000041.mp4",
+      "dynamic_change": 0.75732421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000142.mp4",
+      "dynamic_change": 0.75732421875,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000380.mp4",
+      "dynamic_change": 0.75732421875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000056.mp4",
+      "dynamic_change": 0.7568359375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000457.mp4",
+      "dynamic_change": 0.7568359375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000562.mp4",
+      "dynamic_change": 0.7568359375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000767.mp4",
+      "dynamic_change": 0.7568359375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000467.mp4",
+      "dynamic_change": 0.75634765625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001108.mp4",
+      "dynamic_change": 0.75634765625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000346.mp4",
+      "dynamic_change": 0.7548828125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000121.mp4",
+      "dynamic_change": 0.75439453125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001454.mp4",
+      "dynamic_change": 0.75439453125,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000530.mp4",
+      "dynamic_change": 0.75390625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000990.mp4",
+      "dynamic_change": 0.75390625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001386.mp4",
+      "dynamic_change": 0.75390625,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000563.mp4",
+      "dynamic_change": 0.7529296875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001188.mp4",
+      "dynamic_change": 0.7529296875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000327.mp4",
+      "dynamic_change": 0.75244140625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000911.mp4",
+      "dynamic_change": 0.75244140625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000239.mp4",
+      "dynamic_change": 0.751953125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000724.mp4",
+      "dynamic_change": 0.751953125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001182.mp4",
+      "dynamic_change": 0.751953125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000974.mp4",
+      "dynamic_change": 0.75146484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001243.mp4",
+      "dynamic_change": 0.75146484375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001348.mp4",
+      "dynamic_change": 0.75146484375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001490.mp4",
+      "dynamic_change": 0.75146484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000490.mp4",
+      "dynamic_change": 0.75048828125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001129.mp4",
+      "dynamic_change": 0.75048828125,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "000412.mp4",
+      "dynamic_change": 0.75,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000574.mp4",
+      "dynamic_change": 0.74951171875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001139.mp4",
+      "dynamic_change": 0.7490234375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000104.mp4",
+      "dynamic_change": 0.748046875,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000621.mp4",
+      "dynamic_change": 0.74609375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001061.mp4",
+      "dynamic_change": 0.74609375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001347.mp4",
+      "dynamic_change": 0.74609375,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000149.mp4",
+      "dynamic_change": 0.74560546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000686.mp4",
+      "dynamic_change": 0.74560546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000771.mp4",
+      "dynamic_change": 0.74560546875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000977.mp4",
+      "dynamic_change": 0.74560546875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000117.mp4",
+      "dynamic_change": 0.7451171875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000534.mp4",
+      "dynamic_change": 0.7451171875,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "000125.mp4",
+      "dynamic_change": 0.74462890625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001247.mp4",
+      "dynamic_change": 0.74462890625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001361.mp4",
+      "dynamic_change": 0.744140625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000899.mp4",
+      "dynamic_change": 0.74365234375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000889.mp4",
+      "dynamic_change": 0.7431640625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001050.mp4",
+      "dynamic_change": 0.7431640625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001371.mp4",
+      "dynamic_change": 0.7431640625,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "001385.mp4",
+      "dynamic_change": 0.7431640625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001213.mp4",
+      "dynamic_change": 0.7421875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001410.mp4",
+      "dynamic_change": 0.7421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000258.mp4",
+      "dynamic_change": 0.74169921875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000461.mp4",
+      "dynamic_change": 0.74169921875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000222.mp4",
+      "dynamic_change": 0.740234375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000433.mp4",
+      "dynamic_change": 0.740234375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000967.mp4",
+      "dynamic_change": 0.740234375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001306.mp4",
+      "dynamic_change": 0.740234375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001119.mp4",
+      "dynamic_change": 0.73974609375,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000740.mp4",
+      "dynamic_change": 0.7392578125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000595.mp4",
+      "dynamic_change": 0.73828125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001109.mp4",
+      "dynamic_change": 0.7373046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001136.mp4",
+      "dynamic_change": 0.7373046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001409.mp4",
+      "dynamic_change": 0.7373046875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000692.mp4",
+      "dynamic_change": 0.736328125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000029.mp4",
+      "dynamic_change": 0.73583984375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000169.mp4",
+      "dynamic_change": 0.73486328125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000315.mp4",
+      "dynamic_change": 0.73486328125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000514.mp4",
+      "dynamic_change": 0.73486328125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000611.mp4",
+      "dynamic_change": 0.73486328125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001121.mp4",
+      "dynamic_change": 0.73486328125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001232.mp4",
+      "dynamic_change": 0.73486328125,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "001476.mp4",
+      "dynamic_change": 0.73486328125,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000150.mp4",
+      "dynamic_change": 0.73388671875,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "001166.mp4",
+      "dynamic_change": 0.73388671875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000781.mp4",
+      "dynamic_change": 0.7333984375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001351.mp4",
+      "dynamic_change": 0.73291015625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000112.mp4",
+      "dynamic_change": 0.732421875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000693.mp4",
+      "dynamic_change": 0.732421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001053.mp4",
+      "dynamic_change": 0.732421875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000032.mp4",
+      "dynamic_change": 0.73193359375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000074.mp4",
+      "dynamic_change": 0.73193359375,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000096.mp4",
+      "dynamic_change": 0.73193359375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000300.mp4",
+      "dynamic_change": 0.73193359375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001271.mp4",
+      "dynamic_change": 0.73193359375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000147.mp4",
+      "dynamic_change": 0.7314453125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000741.mp4",
+      "dynamic_change": 0.72998046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000288.mp4",
+      "dynamic_change": 0.7294921875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000681.mp4",
+      "dynamic_change": 0.7294921875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001085.mp4",
+      "dynamic_change": 0.72900390625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001375.mp4",
+      "dynamic_change": 0.72900390625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000093.mp4",
+      "dynamic_change": 0.728515625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000495.mp4",
+      "dynamic_change": 0.728515625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000027.mp4",
+      "dynamic_change": 0.72802734375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000215.mp4",
+      "dynamic_change": 0.7275390625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001333.mp4",
+      "dynamic_change": 0.7275390625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000749.mp4",
+      "dynamic_change": 0.72705078125,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000552.mp4",
+      "dynamic_change": 0.72607421875,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "000871.mp4",
+      "dynamic_change": 0.72607421875,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001145.mp4",
+      "dynamic_change": 0.7255859375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001184.mp4",
+      "dynamic_change": 0.72509765625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000953.mp4",
+      "dynamic_change": 0.72412109375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001051.mp4",
+      "dynamic_change": 0.72412109375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001261.mp4",
+      "dynamic_change": 0.72412109375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000567.mp4",
+      "dynamic_change": 0.7236328125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000201.mp4",
+      "dynamic_change": 0.72314453125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000289.mp4",
+      "dynamic_change": 0.72314453125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001153.mp4",
+      "dynamic_change": 0.72314453125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001318.mp4",
+      "dynamic_change": 0.72314453125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000757.mp4",
+      "dynamic_change": 0.72265625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001294.mp4",
+      "dynamic_change": 0.72265625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001187.mp4",
+      "dynamic_change": 0.7216796875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001254.mp4",
+      "dynamic_change": 0.72119140625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000211.mp4",
+      "dynamic_change": 0.720703125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000280.mp4",
+      "dynamic_change": 0.720703125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000313.mp4",
+      "dynamic_change": 0.720703125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000498.mp4",
+      "dynamic_change": 0.720703125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000591.mp4",
+      "dynamic_change": 0.720703125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000916.mp4",
+      "dynamic_change": 0.720703125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000392.mp4",
+      "dynamic_change": 0.72021484375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001201.mp4",
+      "dynamic_change": 0.72021484375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000577.mp4",
+      "dynamic_change": 0.7197265625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001225.mp4",
+      "dynamic_change": 0.7197265625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000042.mp4",
+      "dynamic_change": 0.71923828125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000304.mp4",
+      "dynamic_change": 0.71923828125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000603.mp4",
+      "dynamic_change": 0.71923828125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001186.mp4",
+      "dynamic_change": 0.71923828125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000979.mp4",
+      "dynamic_change": 0.71875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000630.mp4",
+      "dynamic_change": 0.7177734375,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000225.mp4",
+      "dynamic_change": 0.71728515625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000297.mp4",
+      "dynamic_change": 0.716796875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000426.mp4",
+      "dynamic_change": 0.716796875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000283.mp4",
+      "dynamic_change": 0.71630859375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001483.mp4",
+      "dynamic_change": 0.71630859375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000014.mp4",
+      "dynamic_change": 0.7158203125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000118.mp4",
+      "dynamic_change": 0.7158203125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001023.mp4",
+      "dynamic_change": 0.7158203125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001158.mp4",
+      "dynamic_change": 0.7158203125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001078.mp4",
+      "dynamic_change": 0.71484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001105.mp4",
+      "dynamic_change": 0.71484375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001496.mp4",
+      "dynamic_change": 0.71435546875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001047.mp4",
+      "dynamic_change": 0.71337890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000241.mp4",
+      "dynamic_change": 0.712890625,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "001405.mp4",
+      "dynamic_change": 0.712890625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000644.mp4",
+      "dynamic_change": 0.71240234375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001196.mp4",
+      "dynamic_change": 0.71240234375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001270.mp4",
+      "dynamic_change": 0.7119140625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000136.mp4",
+      "dynamic_change": 0.71142578125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000267.mp4",
+      "dynamic_change": 0.71142578125,
+      "scene_complexity": 11
+    },
+    {
+      "video_name": "000128.mp4",
+      "dynamic_change": 0.7109375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000321.mp4",
+      "dynamic_change": 0.7109375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000367.mp4",
+      "dynamic_change": 0.7109375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000860.mp4",
+      "dynamic_change": 0.7109375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001443.mp4",
+      "dynamic_change": 0.7109375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000407.mp4",
+      "dynamic_change": 0.71044921875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000138.mp4",
+      "dynamic_change": 0.708984375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000846.mp4",
+      "dynamic_change": 0.708984375,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001066.mp4",
+      "dynamic_change": 0.708984375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000758.mp4",
+      "dynamic_change": 0.70849609375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001292.mp4",
+      "dynamic_change": 0.70849609375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000237.mp4",
+      "dynamic_change": 0.7080078125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000480.mp4",
+      "dynamic_change": 0.7080078125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000503.mp4",
+      "dynamic_change": 0.7080078125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000691.mp4",
+      "dynamic_change": 0.7080078125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001140.mp4",
+      "dynamic_change": 0.7080078125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000323.mp4",
+      "dynamic_change": 0.70751953125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001330.mp4",
+      "dynamic_change": 0.70751953125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000265.mp4",
+      "dynamic_change": 0.70703125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001374.mp4",
+      "dynamic_change": 0.70703125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001392.mp4",
+      "dynamic_change": 0.70654296875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001446.mp4",
+      "dynamic_change": 0.70654296875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000961.mp4",
+      "dynamic_change": 0.7060546875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001021.mp4",
+      "dynamic_change": 0.7060546875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001107.mp4",
+      "dynamic_change": 0.7060546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001120.mp4",
+      "dynamic_change": 0.7060546875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000012.mp4",
+      "dynamic_change": 0.70458984375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000197.mp4",
+      "dynamic_change": 0.70458984375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001258.mp4",
+      "dynamic_change": 0.70458984375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000921.mp4",
+      "dynamic_change": 0.70361328125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001122.mp4",
+      "dynamic_change": 0.70361328125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000947.mp4",
+      "dynamic_change": 0.703125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000085.mp4",
+      "dynamic_change": 0.70263671875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000625.mp4",
+      "dynamic_change": 0.70263671875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001088.mp4",
+      "dynamic_change": 0.70263671875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001451.mp4",
+      "dynamic_change": 0.70263671875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000331.mp4",
+      "dynamic_change": 0.7021484375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001269.mp4",
+      "dynamic_change": 0.7021484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000303.mp4",
+      "dynamic_change": 0.701171875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000866.mp4",
+      "dynamic_change": 0.701171875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000883.mp4",
+      "dynamic_change": 0.701171875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001492.mp4",
+      "dynamic_change": 0.701171875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000594.mp4",
+      "dynamic_change": 0.70068359375,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "000047.mp4",
+      "dynamic_change": 0.7001953125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001146.mp4",
+      "dynamic_change": 0.69970703125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001462.mp4",
+      "dynamic_change": 0.69970703125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000547.mp4",
+      "dynamic_change": 0.69921875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001143.mp4",
+      "dynamic_change": 0.69921875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001428.mp4",
+      "dynamic_change": 0.69921875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000751.mp4",
+      "dynamic_change": 0.69873046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000937.mp4",
+      "dynamic_change": 0.69873046875,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000940.mp4",
+      "dynamic_change": 0.69873046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001022.mp4",
+      "dynamic_change": 0.69873046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001026.mp4",
+      "dynamic_change": 0.69873046875,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "000057.mp4",
+      "dynamic_change": 0.6982421875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000065.mp4",
+      "dynamic_change": 0.6962890625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000494.mp4",
+      "dynamic_change": 0.6962890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000584.mp4",
+      "dynamic_change": 0.6962890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001123.mp4",
+      "dynamic_change": 0.6962890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001264.mp4",
+      "dynamic_change": 0.69580078125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001477.mp4",
+      "dynamic_change": 0.69580078125,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000308.mp4",
+      "dynamic_change": 0.6953125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000615.mp4",
+      "dynamic_change": 0.6953125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001128.mp4",
+      "dynamic_change": 0.6953125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001257.mp4",
+      "dynamic_change": 0.6953125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000210.mp4",
+      "dynamic_change": 0.69482421875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000972.mp4",
+      "dynamic_change": 0.69482421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000260.mp4",
+      "dynamic_change": 0.69384765625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000232.mp4",
+      "dynamic_change": 0.69287109375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000662.mp4",
+      "dynamic_change": 0.69287109375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000003.mp4",
+      "dynamic_change": 0.6923828125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001352.mp4",
+      "dynamic_change": 0.6923828125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000884.mp4",
+      "dynamic_change": 0.69189453125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001267.mp4",
+      "dynamic_change": 0.69189453125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001297.mp4",
+      "dynamic_change": 0.69189453125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000286.mp4",
+      "dynamic_change": 0.69140625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000359.mp4",
+      "dynamic_change": 0.69140625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000540.mp4",
+      "dynamic_change": 0.69140625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001389.mp4",
+      "dynamic_change": 0.69140625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000721.mp4",
+      "dynamic_change": 0.6904296875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000144.mp4",
+      "dynamic_change": 0.68994140625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001064.mp4",
+      "dynamic_change": 0.68994140625,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "001096.mp4",
+      "dynamic_change": 0.6884765625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000310.mp4",
+      "dynamic_change": 0.68798828125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000564.mp4",
+      "dynamic_change": 0.68798828125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000052.mp4",
+      "dynamic_change": 0.6875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000543.mp4",
+      "dynamic_change": 0.6875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000660.mp4",
+      "dynamic_change": 0.68701171875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000623.mp4",
+      "dynamic_change": 0.6865234375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001219.mp4",
+      "dynamic_change": 0.6865234375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000194.mp4",
+      "dynamic_change": 0.685546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001376.mp4",
+      "dynamic_change": 0.685546875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000420.mp4",
+      "dynamic_change": 0.6845703125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001133.mp4",
+      "dynamic_change": 0.6845703125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000472.mp4",
+      "dynamic_change": 0.68408203125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000337.mp4",
+      "dynamic_change": 0.68359375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000697.mp4",
+      "dynamic_change": 0.68359375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001152.mp4",
+      "dynamic_change": 0.68359375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001430.mp4",
+      "dynamic_change": 0.68359375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001434.mp4",
+      "dynamic_change": 0.68359375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000750.mp4",
+      "dynamic_change": 0.68310546875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000962.mp4",
+      "dynamic_change": 0.68310546875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001450.mp4",
+      "dynamic_change": 0.68310546875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000173.mp4",
+      "dynamic_change": 0.68212890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001086.mp4",
+      "dynamic_change": 0.68212890625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001339.mp4",
+      "dynamic_change": 0.68212890625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000570.mp4",
+      "dynamic_change": 0.681640625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000624.mp4",
+      "dynamic_change": 0.681640625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000963.mp4",
+      "dynamic_change": 0.681640625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001382.mp4",
+      "dynamic_change": 0.6806640625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001493.mp4",
+      "dynamic_change": 0.6806640625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000488.mp4",
+      "dynamic_change": 0.68017578125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000677.mp4",
+      "dynamic_change": 0.68017578125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000069.mp4",
+      "dynamic_change": 0.6796875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000521.mp4",
+      "dynamic_change": 0.6796875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000403.mp4",
+      "dynamic_change": 0.67919921875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000449.mp4",
+      "dynamic_change": 0.67919921875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001007.mp4",
+      "dynamic_change": 0.67919921875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001440.mp4",
+      "dynamic_change": 0.6787109375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000068.mp4",
+      "dynamic_change": 0.67822265625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001218.mp4",
+      "dynamic_change": 0.67822265625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001355.mp4",
+      "dynamic_change": 0.67822265625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001384.mp4",
+      "dynamic_change": 0.67822265625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000140.mp4",
+      "dynamic_change": 0.677734375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000219.mp4",
+      "dynamic_change": 0.677734375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000233.mp4",
+      "dynamic_change": 0.67724609375,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "000536.mp4",
+      "dynamic_change": 0.67626953125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001095.mp4",
+      "dynamic_change": 0.67626953125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000028.mp4",
+      "dynamic_change": 0.67578125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000640.mp4",
+      "dynamic_change": 0.67578125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000905.mp4",
+      "dynamic_change": 0.67578125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000951.mp4",
+      "dynamic_change": 0.67578125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001227.mp4",
+      "dynamic_change": 0.67578125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001012.mp4",
+      "dynamic_change": 0.67529296875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001018.mp4",
+      "dynamic_change": 0.6748046875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001286.mp4",
+      "dynamic_change": 0.6748046875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000192.mp4",
+      "dynamic_change": 0.67431640625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000596.mp4",
+      "dynamic_change": 0.673828125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000626.mp4",
+      "dynamic_change": 0.673828125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001044.mp4",
+      "dynamic_change": 0.673828125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000631.mp4",
+      "dynamic_change": 0.67333984375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001310.mp4",
+      "dynamic_change": 0.67333984375,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000345.mp4",
+      "dynamic_change": 0.67236328125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001248.mp4",
+      "dynamic_change": 0.671875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000072.mp4",
+      "dynamic_change": 0.67138671875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001331.mp4",
+      "dynamic_change": 0.67138671875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000102.mp4",
+      "dynamic_change": 0.6708984375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001335.mp4",
+      "dynamic_change": 0.6708984375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001377.mp4",
+      "dynamic_change": 0.6708984375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000223.mp4",
+      "dynamic_change": 0.67041015625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001475.mp4",
+      "dynamic_change": 0.67041015625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001110.mp4",
+      "dynamic_change": 0.669921875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000030.mp4",
+      "dynamic_change": 0.66943359375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001206.mp4",
+      "dynamic_change": 0.66943359375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000939.mp4",
+      "dynamic_change": 0.66845703125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000680.mp4",
+      "dynamic_change": 0.66796875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001046.mp4",
+      "dynamic_change": 0.66796875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001259.mp4",
+      "dynamic_change": 0.66796875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000422.mp4",
+      "dynamic_change": 0.66748046875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000646.mp4",
+      "dynamic_change": 0.66748046875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001043.mp4",
+      "dynamic_change": 0.66748046875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001273.mp4",
+      "dynamic_change": 0.6669921875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000179.mp4",
+      "dynamic_change": 0.666015625,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "001265.mp4",
+      "dynamic_change": 0.66552734375,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001141.mp4",
+      "dynamic_change": 0.6650390625,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000613.mp4",
+      "dynamic_change": 0.66357421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001205.mp4",
+      "dynamic_change": 0.66357421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000435.mp4",
+      "dynamic_change": 0.66259765625,
+      "scene_complexity": 11
+    },
+    {
+      "video_name": "000268.mp4",
+      "dynamic_change": 0.662109375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000651.mp4",
+      "dynamic_change": 0.662109375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000528.mp4",
+      "dynamic_change": 0.66162109375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000061.mp4",
+      "dynamic_change": 0.6611328125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000796.mp4",
+      "dynamic_change": 0.6611328125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001499.mp4",
+      "dynamic_change": 0.6611328125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000930.mp4",
+      "dynamic_change": 0.6591796875,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000393.mp4",
+      "dynamic_change": 0.65869140625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001163.mp4",
+      "dynamic_change": 0.65869140625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000694.mp4",
+      "dynamic_change": 0.658203125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001433.mp4",
+      "dynamic_change": 0.658203125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000089.mp4",
+      "dynamic_change": 0.65771484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000445.mp4",
+      "dynamic_change": 0.6572265625,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "001215.mp4",
+      "dynamic_change": 0.6572265625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000736.mp4",
+      "dynamic_change": 0.65673828125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000080.mp4",
+      "dynamic_change": 0.65576171875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000291.mp4",
+      "dynamic_change": 0.65576171875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000361.mp4",
+      "dynamic_change": 0.65576171875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000454.mp4",
+      "dynamic_change": 0.65576171875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001240.mp4",
+      "dynamic_change": 0.6552734375,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000082.mp4",
+      "dynamic_change": 0.65478515625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000573.mp4",
+      "dynamic_change": 0.65478515625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001131.mp4",
+      "dynamic_change": 0.65478515625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000220.mp4",
+      "dynamic_change": 0.654296875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000674.mp4",
+      "dynamic_change": 0.6533203125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000985.mp4",
+      "dynamic_change": 0.6533203125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000221.mp4",
+      "dynamic_change": 0.65283203125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001029.mp4",
+      "dynamic_change": 0.65185546875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001192.mp4",
+      "dynamic_change": 0.65185546875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001069.mp4",
+      "dynamic_change": 0.6513671875,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001083.mp4",
+      "dynamic_change": 0.6513671875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000296.mp4",
+      "dynamic_change": 0.65087890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001486.mp4",
+      "dynamic_change": 0.65087890625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000256.mp4",
+      "dynamic_change": 0.650390625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001124.mp4",
+      "dynamic_change": 0.64990234375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000020.mp4",
+      "dynamic_change": 0.64892578125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000923.mp4",
+      "dynamic_change": 0.64892578125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000499.mp4",
+      "dynamic_change": 0.6484375,
+      "scene_complexity": 11
+    },
+    {
+      "video_name": "000706.mp4",
+      "dynamic_change": 0.6484375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001399.mp4",
+      "dynamic_change": 0.6474609375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001302.mp4",
+      "dynamic_change": 0.646484375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000506.mp4",
+      "dynamic_change": 0.64599609375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001461.mp4",
+      "dynamic_change": 0.64599609375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000797.mp4",
+      "dynamic_change": 0.6455078125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "001429.mp4",
+      "dynamic_change": 0.6455078125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000658.mp4",
+      "dynamic_change": 0.64501953125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000318.mp4",
+      "dynamic_change": 0.64453125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000817.mp4",
+      "dynamic_change": 0.64453125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000950.mp4",
+      "dynamic_change": 0.64453125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000959.mp4",
+      "dynamic_change": 0.64453125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001002.mp4",
+      "dynamic_change": 0.64453125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000395.mp4",
+      "dynamic_change": 0.642578125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000511.mp4",
+      "dynamic_change": 0.642578125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000581.mp4",
+      "dynamic_change": 0.64208984375,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001296.mp4",
+      "dynamic_change": 0.64208984375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000509.mp4",
+      "dynamic_change": 0.6416015625,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "001130.mp4",
+      "dynamic_change": 0.6416015625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001214.mp4",
+      "dynamic_change": 0.6416015625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001299.mp4",
+      "dynamic_change": 0.640625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001071.mp4",
+      "dynamic_change": 0.6396484375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000399.mp4",
+      "dynamic_change": 0.63916015625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000705.mp4",
+      "dynamic_change": 0.638671875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000727.mp4",
+      "dynamic_change": 0.63818359375,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "001019.mp4",
+      "dynamic_change": 0.63818359375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001137.mp4",
+      "dynamic_change": 0.63720703125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000123.mp4",
+      "dynamic_change": 0.63671875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000708.mp4",
+      "dynamic_change": 0.63671875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001174.mp4",
+      "dynamic_change": 0.63623046875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000152.mp4",
+      "dynamic_change": 0.63525390625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000217.mp4",
+      "dynamic_change": 0.634765625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000418.mp4",
+      "dynamic_change": 0.6337890625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000571.mp4",
+      "dynamic_change": 0.6337890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000328.mp4",
+      "dynamic_change": 0.6328125,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000538.mp4",
+      "dynamic_change": 0.6328125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "001212.mp4",
+      "dynamic_change": 0.6328125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001395.mp4",
+      "dynamic_change": 0.6328125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000922.mp4",
+      "dynamic_change": 0.63232421875,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000378.mp4",
+      "dynamic_change": 0.63134765625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000544.mp4",
+      "dynamic_change": 0.63134765625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001494.mp4",
+      "dynamic_change": 0.63134765625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000119.mp4",
+      "dynamic_change": 0.630859375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000366.mp4",
+      "dynamic_change": 0.630859375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000634.mp4",
+      "dynamic_change": 0.63037109375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000845.mp4",
+      "dynamic_change": 0.62939453125,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000200.mp4",
+      "dynamic_change": 0.62890625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000730.mp4",
+      "dynamic_change": 0.62890625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001311.mp4",
+      "dynamic_change": 0.62890625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001397.mp4",
+      "dynamic_change": 0.62890625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000904.mp4",
+      "dynamic_change": 0.62841796875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001138.mp4",
+      "dynamic_change": 0.62841796875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000569.mp4",
+      "dynamic_change": 0.626953125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000945.mp4",
+      "dynamic_change": 0.62646484375,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000038.mp4",
+      "dynamic_change": 0.6259765625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000486.mp4",
+      "dynamic_change": 0.6259765625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001055.mp4",
+      "dynamic_change": 0.62548828125,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000007.mp4",
+      "dynamic_change": 0.625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000214.mp4",
+      "dynamic_change": 0.62451171875,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000654.mp4",
+      "dynamic_change": 0.6240234375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000516.mp4",
+      "dynamic_change": 0.623046875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001115.mp4",
+      "dynamic_change": 0.62255859375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001189.mp4",
+      "dynamic_change": 0.6220703125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000364.mp4",
+      "dynamic_change": 0.62158203125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000408.mp4",
+      "dynamic_change": 0.62158203125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000340.mp4",
+      "dynamic_change": 0.62060546875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "001255.mp4",
+      "dynamic_change": 0.62060546875,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "001298.mp4",
+      "dynamic_change": 0.62060546875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001305.mp4",
+      "dynamic_change": 0.62060546875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000599.mp4",
+      "dynamic_change": 0.61962890625,
+      "scene_complexity": 9
+    },
+    {
+      "video_name": "000789.mp4",
+      "dynamic_change": 0.61962890625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000430.mp4",
+      "dynamic_change": 0.6181640625,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000439.mp4",
+      "dynamic_change": 0.61767578125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000701.mp4",
+      "dynamic_change": 0.61767578125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001056.mp4",
+      "dynamic_change": 0.61767578125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "001404.mp4",
+      "dynamic_change": 0.61767578125,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000788.mp4",
+      "dynamic_change": 0.6171875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001087.mp4",
+      "dynamic_change": 0.6171875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000636.mp4",
+      "dynamic_change": 0.61669921875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000285.mp4",
+      "dynamic_change": 0.6162109375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000436.mp4",
+      "dynamic_change": 0.6162109375,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000438.mp4",
+      "dynamic_change": 0.6162109375,
+      "scene_complexity": 0
+    },
+    {
+      "video_name": "000115.mp4",
+      "dynamic_change": 0.61572265625,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000463.mp4",
+      "dynamic_change": 0.61572265625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000482.mp4",
+      "dynamic_change": 0.61572265625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000779.mp4",
+      "dynamic_change": 0.61474609375,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "001226.mp4",
+      "dynamic_change": 0.61474609375,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000259.mp4",
+      "dynamic_change": 0.6142578125,
+      "scene_complexity": 8
+    },
+    {
+      "video_name": "000943.mp4",
+      "dynamic_change": 0.6142578125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000605.mp4",
+      "dynamic_change": 0.61376953125,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000690.mp4",
+      "dynamic_change": 0.61328125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001463.mp4",
+      "dynamic_change": 0.61328125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000189.mp4",
+      "dynamic_change": 0.6123046875,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000434.mp4",
+      "dynamic_change": 0.6123046875,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000489.mp4",
+      "dynamic_change": 0.6103515625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000766.mp4",
+      "dynamic_change": 0.6103515625,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000126.mp4",
+      "dynamic_change": 0.60791015625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000183.mp4",
+      "dynamic_change": 0.607421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000190.mp4",
+      "dynamic_change": 0.607421875,
+      "scene_complexity": 10
+    },
+    {
+      "video_name": "000497.mp4",
+      "dynamic_change": 0.607421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000551.mp4",
+      "dynamic_change": 0.607421875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000844.mp4",
+      "dynamic_change": 0.607421875,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "001251.mp4",
+      "dynamic_change": 0.607421875,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "001216.mp4",
+      "dynamic_change": 0.60595703125,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000352.mp4",
+      "dynamic_change": 0.60498046875,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000700.mp4",
+      "dynamic_change": 0.6044921875,
+      "scene_complexity": 6
+    },
+    {
+      "video_name": "000105.mp4",
+      "dynamic_change": 0.60400390625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000492.mp4",
+      "dynamic_change": 0.60400390625,
+      "scene_complexity": 5
+    },
+    {
+      "video_name": "000548.mp4",
+      "dynamic_change": 0.60400390625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001398.mp4",
+      "dynamic_change": 0.60400390625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001470.mp4",
+      "dynamic_change": 0.603515625,
+      "scene_complexity": 1
+    },
+    {
+      "video_name": "000124.mp4",
+      "dynamic_change": 0.6025390625,
+      "scene_complexity": 4
+    },
+    {
+      "video_name": "000269.mp4",
+      "dynamic_change": 0.6025390625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "001442.mp4",
+      "dynamic_change": 0.60205078125,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000735.mp4",
+      "dynamic_change": 0.6015625,
+      "scene_complexity": 7
+    },
+    {
+      "video_name": "000906.mp4",
+      "dynamic_change": 0.6015625,
+      "scene_complexity": 2
+    },
+    {
+      "video_name": "000842.mp4",
+      "dynamic_change": 0.6005859375,
+      "scene_complexity": 3
+    },
+    {
+      "video_name": "000936.mp4",
+      "dynamic_change": 0.60009765625,
+      "scene_complexity": 2
+    }
+  ]
+}

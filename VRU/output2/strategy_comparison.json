@@ -1,0 +1,41 @@
+{
+  "total_videos": 1500,
+  "baseline": {
+    "count": 1500,
+    "avg_complexity": 4.582666666666666,
+    "avg_dynamic": 0.6678614908854167
+  },
+  "strategies": {
+    "complexity_only": {
+      "statistics": {
+        "count": 501,
+        "retention_rate": 33.4,
+        "avg_complexity": 7.860279441117765,
+        "avg_dynamic": 0.6031606221151448,
+        "complexity_improvement": 71.52195463597101,
+        "dynamic_improvement": -9.68776754660533
+      }
+    },
+    "dynamic_only": {
+      "statistics": {
+        "count": 987,
+        "retention_rate": 65.8,
+        "avg_complexity": 4.32016210739615,
+        "avg_dynamic": 0.7892044824911347,
+        "complexity_improvement": -5.728205395777941,
+        "dynamic_improvement": 18.16888580367879
+      }
+    },
+    "combined": {
+      "statistics": {
+        "count": 266,
+        "retention_rate": 17.733333333333334,
+        "avg_complexity": 7.515037593984962,
+        "avg_dynamic": 0.7983949130639098,
+        "complexity_improvement": 63.988309441045146,
+        "dynamic_improvement": 19.544984096244058
+      },
+      "recommended": true
+    }
+  }
+}

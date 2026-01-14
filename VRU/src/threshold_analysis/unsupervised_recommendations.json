@@ -1,0 +1,20 @@
+{
+  "methods": {
+    "dynamic_percentile_50": {
+      "threshold": 0.4541015625,
+      "description": "Dynamic Change 50\u5206\u4f4d\u6570\uff08\u4e2d\u4f4d\u6570\uff09",
+      "selected_count": 750
+    },
+    "complexity_6": {
+      "threshold": 6,
+      "description": "Scene Complexity >= 6",
+      "selected_count": 501
+    },
+    "combined_dyn50_cplx6": {
+      "dynamic_threshold": 0.4541015625,
+      "complexity_threshold": 6,
+      "description": "Dynamic >= P50 AND Complexity >= 6",
+      "selected_count": 195
+    }
+  }
+}
