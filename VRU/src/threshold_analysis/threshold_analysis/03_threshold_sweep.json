@@ -1,0 +1,326 @@
+{
+  "cplx_4_dyn_0.50": {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.5,
+    "count": 645,
+    "percentage": 43.0
+  },
+  "cplx_4_dyn_0.55": {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.55,
+    "count": 609,
+    "percentage": 40.6
+  },
+  "cplx_4_dyn_0.60": {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.6000000000000001,
+    "count": 564,
+    "percentage": 37.6
+  },
+  "cplx_4_dyn_0.65": {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.6500000000000001,
+    "count": 508,
+    "percentage": 33.86666666666667
+  },
+  "cplx_4_dyn_0.70": {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.7000000000000002,
+    "count": 423,
+    "percentage": 28.199999999999996
+  },
+  "cplx_4_dyn_0.75": {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.7500000000000002,
+    "count": 328,
+    "percentage": 21.866666666666667
+  },
+  "cplx_4_dyn_0.80": {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.8000000000000003,
+    "count": 242,
+    "percentage": 16.133333333333333
+  },
+  "cplx_4_dyn_0.85": {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.8500000000000003,
+    "count": 158,
+    "percentage": 10.533333333333333
+  },
+  "cplx_4_dyn_0.90": {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.9000000000000004,
+    "count": 108,
+    "percentage": 7.199999999999999
+  },
+  "cplx_5_dyn_0.50": {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.5,
+    "count": 454,
+    "percentage": 30.266666666666666
+  },
+  "cplx_5_dyn_0.55": {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.55,
+    "count": 425,
+    "percentage": 28.333333333333332
+  },
+  "cplx_5_dyn_0.60": {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.6000000000000001,
+    "count": 391,
+    "percentage": 26.066666666666666
+  },
+  "cplx_5_dyn_0.65": {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.6500000000000001,
+    "count": 354,
+    "percentage": 23.599999999999998
+  },
+  "cplx_5_dyn_0.70": {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.7000000000000002,
+    "count": 296,
+    "percentage": 19.733333333333334
+  },
+  "cplx_5_dyn_0.75": {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.7500000000000002,
+    "count": 239,
+    "percentage": 15.933333333333334
+  },
+  "cplx_5_dyn_0.80": {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.8000000000000003,
+    "count": 182,
+    "percentage": 12.133333333333333
+  },
+  "cplx_5_dyn_0.85": {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.8500000000000003,
+    "count": 120,
+    "percentage": 8.0
+  },
+  "cplx_5_dyn_0.90": {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.9000000000000004,
+    "count": 81,
+    "percentage": 5.4
+  },
+  "cplx_6_dyn_0.50": {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.5,
+    "count": 310,
+    "percentage": 20.666666666666668
+  },
+  "cplx_6_dyn_0.55": {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.55,
+    "count": 290,
+    "percentage": 19.333333333333332
+  },
+  "cplx_6_dyn_0.60": {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.6000000000000001,
+    "count": 266,
+    "percentage": 17.733333333333334
+  },
+  "cplx_6_dyn_0.65": {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.6500000000000001,
+    "count": 239,
+    "percentage": 15.933333333333334
+  },
+  "cplx_6_dyn_0.70": {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.7000000000000002,
+    "count": 200,
+    "percentage": 13.333333333333334
+  },
+  "cplx_6_dyn_0.75": {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.7500000000000002,
+    "count": 161,
+    "percentage": 10.733333333333334
+  },
+  "cplx_6_dyn_0.80": {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.8000000000000003,
+    "count": 121,
+    "percentage": 8.066666666666666
+  },
+  "cplx_6_dyn_0.85": {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.8500000000000003,
+    "count": 78,
+    "percentage": 5.2
+  },
+  "cplx_6_dyn_0.90": {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.9000000000000004,
+    "count": 49,
+    "percentage": 3.266666666666666
+  },
+  "cplx_7_dyn_0.50": {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.5,
+    "count": 207,
+    "percentage": 13.8
+  },
+  "cplx_7_dyn_0.55": {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.55,
+    "count": 194,
+    "percentage": 12.933333333333334
+  },
+  "cplx_7_dyn_0.60": {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.6000000000000001,
+    "count": 176,
+    "percentage": 11.733333333333333
+  },
+  "cplx_7_dyn_0.65": {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.6500000000000001,
+    "count": 159,
+    "percentage": 10.6
+  },
+  "cplx_7_dyn_0.70": {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.7000000000000002,
+    "count": 134,
+    "percentage": 8.933333333333334
+  },
+  "cplx_7_dyn_0.75": {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.7500000000000002,
+    "count": 111,
+    "percentage": 7.3999999999999995
+  },
+  "cplx_7_dyn_0.80": {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.8000000000000003,
+    "count": 83,
+    "percentage": 5.533333333333333
+  },
+  "cplx_7_dyn_0.85": {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.8500000000000003,
+    "count": 50,
+    "percentage": 3.3333333333333335
+  },
+  "cplx_7_dyn_0.90": {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.9000000000000004,
+    "count": 34,
+    "percentage": 2.2666666666666666
+  },
+  "cplx_8_dyn_0.50": {
+    "complexity_threshold": 8,
+    "dynamic_threshold": 0.5,
+    "count": 127,
+    "percentage": 8.466666666666667
+  },
+  "cplx_8_dyn_0.55": {
+    "complexity_threshold": 8,
+    "dynamic_threshold": 0.55,
+    "count": 122,
+    "percentage": 8.133333333333333
+  },
+  "cplx_8_dyn_0.60": {
+    "complexity_threshold": 8,
+    "dynamic_threshold": 0.6000000000000001,
+    "count": 110,
+    "percentage": 7.333333333333333
+  },
+  "cplx_8_dyn_0.65": {
+    "complexity_threshold": 8,
+    "dynamic_threshold": 0.6500000000000001,
+    "count": 99,
+    "percentage": 6.6000000000000005
+  },
+  "cplx_8_dyn_0.70": {
+    "complexity_threshold": 8,
+    "dynamic_threshold": 0.7000000000000002,
+    "count": 80,
+    "percentage": 5.333333333333334
+  },
+  "cplx_8_dyn_0.75": {
+    "complexity_threshold": 8,
+    "dynamic_threshold": 0.7500000000000002,
+    "count": 68,
+    "percentage": 4.533333333333333
+  },
+  "cplx_8_dyn_0.80": {
+    "complexity_threshold": 8,
+    "dynamic_threshold": 0.8000000000000003,
+    "count": 52,
+    "percentage": 3.4666666666666663
+  },
+  "cplx_8_dyn_0.85": {
+    "complexity_threshold": 8,
+    "dynamic_threshold": 0.8500000000000003,
+    "count": 34,
+    "percentage": 2.2666666666666666
+  },
+  "cplx_8_dyn_0.90": {
+    "complexity_threshold": 8,
+    "dynamic_threshold": 0.9000000000000004,
+    "count": 23,
+    "percentage": 1.5333333333333332
+  },
+  "cplx_9_dyn_0.50": {
+    "complexity_threshold": 9,
+    "dynamic_threshold": 0.5,
+    "count": 69,
+    "percentage": 4.6
+  },
+  "cplx_9_dyn_0.55": {
+    "complexity_threshold": 9,
+    "dynamic_threshold": 0.55,
+    "count": 69,
+    "percentage": 4.6
+  },
+  "cplx_9_dyn_0.60": {
+    "complexity_threshold": 9,
+    "dynamic_threshold": 0.6000000000000001,
+    "count": 62,
+    "percentage": 4.133333333333333
+  },
+  "cplx_9_dyn_0.65": {
+    "complexity_threshold": 9,
+    "dynamic_threshold": 0.6500000000000001,
+    "count": 56,
+    "percentage": 3.733333333333334
+  },
+  "cplx_9_dyn_0.70": {
+    "complexity_threshold": 9,
+    "dynamic_threshold": 0.7000000000000002,
+    "count": 47,
+    "percentage": 3.1333333333333333
+  },
+  "cplx_9_dyn_0.75": {
+    "complexity_threshold": 9,
+    "dynamic_threshold": 0.7500000000000002,
+    "count": 38,
+    "percentage": 2.533333333333333
+  },
+  "cplx_9_dyn_0.80": {
+    "complexity_threshold": 9,
+    "dynamic_threshold": 0.8000000000000003,
+    "count": 25,
+    "percentage": 1.6666666666666667
+  },
+  "cplx_9_dyn_0.85": {
+    "complexity_threshold": 9,
+    "dynamic_threshold": 0.8500000000000003,
+    "count": 18,
+    "percentage": 1.2
+  },
+  "cplx_9_dyn_0.90": {
+    "complexity_threshold": 9,
+    "dynamic_threshold": 0.9000000000000004,
+    "count": 13,
+    "percentage": 0.8666666666666666
+  }
+}

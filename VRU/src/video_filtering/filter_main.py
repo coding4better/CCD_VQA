@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 视频筛选主程序 - 生成三种筛选策略的结果对比
-复用 threshold_exploration_unsupervised.py 的函数
+调用 threshold_analysis.py 中的函数
 """
 
 import os
@@ -9,33 +9,31 @@ import sys
 import json
 import numpy as np
 from tqdm import tqdm
+import pandas as pd
 
 # 添加项目路径
 ROOT_DIR = "/home/24068286g/UString"
 sys.path.insert(0, os.path.join(ROOT_DIR, 'VRU', 'src', 'threshold_analysis'))
 
-# 复用已有的函数
-from threshold_exploration_unsupervised import (
-    load_annotations,
-    compute_metrics_with_global_normalization
-)
+# 调用 threshold_analysis.py 中的函数
+from threshold_analysis import compute_all_metrics
 
 # 配置
 OUTPUT_DIR = os.path.join(ROOT_DIR, 'VRU', 'output2')
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-COMPLEXITY_THRESHOLD = 6
-DYNAMIC_CHANGE_THRESHOLD = 0.6
+COMPLEXITY_THRESHOLD = 6  # P70 of Scene Complexity
+DYNAMIC_CHANGE_THRESHOLD = 0.7306  # P60 of Dynamic Change (computed from full 1500 videos)
 
 def main():
     print("\n" + "="*70)
     print("视频筛选 - 三种策略对比分析")
     print("="*70)
     
-    # 复用已有函数加载数据
-    print("\n📊 加载视频指标（复用threshold_exploration_unsupervised.py）...")
-    df = compute_metrics_with_global_normalization()
-    if df is None:
+    # 调用 threshold_analysis.py 计算指标
+    print("\n📊 加载视频指标（来自 threshold_analysis.py）...")
+    df = compute_all_metrics()
+    if df is None or df.empty:
         print("✗ 数据加载失败")
         return
     

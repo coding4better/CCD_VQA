@@ -1,0 +1,152 @@
+[
+  {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.7000000000000002,
+    "count": 200,
+    "percentage": 13.333333333333334,
+    "avg_dynamic": 0.84572265625,
+    "avg_complexity": 7.525,
+    "dynamic_improvement": 26.631444961556927,
+    "complexity_improvement": 64.20570264765786
+  },
+  {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.55,
+    "count": 194,
+    "percentage": 12.933333333333334,
+    "avg_dynamic": 0.7765886759020618,
+    "avg_complexity": 8.335051546391753,
+    "dynamic_improvement": 16.279900323718348,
+    "complexity_improvement": 81.88212568501062
+  },
+  {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.5,
+    "count": 207,
+    "percentage": 13.8,
+    "avg_dynamic": 0.7606572690217391,
+    "avg_complexity": 8.27536231884058,
+    "dynamic_improvement": 13.894464556310702,
+    "complexity_improvement": 80.5796258111852
+  },
+  {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.8000000000000003,
+    "count": 182,
+    "percentage": 12.133333333333333,
+    "avg_dynamic": 0.9111730554601648,
+    "avg_complexity": 6.708791208791209,
+    "dynamic_improvement": 36.431440934283856,
+    "complexity_improvement": 46.39492018019805
+  },
+  {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.6000000000000001,
+    "count": 176,
+    "percentage": 11.733333333333333,
+    "avg_dynamic": 0.7979264692826704,
+    "avg_complexity": 8.289772727272727,
+    "dynamic_improvement": 19.47484323805228,
+    "complexity_improvement": 80.89408046129023
+  },
+  {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.7500000000000002,
+    "count": 239,
+    "percentage": 15.933333333333334,
+    "avg_dynamic": 0.8781421613493724,
+    "avg_complexity": 6.7489539748953975,
+    "dynamic_improvement": 31.485670806558456,
+    "complexity_improvement": 47.271326190618225
+  },
+  {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.6500000000000001,
+    "count": 239,
+    "percentage": 15.933333333333334,
+    "avg_dynamic": 0.8179323842834728,
+    "avg_complexity": 7.531380753138075,
+    "dynamic_improvement": 22.470361810964697,
+    "complexity_improvement": 64.34493933236999
+  },
+  {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.7500000000000002,
+    "count": 161,
+    "percentage": 10.733333333333334,
+    "avg_dynamic": 0.8746542604813664,
+    "avg_complexity": 7.596273291925466,
+    "dynamic_improvement": 30.963421670232016,
+    "complexity_improvement": 65.76098251219376
+  },
+  {
+    "complexity_threshold": 7,
+    "dynamic_threshold": 0.6500000000000001,
+    "count": 159,
+    "percentage": 10.6,
+    "avg_dynamic": 0.8166120037342768,
+    "avg_complexity": 8.30188679245283,
+    "dynamic_improvement": 22.272659058640176,
+    "complexity_improvement": 81.1584257881764
+  },
+  {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.8000000000000003,
+    "count": 242,
+    "percentage": 16.133333333333333,
+    "avg_dynamic": 0.91624564178719,
+    "avg_complexity": 6.037190082644628,
+    "dynamic_improvement": 37.190967631997815,
+    "complexity_improvement": 31.739673028323278
+  },
+  {
+    "complexity_threshold": 4,
+    "dynamic_threshold": 0.8500000000000003,
+    "count": 158,
+    "percentage": 10.533333333333333,
+    "avg_dynamic": 0.9654123813291139,
+    "avg_complexity": 6.056962025316456,
+    "dynamic_improvement": 44.5527844477482,
+    "complexity_improvement": 32.171123624886306
+  },
+  {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.6000000000000001,
+    "count": 266,
+    "percentage": 17.733333333333334,
+    "avg_dynamic": 0.7983949130639098,
+    "avg_complexity": 7.515037593984962,
+    "dynamic_improvement": 19.544984096244043,
+    "complexity_improvement": 63.98830944104515
+  },
+  {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.55,
+    "count": 290,
+    "percentage": 19.333333333333332,
+    "avg_dynamic": 0.7795965786637931,
+    "avg_complexity": 7.562068965517241,
+    "dynamic_improvement": 16.73027855375277,
+    "complexity_improvement": 65.01459773459212
+  },
+  {
+    "complexity_threshold": 5,
+    "dynamic_threshold": 0.7000000000000002,
+    "count": 296,
+    "percentage": 19.733333333333334,
+    "avg_dynamic": 0.8486361116976351,
+    "avg_complexity": 6.706081081081081,
+    "dynamic_improvement": 27.067681439838164,
+    "complexity_improvement": 46.3357815190809
+  },
+  {
+    "complexity_threshold": 6,
+    "dynamic_threshold": 0.5,
+    "count": 310,
+    "percentage": 20.666666666666668,
+    "avg_dynamic": 0.7633537046370967,
+    "avg_complexity": 7.519354838709678,
+    "dynamic_improvement": 14.298206297997709,
+    "complexity_improvement": 64.0825175744038
+  }
+]

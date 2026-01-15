@@ -1,0 +1,50 @@
+{
+  "decision_timestamp": "2026-01-15T22:36:54.406528",
+  "decision_stage": "Final Selection",
+  "description": "方案#1：阈值组合的最终决策",
+  "thresholds": {
+    "scene_complexity": 6,
+    "dynamic_change": 0.7000000000000002,
+    "logic": "AND"
+  },
+  "rationale": {
+    "reason_1": "样本量精准：恰好200个视频，在目标范围内（150-500）",
+    "reason_2": "Complexity 提升：64.2% （基线 4.58 → 筛选后 7.53）",
+    "reason_3": "Dynamic 提升：26.6% （基线 0.6679 → 筛选后 0.8457）",
+    "reason_4": "分位数友好：C≥6 对应P70，D≥0.70 接近P70，便于复现和解释",
+    "reason_5": "平衡性：两个指标均获得显著提升，不偏颇任何一方"
+  },
+  "statistics": {
+    "total_videos": 1500,
+    "filtered_count": 200,
+    "retention_rate_percent": 13.333333333333334,
+    "baseline": {
+      "avg_dynamic": 0.6678614908854167,
+      "avg_complexity": 4.582666666666666
+    },
+    "filtered": {
+      "avg_dynamic": 0.84572265625,
+      "avg_complexity": 7.525,
+      "min_dynamic": 0.703125,
+      "max_dynamic": 1.4541015625,
+      "min_complexity": 6,
+      "max_complexity": 14
+    },
+    "improvement_percent": {
+      "dynamic": 26.631444961556927,
+      "complexity": 64.20570264765786
+    }
+  },
+  "alternatives": {
+    "reason_not_selected": "相比其他方案",
+    "alternative_high_quality": "方案#11 (C≥4, D≥0.85): Dynamic 提升 44.6%，但样本量偏少 (158条)",
+    "alternative_high_sample": "方案#15 (C≥6, D≥0.50): 样本量多 (310条)，但质量提升较低 (14.3%)",
+    "chosen_reason": "方案#1 在样本量精准性、质量双指标均衡、分位数友好性三方面最佳"
+  },
+  "output_files": {
+    "videos_json": "07_final_filtered_videos.json",
+    "videos_csv": "07_final_filtered_videos.csv",
+    "videos_txt": "07_final_filtered_videos.txt",
+    "decision_document": "06_final_decision.json"
+  }
+}

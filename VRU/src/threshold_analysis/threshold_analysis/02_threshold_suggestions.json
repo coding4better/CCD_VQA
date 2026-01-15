@@ -1,0 +1,14 @@
+{
+  "conservative": {
+    "dynamic_change_threshold": 0.8326171875,
+    "complexity_threshold": 6.0
+  },
+  "balanced": {
+    "dynamic_change_threshold": 0.7305664062499999,
+    "complexity_threshold": 4.0
+  },
+  "aggressive": {
+    "dynamic_change_threshold": 0.63505859375,
+    "complexity_threshold": 2.0
+  }
+}

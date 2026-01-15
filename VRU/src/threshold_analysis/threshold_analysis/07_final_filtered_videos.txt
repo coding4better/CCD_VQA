@@ -1,0 +1,204 @@
+# 方案#1 最终筛选结果（共200个视频）
+# 阈值：Complexity ≥ 6, Dynamic ≥ 0.7000000000000002
+# 生成时间：2026-01-15T22:36:54.406528
+
+  1. 000156.mp4           | Complexity:  6 | Dynamic: 1.4541 | Accident Frame:  33
+  2. 001312.mp4           | Complexity:  6 | Dynamic: 1.1592 | Accident Frame:  34
+  3. 001181.mp4           | Complexity:  7 | Dynamic: 1.1533 | Accident Frame:  42
+  4. 000744.mp4           | Complexity:  7 | Dynamic: 1.1406 | Accident Frame:  30
+  5. 001231.mp4           | Complexity:  7 | Dynamic: 1.1367 | Accident Frame:  41
+  6. 000840.mp4           | Complexity:  6 | Dynamic: 1.1182 | Accident Frame:  41
+  7. 000733.mp4           | Complexity:  6 | Dynamic: 1.1143 | Accident Frame:  30
+  8. 001162.mp4           | Complexity:  8 | Dynamic: 1.0986 | Accident Frame:  30
+  9. 000927.mp4           | Complexity:  6 | Dynamic: 1.0781 | Accident Frame:  30
+ 10. 000491.mp4           | Complexity:  6 | Dynamic: 1.0635 | Accident Frame:  31
+ 11. 000811.mp4           | Complexity: 13 | Dynamic: 1.0488 | Accident Frame:  30
+ 12. 001282.mp4           | Complexity:  6 | Dynamic: 1.0361 | Accident Frame:  40
+ 13. 000474.mp4           | Complexity:  6 | Dynamic: 1.0352 | Accident Frame:  41
+ 14. 000835.mp4           | Complexity: 10 | Dynamic: 1.0186 | Accident Frame:  32
+ 15. 001001.mp4           | Complexity:  9 | Dynamic: 1.0166 | Accident Frame:  48
+ 16. 000919.mp4           | Complexity:  8 | Dynamic: 1.0107 | Accident Frame:  32
+ 17. 001237.mp4           | Complexity:  8 | Dynamic: 1.0068 | Accident Frame:  30
+ 18. 001349.mp4           | Complexity:  9 | Dynamic: 1.0059 | Accident Frame:  33
+ 19. 000946.mp4           | Complexity:  6 | Dynamic: 1.0059 | Accident Frame:  41
+ 20. 001234.mp4           | Complexity:  7 | Dynamic: 1.0059 | Accident Frame:  40
+ 21. 000469.mp4           | Complexity:  8 | Dynamic: 0.9995 | Accident Frame:  33
+ 22. 000838.mp4           | Complexity: 13 | Dynamic: 0.9922 | Accident Frame:  31
+ 23. 000804.mp4           | Complexity:  7 | Dynamic: 0.9878 | Accident Frame:  30
+ 24. 000891.mp4           | Complexity:  8 | Dynamic: 0.9785 | Accident Frame:  30
+ 25. 001275.mp4           | Complexity:  9 | Dynamic: 0.9766 | Accident Frame:  30
+ 26. 001342.mp4           | Complexity:  8 | Dynamic: 0.9766 | Accident Frame:  42
+ 27. 000655.mp4           | Complexity:  6 | Dynamic: 0.9736 | Accident Frame:  47
+ 28. 001308.mp4           | Complexity:  7 | Dynamic: 0.9712 | Accident Frame:  31
+ 29. 001406.mp4           | Complexity: 10 | Dynamic: 0.9673 | Accident Frame:  36
+ 30. 000166.mp4           | Complexity:  7 | Dynamic: 0.9561 | Accident Frame:  30
+ 31. 001441.mp4           | Complexity:  8 | Dynamic: 0.9551 | Accident Frame:  31
+ 32. 000639.mp4           | Complexity: 11 | Dynamic: 0.9546 | Accident Frame:  32
+ 33. 000729.mp4           | Complexity: 10 | Dynamic: 0.9482 | Accident Frame:  35
+ 34. 000440.mp4           | Complexity:  7 | Dynamic: 0.9438 | Accident Frame:  30
+ 35. 000715.mp4           | Complexity: 14 | Dynamic: 0.9424 | Accident Frame:  39
+ 36. 000432.mp4           | Complexity:  6 | Dynamic: 0.9385 | Accident Frame:  43
+ 37. 000360.mp4           | Complexity:  7 | Dynamic: 0.9346 | Accident Frame:  39
+ 38. 000177.mp4           | Complexity: 13 | Dynamic: 0.9302 | Accident Frame:  30
+ 39. 000925.mp4           | Complexity: 10 | Dynamic: 0.9268 | Accident Frame:  31
+ 40. 001127.mp4           | Complexity:  8 | Dynamic: 0.9268 | Accident Frame:  30
+ 41. 000371.mp4           | Complexity:  6 | Dynamic: 0.9224 | Accident Frame:  36
+ 42. 001345.mp4           | Complexity:  7 | Dynamic: 0.9214 | Accident Frame:  32
+ 43. 000066.mp4           | Complexity:  6 | Dynamic: 0.9209 | Accident Frame:  30
+ 44. 000918.mp4           | Complexity:  6 | Dynamic: 0.9194 | Accident Frame:  34
+ 45. 000339.mp4           | Complexity: 10 | Dynamic: 0.9146 | Accident Frame:  38
+ 46. 001283.mp4           | Complexity:  6 | Dynamic: 0.9092 | Accident Frame:  44
+ 47. 001337.mp4           | Complexity:  8 | Dynamic: 0.9077 | Accident Frame:  32
+ 48. 000968.mp4           | Complexity:  8 | Dynamic: 0.9023 | Accident Frame:  32
+ 49. 001309.mp4           | Complexity:  7 | Dynamic: 0.9009 | Accident Frame:  36
+ 50. 001126.mp4           | Complexity:  6 | Dynamic: 0.8999 | Accident Frame:  36
+ 51. 001303.mp4           | Complexity:  6 | Dynamic: 0.8975 | Accident Frame:  34
+ 52. 000466.mp4           | Complexity:  7 | Dynamic: 0.8970 | Accident Frame:  40
+ 53. 000805.mp4           | Complexity:  6 | Dynamic: 0.8945 | Accident Frame:  30
+ 54. 000770.mp4           | Complexity:  8 | Dynamic: 0.8940 | Accident Frame:  33
+ 55. 001394.mp4           | Complexity:  8 | Dynamic: 0.8931 | Accident Frame:  33
+ 56. 000343.mp4           | Complexity:  8 | Dynamic: 0.8926 | Accident Frame:  36
+ 57. 000818.mp4           | Complexity:  6 | Dynamic: 0.8926 | Accident Frame:  36
+ 58. 000969.mp4           | Complexity:  7 | Dynamic: 0.8877 | Accident Frame:  32
+ 59. 000728.mp4           | Complexity:  7 | Dynamic: 0.8872 | Accident Frame:  32
+ 60. 000234.mp4           | Complexity:  7 | Dynamic: 0.8843 | Accident Frame:  31
+ 61. 000306.mp4           | Complexity:  9 | Dynamic: 0.8799 | Accident Frame:  34
+ 62. 000374.mp4           | Complexity:  6 | Dynamic: 0.8799 | Accident Frame:  47
+ 63. 001455.mp4           | Complexity:  6 | Dynamic: 0.8779 | Accident Frame:  35
+ 64. 000276.mp4           | Complexity:  6 | Dynamic: 0.8765 | Accident Frame:  30
+ 65. 000879.mp4           | Complexity:  6 | Dynamic: 0.8740 | Accident Frame:  30
+ 66. 001073.mp4           | Complexity: 10 | Dynamic: 0.8730 | Accident Frame:  39
+ 67. 000198.mp4           | Complexity:  9 | Dynamic: 0.8721 | Accident Frame:  30
+ 68. 001336.mp4           | Complexity:  6 | Dynamic: 0.8701 | Accident Frame:  33
+ 69. 000851.mp4           | Complexity:  8 | Dynamic: 0.8687 | Accident Frame:  42
+ 70. 000195.mp4           | Complexity:  9 | Dynamic: 0.8613 | Accident Frame:  30
+ 71. 001242.mp4           | Complexity:  6 | Dynamic: 0.8604 | Accident Frame:  38
+ 72. 000695.mp4           | Complexity:  8 | Dynamic: 0.8599 | Accident Frame:  39
+ 73. 001016.mp4           | Complexity:  6 | Dynamic: 0.8594 | Accident Frame:  38
+ 74. 001482.mp4           | Complexity:  8 | Dynamic: 0.8569 | Accident Frame:  38
+ 75. 000988.mp4           | Complexity:  7 | Dynamic: 0.8545 | Accident Frame:  36
+ 76. 000062.mp4           | Complexity:  9 | Dynamic: 0.8525 | Accident Frame:  43
+ 77. 000815.mp4           | Complexity:  6 | Dynamic: 0.8506 | Accident Frame:  42
+ 78. 000618.mp4           | Complexity:  6 | Dynamic: 0.8501 | Accident Frame:  32
+ 79. 001359.mp4           | Complexity:  7 | Dynamic: 0.8491 | Accident Frame:  42
+ 80. 000148.mp4           | Complexity:  6 | Dynamic: 0.8491 | Accident Frame:  32
+ 81. 001316.mp4           | Complexity:  8 | Dynamic: 0.8486 | Accident Frame:  38
+ 82. 000614.mp4           | Complexity:  6 | Dynamic: 0.8472 | Accident Frame:  32
+ 83. 000633.mp4           | Complexity: 11 | Dynamic: 0.8447 | Accident Frame:  45
+ 84. 001301.mp4           | Complexity:  9 | Dynamic: 0.8428 | Accident Frame:  31
+ 85. 000255.mp4           | Complexity:  9 | Dynamic: 0.8428 | Accident Frame:  35
+ 86. 000878.mp4           | Complexity:  8 | Dynamic: 0.8423 | Accident Frame:  34
+ 87. 001390.mp4           | Complexity:  6 | Dynamic: 0.8403 | Accident Frame:  30
+ 88. 000914.mp4           | Complexity:  7 | Dynamic: 0.8398 | Accident Frame:  30
+ 89. 000926.mp4           | Complexity:  7 | Dynamic: 0.8389 | Accident Frame:  30
+ 90. 001363.mp4           | Complexity:  6 | Dynamic: 0.8364 | Accident Frame:  33
+ 91. 000250.mp4           | Complexity:  7 | Dynamic: 0.8301 | Accident Frame:  35
+ 92. 000427.mp4           | Complexity:  7 | Dynamic: 0.8301 | Accident Frame:  41
+ 93. 000134.mp4           | Complexity:  7 | Dynamic: 0.8281 | Accident Frame:  32
+ 94. 001041.mp4           | Complexity:  8 | Dynamic: 0.8281 | Accident Frame:  32
+ 95. 000185.mp4           | Complexity:  8 | Dynamic: 0.8262 | Accident Frame:  30
+ 96. 001370.mp4           | Complexity:  8 | Dynamic: 0.8247 | Accident Frame:  30
+ 97. 000167.mp4           | Complexity:  7 | Dynamic: 0.8223 | Accident Frame:  30
+ 98. 001367.mp4           | Complexity:  6 | Dynamic: 0.8203 | Accident Frame:  31
+ 99. 000722.mp4           | Complexity:  7 | Dynamic: 0.8198 | Accident Frame:  30
+100. 000843.mp4           | Complexity:  7 | Dynamic: 0.8193 | Accident Frame:  32
+101. 000572.mp4           | Complexity: 10 | Dynamic: 0.8193 | Accident Frame:  34
+102. 000078.mp4           | Complexity:  6 | Dynamic: 0.8188 | Accident Frame:  30
+103. 000578.mp4           | Complexity:  7 | Dynamic: 0.8174 | Accident Frame:  36
+104. 001024.mp4           | Complexity:  9 | Dynamic: 0.8174 | Accident Frame:  35
+105. 000792.mp4           | Complexity: 11 | Dynamic: 0.8164 | Accident Frame:  34
+106. 000699.mp4           | Complexity:  7 | Dynamic: 0.8159 | Accident Frame:  34
+107. 000978.mp4           | Complexity:  6 | Dynamic: 0.8154 | Accident Frame:  45
+108. 001413.mp4           | Complexity:  7 | Dynamic: 0.8154 | Accident Frame:  39
+109. 000465.mp4           | Complexity:  8 | Dynamic: 0.8149 | Accident Frame:  30
+110. 000753.mp4           | Complexity:  6 | Dynamic: 0.8149 | Accident Frame:  47
+111. 000600.mp4           | Complexity:  8 | Dynamic: 0.8140 | Accident Frame:  46
+112. 001168.mp4           | Complexity:  7 | Dynamic: 0.8101 | Accident Frame:  41
+113. 000726.mp4           | Complexity:  7 | Dynamic: 0.8066 | Accident Frame:  40
+114. 000278.mp4           | Complexity:  8 | Dynamic: 0.8057 | Accident Frame:  37
+115. 000580.mp4           | Complexity:  9 | Dynamic: 0.8037 | Accident Frame:  43
+116. 000529.mp4           | Complexity:  6 | Dynamic: 0.8037 | Accident Frame:  36
+117. 001054.mp4           | Complexity:  7 | Dynamic: 0.8032 | Accident Frame:  38
+118. 000982.mp4           | Complexity:  8 | Dynamic: 0.8032 | Accident Frame:  33
+119. 000854.mp4           | Complexity:  8 | Dynamic: 0.8032 | Accident Frame:  35
+120. 000913.mp4           | Complexity:  8 | Dynamic: 0.8027 | Accident Frame:  32
+121. 000171.mp4           | Complexity:  6 | Dynamic: 0.8008 | Accident Frame:  30
+122. 000033.mp4           | Complexity:  7 | Dynamic: 0.7988 | Accident Frame:  33
+123. 000353.mp4           | Complexity:  8 | Dynamic: 0.7969 | Accident Frame:  31
+124. 000243.mp4           | Complexity:  6 | Dynamic: 0.7915 | Accident Frame:  31
+125. 000358.mp4           | Complexity: 14 | Dynamic: 0.7915 | Accident Frame:  37
+126. 000349.mp4           | Complexity:  9 | Dynamic: 0.7871 | Accident Frame:  37
+127. 000775.mp4           | Complexity:  6 | Dynamic: 0.7871 | Accident Frame:  38
+128. 000414.mp4           | Complexity: 10 | Dynamic: 0.7866 | Accident Frame:  32
+129. 000487.mp4           | Complexity:  6 | Dynamic: 0.7861 | Accident Frame:  39
+130. 001290.mp4           | Complexity:  6 | Dynamic: 0.7856 | Accident Frame:  30
+131. 000627.mp4           | Complexity:  6 | Dynamic: 0.7852 | Accident Frame:  37
+132. 001106.mp4           | Complexity:  6 | Dynamic: 0.7847 | Accident Frame:  46
+133. 000475.mp4           | Complexity:  7 | Dynamic: 0.7837 | Accident Frame:  42
+134. 001354.mp4           | Complexity:  7 | Dynamic: 0.7827 | Accident Frame:  32
+135. 000246.mp4           | Complexity:  6 | Dynamic: 0.7822 | Accident Frame:  30
+136. 001094.mp4           | Complexity:  6 | Dynamic: 0.7808 | Accident Frame:  36
+137. 001362.mp4           | Complexity: 10 | Dynamic: 0.7803 | Accident Frame:  30
+138. 000249.mp4           | Complexity:  7 | Dynamic: 0.7773 | Accident Frame:  30
+139. 001289.mp4           | Complexity:  6 | Dynamic: 0.7769 | Accident Frame:  44
+140. 000901.mp4           | Complexity:  7 | Dynamic: 0.7754 | Accident Frame:  30
+141. 000462.mp4           | Complexity:  7 | Dynamic: 0.7744 | Accident Frame:  45
+142. 000986.mp4           | Complexity:  9 | Dynamic: 0.7734 | Accident Frame:  43
+143. 000524.mp4           | Complexity:  7 | Dynamic: 0.7720 | Accident Frame:  35
+144. 000205.mp4           | Complexity:  6 | Dynamic: 0.7695 | Accident Frame:  30
+145. 000464.mp4           | Complexity:  7 | Dynamic: 0.7656 | Accident Frame:  37
+146. 000617.mp4           | Complexity:  7 | Dynamic: 0.7656 | Accident Frame:  37
+147. 000311.mp4           | Complexity:  9 | Dynamic: 0.7642 | Accident Frame:  33
+148. 000363.mp4           | Complexity:  7 | Dynamic: 0.7627 | Accident Frame:  33
+149. 000369.mp4           | Complexity:  7 | Dynamic: 0.7622 | Accident Frame:  42
+150. 000816.mp4           | Complexity:  6 | Dynamic: 0.7617 | Accident Frame:  31
+151. 000394.mp4           | Complexity:  8 | Dynamic: 0.7607 | Accident Frame:  41
+152. 000992.mp4           | Complexity: 10 | Dynamic: 0.7607 | Accident Frame:  36
+153. 001049.mp4           | Complexity:  9 | Dynamic: 0.7603 | Accident Frame:  37
+154. 000317.mp4           | Complexity: 10 | Dynamic: 0.7588 | Accident Frame:  33
+155. 000264.mp4           | Complexity:  9 | Dynamic: 0.7583 | Accident Frame:  40
+156. 000416.mp4           | Complexity: 10 | Dynamic: 0.7583 | Accident Frame:  31
+157. 000142.mp4           | Complexity:  8 | Dynamic: 0.7573 | Accident Frame:  30
+158. 001108.mp4           | Complexity:  7 | Dynamic: 0.7563 | Accident Frame:  48
+159. 001454.mp4           | Complexity:  9 | Dynamic: 0.7544 | Accident Frame:  37
+160. 001386.mp4           | Complexity:  9 | Dynamic: 0.7539 | Accident Frame:  32
+161. 000490.mp4           | Complexity:  6 | Dynamic: 0.7505 | Accident Frame:  44
+162. 000104.mp4           | Complexity:  9 | Dynamic: 0.7480 | Accident Frame:  33
+163. 001347.mp4           | Complexity:  9 | Dynamic: 0.7461 | Accident Frame:  30
+164. 000117.mp4           | Complexity:  6 | Dynamic: 0.7451 | Accident Frame:  30
+165. 001247.mp4           | Complexity:  8 | Dynamic: 0.7446 | Accident Frame:  36
+166. 000125.mp4           | Complexity:  6 | Dynamic: 0.7446 | Accident Frame:  35
+167. 001361.mp4           | Complexity:  6 | Dynamic: 0.7441 | Accident Frame:  40
+168. 000258.mp4           | Complexity:  6 | Dynamic: 0.7417 | Accident Frame:  45
+169. 000967.mp4           | Complexity:  6 | Dynamic: 0.7402 | Accident Frame:  31
+170. 000595.mp4           | Complexity:  7 | Dynamic: 0.7383 | Accident Frame:  46
+171. 000692.mp4           | Complexity:  6 | Dynamic: 0.7363 | Accident Frame:  32
+172. 001232.mp4           | Complexity:  9 | Dynamic: 0.7349 | Accident Frame:  31
+173. 000611.mp4           | Complexity:  7 | Dynamic: 0.7349 | Accident Frame:  48
+174. 001476.mp4           | Complexity: 10 | Dynamic: 0.7349 | Accident Frame:  34
+175. 000150.mp4           | Complexity:  9 | Dynamic: 0.7339 | Accident Frame:  40
+176. 000074.mp4           | Complexity:  9 | Dynamic: 0.7319 | Accident Frame:  30
+177. 000032.mp4           | Complexity:  7 | Dynamic: 0.7319 | Accident Frame:  36
+178. 000300.mp4           | Complexity:  8 | Dynamic: 0.7319 | Accident Frame:  38
+179. 001085.mp4           | Complexity:  6 | Dynamic: 0.7290 | Accident Frame:  31
+180. 000215.mp4           | Complexity:  7 | Dynamic: 0.7275 | Accident Frame:  30
+181. 000749.mp4           | Complexity: 10 | Dynamic: 0.7271 | Accident Frame:  32
+182. 000871.mp4           | Complexity:  8 | Dynamic: 0.7261 | Accident Frame:  30
+183. 001184.mp4           | Complexity:  6 | Dynamic: 0.7251 | Accident Frame:  34
+184. 000953.mp4           | Complexity:  7 | Dynamic: 0.7241 | Accident Frame:  42
+185. 001318.mp4           | Complexity:  7 | Dynamic: 0.7231 | Accident Frame:  30
+186. 001294.mp4           | Complexity:  7 | Dynamic: 0.7227 | Accident Frame:  30
+187. 000042.mp4           | Complexity:  6 | Dynamic: 0.7192 | Accident Frame:  35
+188. 000979.mp4           | Complexity:  7 | Dynamic: 0.7188 | Accident Frame:  33
+189. 000426.mp4           | Complexity:  7 | Dynamic: 0.7168 | Accident Frame:  30
+190. 000241.mp4           | Complexity:  9 | Dynamic: 0.7129 | Accident Frame:  31
+191. 001270.mp4           | Complexity:  6 | Dynamic: 0.7119 | Accident Frame:  46
+192. 000136.mp4           | Complexity:  6 | Dynamic: 0.7114 | Accident Frame:  35
+193. 000267.mp4           | Complexity: 11 | Dynamic: 0.7114 | Accident Frame:  30
+194. 000860.mp4           | Complexity:  6 | Dynamic: 0.7109 | Accident Frame:  35
+195. 000407.mp4           | Complexity:  7 | Dynamic: 0.7104 | Accident Frame:  40
+196. 000846.mp4           | Complexity:  7 | Dynamic: 0.7090 | Accident Frame:  30
+197. 000691.mp4           | Complexity:  6 | Dynamic: 0.7080 | Accident Frame:  38
+198. 001374.mp4           | Complexity:  6 | Dynamic: 0.7070 | Accident Frame:  34
+199. 000961.mp4           | Complexity:  6 | Dynamic: 0.7061 | Accident Frame:  30
+200. 000947.mp4           | Complexity:  6 | Dynamic: 0.7031 | Accident Frame:  30
