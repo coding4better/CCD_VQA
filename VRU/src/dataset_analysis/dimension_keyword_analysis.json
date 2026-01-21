@@ -1,0 +1,392 @@
+{
+  "summary": {
+    "total_questions": 2028,
+    "dimensions_count": 6
+  },
+  "dimensions": {
+    "Weather & Light": {
+      "total_questions": 338,
+      "extracted_options_count": 172,
+      "categories": {
+        "Time": {
+          "total_count": 154,
+          "percentage": 45.6,
+          "keywords": {
+            "Daytime": {
+              "count": 137,
+              "percentage": 40.5
+            },
+            "Nighttime": {
+              "count": 6,
+              "percentage": 1.8
+            },
+            "Dusk/Dawn": {
+              "count": 11,
+              "percentage": 3.3
+            }
+          }
+        },
+        "Sky": {
+          "total_count": 210,
+          "percentage": 62.1,
+          "keywords": {
+            "Clear": {
+              "count": 85,
+              "percentage": 25.1
+            },
+            "Cloudy/Overcast": {
+              "count": 72,
+              "percentage": 21.3
+            },
+            "Rain/Wet": {
+              "count": 34,
+              "percentage": 10.1
+            },
+            "Snow/Ice": {
+              "count": 19,
+              "percentage": 5.6
+            }
+          }
+        },
+        "Road Surface Condition": {
+          "total_count": 128,
+          "percentage": 37.9,
+          "keywords": {
+            "Dry": {
+              "count": 73,
+              "percentage": 21.6
+            },
+            "Wet/Slippery": {
+              "count": 36,
+              "percentage": 10.7
+            },
+            "Icy/Snowy": {
+              "count": 19,
+              "percentage": 5.6
+            }
+          }
+        },
+        "Visibility": {
+          "total_count": 64,
+          "percentage": 18.9,
+          "keywords": {
+            "Good": {
+              "count": 60,
+              "percentage": 17.8
+            },
+            "Poor/Reduced": {
+              "count": 4,
+              "percentage": 1.2
+            }
+          }
+        }
+      },
+      "others": {
+        "count": 166,
+        "percentage": 49.1,
+        "examples": [
+          "A",
+          "None",
+          "A",
+          "B",
+          "C",
+          "B",
+          "A",
+          "None",
+          "None",
+          "C"
+        ]
+      }
+    },
+    "Traffic Environment": {
+      "total_questions": 338,
+      "extracted_options_count": 168,
+      "categories": {
+        "Area Type": {
+          "total_count": 192,
+          "percentage": 56.8,
+          "keywords": {
+            "Urban/City": {
+              "count": 145,
+              "percentage": 42.9
+            },
+            "Highway/Expressway": {
+              "count": 18,
+              "percentage": 5.3
+            },
+            "Suburban": {
+              "count": 26,
+              "percentage": 7.7
+            },
+            "Rural/Open": {
+              "count": 3,
+              "percentage": 0.9
+            }
+          }
+        },
+        "Traffic Density": {
+          "total_count": 90,
+          "percentage": 26.6,
+          "keywords": {
+            "Moderate": {
+              "count": 41,
+              "percentage": 12.1
+            },
+            "Heavy/Congested": {
+              "count": 43,
+              "percentage": 12.7
+            },
+            "Light/Sparse": {
+              "count": 6,
+              "percentage": 1.8
+            }
+          }
+        }
+      },
+      "others": {
+        "count": 170,
+        "percentage": 50.3,
+        "examples": [
+          "A",
+          "None",
+          "A",
+          "D",
+          "B",
+          "B",
+          "A",
+          "None",
+          "None",
+          "B"
+        ]
+      }
+    },
+    "Road Configuration": {
+      "total_questions": 338,
+      "extracted_options_count": 146,
+      "categories": {
+        "Lane Count": {
+          "total_count": 122,
+          "percentage": 36.1,
+          "keywords": {
+            "Multi-lane": {
+              "count": 113,
+              "percentage": 33.4
+            },
+            "Two-lane": {
+              "count": 9,
+              "percentage": 2.7
+            }
+          }
+        },
+        "Intersection Presence": {
+          "total_count": 60,
+          "percentage": 17.8,
+          "keywords": {
+            "Intersection": {
+              "count": 60,
+              "percentage": 17.8
+            }
+          }
+        },
+        "Road Structure": {
+          "total_count": 57,
+          "percentage": 16.9,
+          "keywords": {
+            "Divided": {
+              "count": 21,
+              "percentage": 6.2
+            },
+            "Straight": {
+              "count": 33,
+              "percentage": 9.8
+            },
+            "Curved/Winding": {
+              "count": 3,
+              "percentage": 0.9
+            }
+          }
+        }
+      },
+      "others": {
+        "count": 192,
+        "percentage": 56.8,
+        "examples": [
+          "A",
+          "None",
+          "A two-way street, likely with one travel lane in each direction, where markings are obscured by snow.",
+          "A",
+          "B",
+          "B",
+          "A",
+          "A parallel parking space on the right side of the street.",
+          "A",
+          "None"
+        ]
+      }
+    },
+    "Accident Type": {
+      "total_questions": 338,
+      "extracted_options_count": 135,
+      "categories": {
+        "Collision Mode": {
+          "total_count": 183,
+          "percentage": 54.1,
+          "keywords": {
+            "Side Collision (T-Bone/Sideswipe)": {
+              "count": 112,
+              "percentage": 33.1
+            },
+            "Head-On": {
+              "count": 57,
+              "percentage": 16.9
+            },
+            "Rear-End": {
+              "count": 14,
+              "percentage": 4.1
+            }
+          }
+        },
+        "Impact Location": {
+          "total_count": 140,
+          "percentage": 41.4,
+          "keywords": {
+            "Front": {
+              "count": 50,
+              "percentage": 14.8
+            },
+            "Side": {
+              "count": 76,
+              "percentage": 22.5
+            },
+            "Rear": {
+              "count": 14,
+              "percentage": 4.1
+            }
+          }
+        }
+      },
+      "others": {
+        "count": 203,
+        "percentage": 60.1,
+        "examples": [
+          "A",
+          "None",
+          "A collision where a parked vehicle pulls out unsafely into the path of a moving vehicle.",
+          "A",
+          "B",
+          "C",
+          "B",
+          "A collision between a reversing vehicle and a pedestrian.",
+          "A",
+          "None"
+        ]
+      }
+    },
+    "Accident Cause": {
+      "total_questions": 338,
+      "extracted_options_count": 135,
+      "categories": {
+        "Violation": {
+          "total_count": 158,
+          "percentage": 46.7,
+          "keywords": {
+            "Improper Turn": {
+              "count": 41,
+              "percentage": 12.1
+            },
+            "Unsafe Lane Change": {
+              "count": 34,
+              "percentage": 10.1
+            },
+            "Right-of-Way Violation": {
+              "count": 77,
+              "percentage": 22.8
+            },
+            "Signal Violation": {
+              "count": 6,
+              "percentage": 1.8
+            }
+          }
+        },
+        "Driver Error": {
+          "total_count": 28,
+          "percentage": 8.3,
+          "keywords": {
+            "Speeding/Aggressive": {
+              "count": 26,
+              "percentage": 7.7
+            },
+            "Distraction/Inattention": {
+              "count": 2,
+              "percentage": 0.6
+            }
+          }
+        }
+      },
+      "others": {
+        "count": 203,
+        "percentage": 60.1,
+        "examples": [
+          "A",
+          "None",
+          "A",
+          "C",
+          "B",
+          "B",
+          "The driver failed to ensure the path was clear of pedestrians before and during the reversing maneuver.",
+          "A",
+          "None",
+          "None"
+        ]
+      }
+    },
+    "Accident Prevention": {
+      "total_questions": 338,
+      "extracted_options_count": 96,
+      "categories": {
+        "Defensive Driving": {
+          "total_count": 114,
+          "percentage": 33.7,
+          "keywords": {
+            "Observation (Check Mirrors/Blind Spots)": {
+              "count": 21,
+              "percentage": 6.2
+            },
+            "Signaling": {
+              "count": 19,
+              "percentage": 5.6
+            },
+            "Maintain Safe Distance": {
+              "count": 46,
+              "percentage": 13.6
+            },
+            "Patience (Wait/Yield)": {
+              "count": 12,
+              "percentage": 3.6
+            },
+            "Speed Control (Slow Down/Brake)": {
+              "count": 16,
+              "percentage": 4.7
+            }
+          }
+        }
+      },
+      "others": {
+        "count": 242,
+        "percentage": 71.6,
+        "examples": [
+          "By waiting for the silver sedan (Car B) to pass before starting the maneuver.",
+          "A",
+          "None",
+          "C) Thoroughly checked mirrors and blind spots for approaching vehicles and yielded the right-of-way until the lane was clear.",
+          "Waiting for the ego-vehicle to pass before attempting to enter the lane.",
+          "A",
+          "C",
+          "A",
+          "B",
+          "A"
+        ]
+      }
+    }
+  }
+}

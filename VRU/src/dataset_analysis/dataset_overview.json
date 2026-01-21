@@ -1,0 +1,888 @@
+{
+  "dataset_overview": {
+    "total_records": 344,
+    "total_questions": 2064,
+    "avg_questions_per_record": 6.0,
+    "total_correct_options_extracted": 1800
+  },
+  "dimension_distribution": {
+    "Weather & Light": 338,
+    "Traffic Environment": 338,
+    "Road Configuration": 338,
+    "Accident Type": 338,
+    "Accident Cause": 338,
+    "Accident Prevention": 338,
+    "Unknown": 36
+  },
+  "answer_type_distribution": {
+    "str": 1704,
+    "int": 96,
+    "NoneType": 264
+  },
+  "dimension_category_summary": {
+    "Weather & Light": {
+      "total_questions": 338,
+      "extracted_options_count": 183,
+      "others": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "top_categories": {
+        "Time of Day": {
+          "total_count": 149,
+          "percentage": 44.1,
+          "top_keywords": {
+            "daytime": {
+              "count": 126,
+              "percentage": 37.3
+            },
+            "dusk": {
+              "count": 9,
+              "percentage": 2.7
+            },
+            "nighttime": {
+              "count": 4,
+              "percentage": 1.2
+            },
+            "evening": {
+              "count": 4,
+              "percentage": 1.2
+            },
+            "dawn": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "night": {
+              "count": 2,
+              "percentage": 0.6
+            },
+            "morning": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Sky Conditions": {
+          "total_count": 286,
+          "percentage": 84.6,
+          "top_keywords": {
+            "clear": {
+              "count": 91,
+              "percentage": 26.9
+            },
+            "overcast": {
+              "count": 56,
+              "percentage": 16.6
+            },
+            "clear skies": {
+              "count": 41,
+              "percentage": 12.1
+            },
+            "overcast skies": {
+              "count": 28,
+              "percentage": 8.3
+            },
+            "cloudy": {
+              "count": 26,
+              "percentage": 7.7
+            },
+            "sunny": {
+              "count": 21,
+              "percentage": 6.2
+            },
+            "cloudy skies": {
+              "count": 18,
+              "percentage": 5.3
+            },
+            "bright": {
+              "count": 5,
+              "percentage": 1.5
+            }
+          }
+        },
+        "Weather": {
+          "total_count": 34,
+          "percentage": 10.1,
+          "top_keywords": {
+            "snow": {
+              "count": 18,
+              "percentage": 5.3
+            },
+            "rain": {
+              "count": 6,
+              "percentage": 1.8
+            },
+            "rainy": {
+              "count": 5,
+              "percentage": 1.5
+            },
+            "snowy": {
+              "count": 4,
+              "percentage": 1.2
+            },
+            "raining": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Road Surface": {
+          "total_count": 214,
+          "percentage": 63.3,
+          "top_keywords": {
+            "dry": {
+              "count": 75,
+              "percentage": 22.2
+            },
+            "dry road": {
+              "count": 72,
+              "percentage": 21.3
+            },
+            "wet": {
+              "count": 37,
+              "percentage": 10.9
+            },
+            "wet road": {
+              "count": 20,
+              "percentage": 5.9
+            },
+            "slippery": {
+              "count": 4,
+              "percentage": 1.2
+            },
+            "icy": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "snow-covered": {
+              "count": 2,
+              "percentage": 0.6
+            },
+            "damp": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Visibility": {
+          "total_count": 65,
+          "percentage": 19.2,
+          "top_keywords": {
+            "good visibility": {
+              "count": 60,
+              "percentage": 17.8
+            },
+            "low visibility": {
+              "count": 2,
+              "percentage": 0.6
+            },
+            "reduced visibility": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "excellent visibility": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "limited visibility": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Lighting": {
+          "total_count": 9,
+          "percentage": 2.7,
+          "top_keywords": {
+            "glare": {
+              "count": 6,
+              "percentage": 1.8
+            },
+            "streetlights": {
+              "count": 2,
+              "percentage": 0.6
+            },
+            "shadows": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        }
+      }
+    },
+    "Traffic Environment": {
+      "total_questions": 338,
+      "extracted_options_count": 183,
+      "others": {
+        "count": 8,
+        "percentage": 2.4
+      },
+      "top_categories": {
+        "Area Type": {
+          "total_count": 237,
+          "percentage": 70.1,
+          "top_keywords": {
+            "urban": {
+              "count": 153,
+              "percentage": 45.3
+            },
+            "commercial": {
+              "count": 27,
+              "percentage": 8.0
+            },
+            "suburban": {
+              "count": 18,
+              "percentage": 5.3
+            },
+            "urban area": {
+              "count": 12,
+              "percentage": 3.6
+            },
+            "residential": {
+              "count": 9,
+              "percentage": 2.7
+            },
+            "suburban area": {
+              "count": 6,
+              "percentage": 1.8
+            },
+            "residential area": {
+              "count": 4,
+              "percentage": 1.2
+            },
+            "rural": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "rural area": {
+              "count": 2,
+              "percentage": 0.6
+            },
+            "downtown area": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "downtown": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "commercial area": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Surroundings": {
+          "total_count": 66,
+          "percentage": 19.5,
+          "top_keywords": {
+            "buildings": {
+              "count": 50,
+              "percentage": 14.8
+            },
+            "trees": {
+              "count": 12,
+              "percentage": 3.6
+            },
+            "roadside buildings": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "shops": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Traffic Level": {
+          "total_count": 72,
+          "percentage": 21.3,
+          "top_keywords": {
+            "busy": {
+              "count": 29,
+              "percentage": 8.6
+            },
+            "moderate traffic": {
+              "count": 26,
+              "percentage": 7.7
+            },
+            "heavy traffic": {
+              "count": 10,
+              "percentage": 3.0
+            },
+            "congested": {
+              "count": 4,
+              "percentage": 1.2
+            },
+            "flowing traffic": {
+              "count": 3,
+              "percentage": 0.9
+            }
+          }
+        },
+        "Pedestrian Presence": {
+          "total_count": 29,
+          "percentage": 8.6,
+          "top_keywords": {
+            "pedestrians": {
+              "count": 10,
+              "percentage": 3.0
+            },
+            "pedestrian": {
+              "count": 9,
+              "percentage": 2.7
+            },
+            "crosswalk": {
+              "count": 5,
+              "percentage": 1.5
+            },
+            "pedestrian crosswalk": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "marked crosswalk": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "sidewalk": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Parking": {
+          "total_count": 16,
+          "percentage": 4.7,
+          "top_keywords": {
+            "parked cars": {
+              "count": 6,
+              "percentage": 1.8
+            },
+            "parked vehicles": {
+              "count": 5,
+              "percentage": 1.5
+            },
+            "parking": {
+              "count": 5,
+              "percentage": 1.5
+            }
+          }
+        },
+        "Road Features": {
+          "total_count": 1,
+          "percentage": 0.3,
+          "top_keywords": {
+            "road markings": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        }
+      }
+    },
+    "Road Configuration": {
+      "total_questions": 338,
+      "extracted_options_count": 183,
+      "others": {
+        "count": 26,
+        "percentage": 7.7
+      },
+      "top_categories": {
+        "Lane Configuration": {
+          "total_count": 175,
+          "percentage": 51.8,
+          "top_keywords": {
+            "multi-lane": {
+              "count": 116,
+              "percentage": 34.3
+            },
+            "multi-lane road": {
+              "count": 40,
+              "percentage": 11.8
+            },
+            "two-lane": {
+              "count": 7,
+              "percentage": 2.1
+            },
+            "two-lane road": {
+              "count": 6,
+              "percentage": 1.8
+            },
+            "multiple lanes": {
+              "count": 5,
+              "percentage": 1.5
+            },
+            "dual carriageway": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Road Type": {
+          "total_count": 45,
+          "percentage": 13.3,
+          "top_keywords": {
+            "main road": {
+              "count": 18,
+              "percentage": 5.3
+            },
+            "highway": {
+              "count": 11,
+              "percentage": 3.3
+            },
+            "side road": {
+              "count": 8,
+              "percentage": 2.4
+            },
+            "arterial road": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "arterial": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "expressway": {
+              "count": 2,
+              "percentage": 0.6
+            }
+          }
+        },
+        "Intersection Type": {
+          "total_count": 116,
+          "percentage": 34.3,
+          "top_keywords": {
+            "intersection": {
+              "count": 59,
+              "percentage": 17.5
+            },
+            "signalized": {
+              "count": 25,
+              "percentage": 7.4
+            },
+            "signalized intersection": {
+              "count": 15,
+              "percentage": 4.4
+            },
+            "four-way intersection": {
+              "count": 6,
+              "percentage": 1.8
+            },
+            "unsignalized": {
+              "count": 5,
+              "percentage": 1.5
+            },
+            "t-intersection": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "unsignalized intersection": {
+              "count": 2,
+              "percentage": 0.6
+            },
+            "uncontrolled intersection": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Median/Divider": {
+          "total_count": 52,
+          "percentage": 15.4,
+          "top_keywords": {
+            "median": {
+              "count": 20,
+              "percentage": 5.9
+            },
+            "separated": {
+              "count": 17,
+              "percentage": 5.0
+            },
+            "barrier": {
+              "count": 5,
+              "percentage": 1.5
+            },
+            "median barrier": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "divided": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "divider": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "physical barrier": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Special Features": {
+          "total_count": 1,
+          "percentage": 0.3,
+          "top_keywords": {
+            "turn lane": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Road Geometry": {
+          "total_count": 38,
+          "percentage": 11.2,
+          "top_keywords": {
+            "straight": {
+              "count": 34,
+              "percentage": 10.1
+            },
+            "curve": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "curved": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        }
+      }
+    },
+    "Accident Type": {
+      "total_questions": 338,
+      "extracted_options_count": 183,
+      "others": {
+        "count": 32,
+        "percentage": 9.5
+      },
+      "top_categories": {
+        "Collision Type": {
+          "total_count": 259,
+          "percentage": 76.6,
+          "top_keywords": {
+            "t-bone": {
+              "count": 75,
+              "percentage": 22.2
+            },
+            "side-impact": {
+              "count": 71,
+              "percentage": 21.0
+            },
+            "sideswipe": {
+              "count": 36,
+              "percentage": 10.7
+            },
+            "rear-end collision": {
+              "count": 15,
+              "percentage": 4.4
+            },
+            "rear-end": {
+              "count": 15,
+              "percentage": 4.4
+            },
+            "angle collision": {
+              "count": 11,
+              "percentage": 3.3
+            },
+            "side-impact collision": {
+              "count": 11,
+              "percentage": 3.3
+            },
+            "t-bone collision": {
+              "count": 9,
+              "percentage": 2.7
+            },
+            "head-on collision": {
+              "count": 7,
+              "percentage": 2.1
+            },
+            "head-on": {
+              "count": 7,
+              "percentage": 2.1
+            },
+            "broadside collision": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "broadside": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Impact Location": {
+          "total_count": 153,
+          "percentage": 45.3,
+          "top_keywords": {
+            "side": {
+              "count": 83,
+              "percentage": 24.6
+            },
+            "front": {
+              "count": 54,
+              "percentage": 16.0
+            },
+            "rear": {
+              "count": 15,
+              "percentage": 4.4
+            },
+            "left side": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Impact Pattern": {
+          "total_count": 5,
+          "percentage": 1.5,
+          "top_keywords": {
+            "striking": {
+              "count": 2,
+              "percentage": 0.6
+            },
+            "struck by": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "hitting": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "collided with": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        }
+      }
+    },
+    "Accident Cause": {
+      "total_questions": 338,
+      "extracted_options_count": 183,
+      "others": {
+        "count": 67,
+        "percentage": 19.8
+      },
+      "top_categories": {
+        "Violation Type": {
+          "total_count": 69,
+          "percentage": 20.4,
+          "top_keywords": {
+            "failed to yield": {
+              "count": 60,
+              "percentage": 17.8
+            },
+            "failed to stop": {
+              "count": 4,
+              "percentage": 1.2
+            },
+            "improper turn": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "illegal maneuver": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "improper lane change": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Right-of-Way": {
+          "total_count": 167,
+          "percentage": 49.4,
+          "top_keywords": {
+            "right-of-way": {
+              "count": 79,
+              "percentage": 23.4
+            },
+            "yield": {
+              "count": 77,
+              "percentage": 22.8
+            },
+            "yielding": {
+              "count": 11,
+              "percentage": 3.3
+            }
+          }
+        },
+        "Maneuver Errors": {
+          "total_count": 19,
+          "percentage": 5.6,
+          "top_keywords": {
+            "unsafe lane change": {
+              "count": 11,
+              "percentage": 3.3
+            },
+            "illegal turn": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "improper turn": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "sudden lane change": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "cutting off": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Driver Behavior": {
+          "total_count": 5,
+          "percentage": 1.5,
+          "top_keywords": {
+            "excessive speed": {
+              "count": 3,
+              "percentage": 0.9
+            },
+            "reckless": {
+              "count": 1,
+              "percentage": 0.3
+            },
+            "inattentive": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Visibility Issues": {
+          "total_count": 10,
+          "percentage": 3.0,
+          "top_keywords": {
+            "blind spot": {
+              "count": 8,
+              "percentage": 2.4
+            },
+            "failed to check": {
+              "count": 2,
+              "percentage": 0.6
+            }
+          }
+        }
+      }
+    },
+    "Accident Prevention": {
+      "total_questions": 338,
+      "extracted_options_count": 183,
+      "others": {
+        "count": 89,
+        "percentage": 26.3
+      },
+      "top_categories": {
+        "Observation": {
+          "total_count": 44,
+          "percentage": 13.0,
+          "top_keywords": {
+            "checking": {
+              "count": 21,
+              "percentage": 6.2
+            },
+            "checking mirrors": {
+              "count": 13,
+              "percentage": 3.8
+            },
+            "scanning": {
+              "count": 4,
+              "percentage": 1.2
+            },
+            "checking blind spots": {
+              "count": 2,
+              "percentage": 0.6
+            },
+            "looking": {
+              "count": 2,
+              "percentage": 0.6
+            },
+            "observing": {
+              "count": 2,
+              "percentage": 0.6
+            }
+          }
+        },
+        "Waiting": {
+          "total_count": 38,
+          "percentage": 11.2,
+          "top_keywords": {
+            "waiting": {
+              "count": 37,
+              "percentage": 10.9
+            },
+            "waiting for traffic": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        },
+        "Yielding": {
+          "total_count": 15,
+          "percentage": 4.4,
+          "top_keywords": {
+            "yielding": {
+              "count": 9,
+              "percentage": 2.7
+            },
+            "yield": {
+              "count": 4,
+              "percentage": 1.2
+            },
+            "yielding to traffic": {
+              "count": 2,
+              "percentage": 0.6
+            }
+          }
+        },
+        "Speed Control": {
+          "total_count": 16,
+          "percentage": 4.7,
+          "top_keywords": {
+            "reducing speed": {
+              "count": 6,
+              "percentage": 1.8
+            },
+            "slowing down": {
+              "count": 5,
+              "percentage": 1.5
+            },
+            "slowing": {
+              "count": 5,
+              "percentage": 1.5
+            }
+          }
+        },
+        "Signaling": {
+          "total_count": 3,
+          "percentage": 0.9,
+          "top_keywords": {
+            "signaling": {
+              "count": 3,
+              "percentage": 0.9
+            }
+          }
+        },
+        "Safe Distance": {
+          "total_count": 16,
+          "percentage": 4.7,
+          "top_keywords": {
+            "following distance": {
+              "count": 15,
+              "percentage": 4.4
+            },
+            "clearance": {
+              "count": 1,
+              "percentage": 0.3
+            }
+          }
+        }
+      }
+    }
+  }
+}

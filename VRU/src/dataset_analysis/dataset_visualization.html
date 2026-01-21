@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Dataset VQA Analysis Charts</title>
+  <script src='https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js'></script>
+  <style>
+    body { font-family: Inter, system-ui, Arial, sans-serif; margin: 0; background:#0f172a; color:#e2e8f0; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+    .card { background:#111827; border:1px solid #1f2937; border-radius:12px; padding:16px; box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+    h1 { font-size: 24px; margin: 8px 0 16px; color:#93c5fd; }
+    h2 { font-size: 18px; margin: 0 0 12px; color:#a7f3d0; }
+    .kpis { display:flex; gap:16px; flex-wrap:wrap; }
+    .kpi { flex:1 1 220px; background:#0b1220; border:1px solid #1f2937; border-radius:10px; padding:12px; }
+    .kpi .label { color:#9ca3af; font-size:12px; }
+    .kpi .value { color:#e5e7eb; font-size:24px; font-weight:600; }
+    canvas { width:100%; height:340px; }
+    .small canvas { height:260px; }
+    .footer { margin-top: 20px; color:#94a3b8; font-size:12px; }
+    .dim-section { margin-top: 24px; }
+  </style>
+</head>
+<body>
+  <div class='container'>
+    <h1>Dataset VQA Analysis Charts</h1>
+    <div class='kpis'>
+      <div class='kpi'><div class='label'>Total Records</div><div class='value'>344</div></div>
+      <div class='kpi'><div class='label'>Total Questions</div><div class='value'>2064</div></div>
+      <div class='kpi'><div class='label'>Avg Questions / Record</div><div class='value'>6.0</div></div>
+    </div>
+
+    <div class='grid'>
+      <div class='card'>
+        <h2>Dimension Distribution</h2>
+        <canvas id='dimDist'></canvas>
+      </div>
+      <div class='card'>
+        <h2>Others Percentage by Dimension</h2>
+        <canvas id='othersBar'></canvas>
+      </div>
+    </div>
+
+    <div class='dim-section'>
+      <h2>Top Categories per Dimension (percentage over questions)</h2>
+      <div class='grid'>
+        <div class='card small'><h2>Weather & Light</h2><canvas id='cat_wl'></canvas></div>
+        <div class='card small'><h2>Traffic Environment</h2><canvas id='cat_te'></canvas></div>
+        <div class='card small'><h2>Road Configuration</h2><canvas id='cat_rc'></canvas></div>
+        <div class='card small'><h2>Accident Type</h2><canvas id='cat_at'></canvas></div>
+        <div class='card small'><h2>Accident Cause</h2><canvas id='cat_ac'></canvas></div>
+        <div class='card small'><h2>Accident Prevention</h2><canvas id='cat_ap'></canvas></div>
+      </div>
+    </div>
+
+    <div class='footer'>Generated on demand · All labels in English</div>
+  </div>
+
+  <script>
+    const dimDistData = {"Weather & Light": 338, "Traffic Environment": 338, "Road Configuration": 338, "Accident Type": 338, "Accident Cause": 338, "Accident Prevention": 338, "Unknown": 36};
+    const dimsDetail = {"Weather & Light": {"total_questions": 338, "extracted_options_count": 183, "categories": {"Time of Day": {"total_count": 149, "percentage": 44.1, "keywords": {"daytime": {"count": 126, "percentage": 37.3}, "dusk": {"count": 9, "percentage": 2.7}, "nighttime": {"count": 4, "percentage": 1.2}, "evening": {"count": 4, "percentage": 1.2}, "dawn": {"count": 3, "percentage": 0.9}, "night": {"count": 2, "percentage": 0.6}, "morning": {"count": 1, "percentage": 0.3}}}, "Sky Conditions": {"total_count": 286, "percentage": 84.6, "keywords": {"clear": {"count": 91, "percentage": 26.9}, "overcast": {"count": 56, "percentage": 16.6}, "clear skies": {"count": 41, "percentage": 12.1}, "overcast skies": {"count": 28, "percentage": 8.3}, "cloudy": {"count": 26, "percentage": 7.7}, "sunny": {"count": 21, "percentage": 6.2}, "cloudy skies": {"count": 18, "percentage": 5.3}, "bright": {"count": 5, "percentage": 1.5}}}, "Weather": {"total_count": 34, "percentage": 10.1, "keywords": {"snow": {"count": 18, "percentage": 5.3}, "rain": {"count": 6, "percentage": 1.8}, "rainy": {"count": 5, "percentage": 1.5}, "snowy": {"count": 4, "percentage": 1.2}, "raining": {"count": 1, "percentage": 0.3}}}, "Road Surface": {"total_count": 214, "percentage": 63.3, "keywords": {"dry": {"count": 75, "percentage": 22.2}, "dry road": {"count": 72, "percentage": 21.3}, "wet": {"count": 37, "percentage": 10.9}, "wet road": {"count": 20, "percentage": 5.9}, "slippery": {"count": 4, "percentage": 1.2}, "icy": {"count": 3, "percentage": 0.9}, "snow-covered": {"count": 2, "percentage": 0.6}, "damp": {"count": 1, "percentage": 0.3}}}, "Visibility": {"total_count": 65, "percentage": 19.2, "keywords": {"good visibility": {"count": 60, "percentage": 17.8}, "low visibility": {"count": 2, "percentage": 0.6}, "reduced visibility": {"count": 1, "percentage": 0.3}, "excellent visibility": {"count": 1, "percentage": 0.3}, "limited visibility": {"count": 1, "percentage": 0.3}}}, "Lighting": {"total_count": 9, "percentage": 2.7, "keywords": {"glare": {"count": 6, "percentage": 1.8}, "streetlights": {"count": 2, "percentage": 0.6}, "shadows": {"count": 1, "percentage": 0.3}}}}, "others": {"count": 0, "percentage": 0.0, "examples": []}}, "Traffic Environment": {"total_questions": 338, "extracted_options_count": 183, "categories": {"Area Type": {"total_count": 237, "percentage": 70.1, "keywords": {"urban": {"count": 153, "percentage": 45.3}, "commercial": {"count": 27, "percentage": 8.0}, "suburban": {"count": 18, "percentage": 5.3}, "urban area": {"count": 12, "percentage": 3.6}, "residential": {"count": 9, "percentage": 2.7}, "suburban area": {"count": 6, "percentage": 1.8}, "residential area": {"count": 4, "percentage": 1.2}, "rural": {"count": 3, "percentage": 0.9}, "rural area": {"count": 2, "percentage": 0.6}, "downtown area": {"count": 1, "percentage": 0.3}, "downtown": {"count": 1, "percentage": 0.3}, "commercial area": {"count": 1, "percentage": 0.3}}}, "Surroundings": {"total_count": 66, "percentage": 19.5, "keywords": {"buildings": {"count": 50, "percentage": 14.8}, "trees": {"count": 12, "percentage": 3.6}, "roadside buildings": {"count": 3, "percentage": 0.9}, "shops": {"count": 1, "percentage": 0.3}}}, "Traffic Level": {"total_count": 72, "percentage": 21.3, "keywords": {"busy": {"count": 29, "percentage": 8.6}, "moderate traffic": {"count": 26, "percentage": 7.7}, "heavy traffic": {"count": 10, "percentage": 3.0}, "congested": {"count": 4, "percentage": 1.2}, "flowing traffic": {"count": 3, "percentage": 0.9}}}, "Pedestrian Presence": {"total_count": 29, "percentage": 8.6, "keywords": {"pedestrians": {"count": 10, "percentage": 3.0}, "pedestrian": {"count": 9, "percentage": 2.7}, "crosswalk": {"count": 5, "percentage": 1.5}, "pedestrian crosswalk": {"count": 3, "percentage": 0.9}, "marked crosswalk": {"count": 1, "percentage": 0.3}, "sidewalk": {"count": 1, "percentage": 0.3}}}, "Parking": {"total_count": 16, "percentage": 4.7, "keywords": {"parked cars": {"count": 6, "percentage": 1.8}, "parked vehicles": {"count": 5, "percentage": 1.5}, "parking": {"count": 5, "percentage": 1.5}}}, "Road Features": {"total_count": 1, "percentage": 0.3, "keywords": {"road markings": {"count": 1, "percentage": 0.3}}}}, "others": {"count": 8, "percentage": 2.4, "examples": ["The main road has a traffic light, while the intersecting side road has a STOP sign.", "Heavy but steadily moving traffic on a multi-lane highway.", "Slow-moving or queuing traffic, with vehicles braking to a stop.", "On a multi-lane main road, adjacent to an access point or side road.", "At a signalized intersection on a multi-lane arterial road.", "A multi-lane highway with traffic flowing in opposite directions.", "C. On a multi-lane main road approaching a signalized intersection.", "The traffic was slowing down or queuing for a red light at an intersection."]}}, "Road Configuration": {"total_questions": 338, "extracted_options_count": 183, "categories": {"Lane Configuration": {"total_count": 175, "percentage": 51.8, "keywords": {"multi-lane": {"count": 116, "percentage": 34.3}, "multi-lane road": {"count": 40, "percentage": 11.8}, "two-lane": {"count": 7, "percentage": 2.1}, "two-lane road": {"count": 6, "percentage": 1.8}, "multiple lanes": {"count": 5, "percentage": 1.5}, "dual carriageway": {"count": 1, "percentage": 0.3}}}, "Road Type": {"total_count": 45, "percentage": 13.3, "keywords": {"main road": {"count": 18, "percentage": 5.3}, "highway": {"count": 11, "percentage": 3.3}, "side road": {"count": 8, "percentage": 2.4}, "arterial road": {"count": 3, "percentage": 0.9}, "arterial": {"count": 3, "percentage": 0.9}, "expressway": {"count": 2, "percentage": 0.6}}}, "Intersection Type": {"total_count": 116, "percentage": 34.3, "keywords": {"intersection": {"count": 59, "percentage": 17.5}, "signalized": {"count": 25, "percentage": 7.4}, "signalized intersection": {"count": 15, "percentage": 4.4}, "four-way intersection": {"count": 6, "percentage": 1.8}, "unsignalized": {"count": 5, "percentage": 1.5}, "t-intersection": {"count": 3, "percentage": 0.9}, "unsignalized intersection": {"count": 2, "percentage": 0.6}, "uncontrolled intersection": {"count": 1, "percentage": 0.3}}}, "Median/Divider": {"total_count": 52, "percentage": 15.4, "keywords": {"median": {"count": 20, "percentage": 5.9}, "separated": {"count": 17, "percentage": 5.0}, "barrier": {"count": 5, "percentage": 1.5}, "median barrier": {"count": 3, "percentage": 0.9}, "divided": {"count": 3, "percentage": 0.9}, "divider": {"count": 3, "percentage": 0.9}, "physical barrier": {"count": 1, "percentage": 0.3}}}, "Special Features": {"total_count": 1, "percentage": 0.3, "keywords": {"turn lane": {"count": 1, "percentage": 0.3}}}, "Road Geometry": {"total_count": 38, "percentage": 11.2, "keywords": {"straight": {"count": 34, "percentage": 10.1}, "curve": {"count": 3, "percentage": 0.9}, "curved": {"count": 1, "percentage": 0.3}}}}, "others": {"count": 26, "percentage": 7.7, "examples": ["A two-way street, likely with one travel lane in each direction, where markings are obscured by snow.", "A parallel parking space on the right side of the street.", "C. A two-way road with one lane in each direction, featuring crossing signs but no painted crosswalk lines.", "B. The road is an urban street that incorporates tram tracks running along the pavement.", "The vehicles were stopped side-by-side in two separate, parallel lanes at a traffic light.", "A solid white line, indicating that lane changes are prohibited.", "A two-way street with at least one lane in each direction, featuring tram tracks in the center.", "A one-way road with at least three lanes, marked with dashed lines, approaching a right-side exit.", "It is stopped on the far-left shoulder, with the driver's door opened into the adjacent active lane.", "A single, one-way lane dedicated to a specific service."]}}, "Accident Type": {"total_questions": 338, "extracted_options_count": 183, "categories": {"Collision Type": {"total_count": 259, "percentage": 76.6, "keywords": {"t-bone": {"count": 75, "percentage": 22.2}, "side-impact": {"count": 71, "percentage": 21.0}, "sideswipe": {"count": 36, "percentage": 10.7}, "rear-end collision": {"count": 15, "percentage": 4.4}, "rear-end": {"count": 15, "percentage": 4.4}, "angle collision": {"count": 11, "percentage": 3.3}, "side-impact collision": {"count": 11, "percentage": 3.3}, "t-bone collision": {"count": 9, "percentage": 2.7}, "head-on collision": {"count": 7, "percentage": 2.1}, "head-on": {"count": 7, "percentage": 2.1}, "broadside collision": {"count": 1, "percentage": 0.3}, "broadside": {"count": 1, "percentage": 0.3}}}, "Impact Location": {"total_count": 153, "percentage": 45.3, "keywords": {"side": {"count": 83, "percentage": 24.6}, "front": {"count": 54, "percentage": 16.0}, "rear": {"count": 15, "percentage": 4.4}, "left side": {"count": 1, "percentage": 0.3}}}, "Impact Pattern": {"total_count": 5, "percentage": 1.5, "keywords": {"striking": {"count": 2, "percentage": 0.6}, "struck by": {"count": 1, "percentage": 0.3}, "hitting": {"count": 1, "percentage": 0.3}, "collided with": {"count": 1, "percentage": 0.3}}}}, "others": {"count": 32, "percentage": 9.5, "examples": ["A collision where a parked vehicle pulls out unsafely into the path of a moving vehicle.", "A collision between a reversing vehicle and a pedestrian.", "A loss-of-control incident where a moving vehicle crosses into the opposing lane and strikes a stationary vehicle.", "A loss-of-control incident where a single vehicle struck a stationary object (a parked car) and subsequently rolled over.", "A left-turn collision where a turning vehicle crossed the path of an oncoming vehicle.", "D. A collision between a vehicle and a pedestrian at a designated crosswalk.", "C. A collision where a moving tram strikes a stationary car that is obstructing its tracks.", "The truck's oversized cargo struck a fixed object (a traffic light pole) during a turn.", "A moving vehicle (truck) colliding with a stationary object (open car door).", "A turning vs. straight-on collision at an intersection."]}}, "Accident Cause": {"total_questions": 338, "extracted_options_count": 183, "categories": {"Violation Type": {"total_count": 69, "percentage": 20.4, "keywords": {"failed to yield": {"count": 60, "percentage": 17.8}, "failed to stop": {"count": 4, "percentage": 1.2}, "improper turn": {"count": 3, "percentage": 0.9}, "illegal maneuver": {"count": 1, "percentage": 0.3}, "improper lane change": {"count": 1, "percentage": 0.3}}}, "Right-of-Way": {"total_count": 167, "percentage": 49.4, "keywords": {"right-of-way": {"count": 79, "percentage": 23.4}, "yield": {"count": 77, "percentage": 22.8}, "yielding": {"count": 11, "percentage": 3.3}}}, "Maneuver Errors": {"total_count": 19, "percentage": 5.6, "keywords": {"unsafe lane change": {"count": 11, "percentage": 3.3}, "illegal turn": {"count": 3, "percentage": 0.9}, "improper turn": {"count": 3, "percentage": 0.9}, "sudden lane change": {"count": 1, "percentage": 0.3}, "cutting off": {"count": 1, "percentage": 0.3}}}, "Driver Behavior": {"total_count": 5, "percentage": 1.5, "keywords": {"excessive speed": {"count": 3, "percentage": 0.9}, "reckless": {"count": 1, "percentage": 0.3}, "inattentive": {"count": 1, "percentage": 0.3}}}, "Visibility Issues": {"total_count": 10, "percentage": 3.0, "keywords": {"blind spot": {"count": 8, "percentage": 2.4}, "failed to check": {"count": 2, "percentage": 0.6}}}}, "others": {"count": 67, "percentage": 19.8, "examples": ["The dark SUV executed a sudden and unsignaled lane change into the POV car's lane.", "The driver of the black car made a sudden and unsignaled lane change without checking for adjacent traffic.", "The driver failed to ensure the path was clear of pedestrians before and during the reversing maneuver.", "The driver of the sedan accelerated too aggressively for the wet conditions while turning, causing a loss of traction.", "The SUV was dangerously stopped in a travel lane without warnings, and the camera car driver failed to notice it in time due to inattention or high speed.", "The POV driver was tailgating and did not maintain a safe following distance.", "The truck driver made an unsafe and improper right turn from the left lane, failing to check for the vehicle in the adjacent lane.", "The bus driver's negligence in operating the vehicle with the passenger door unsecured and open.", "The driver of the silver car performed an aggressive and improperly timed lane change with insufficient space.", "The driver of the camera vehicle was following the van too closely and failed to react in time when it braked."]}}, "Accident Prevention": {"total_questions": 338, "extracted_options_count": 183, "categories": {"Observation": {"total_count": 44, "percentage": 13.0, "keywords": {"checking": {"count": 21, "percentage": 6.2}, "checking mirrors": {"count": 13, "percentage": 3.8}, "scanning": {"count": 4, "percentage": 1.2}, "checking blind spots": {"count": 2, "percentage": 0.6}, "looking": {"count": 2, "percentage": 0.6}, "observing": {"count": 2, "percentage": 0.6}}}, "Waiting": {"total_count": 38, "percentage": 11.2, "keywords": {"waiting": {"count": 37, "percentage": 10.9}, "waiting for traffic": {"count": 1, "percentage": 0.3}}}, "Yielding": {"total_count": 15, "percentage": 4.4, "keywords": {"yielding": {"count": 9, "percentage": 2.7}, "yield": {"count": 4, "percentage": 1.2}, "yielding to traffic": {"count": 2, "percentage": 0.6}}}, "Speed Control": {"total_count": 16, "percentage": 4.7, "keywords": {"reducing speed": {"count": 6, "percentage": 1.8}, "slowing down": {"count": 5, "percentage": 1.5}, "slowing": {"count": 5, "percentage": 1.5}}}, "Signaling": {"total_count": 3, "percentage": 0.9, "keywords": {"signaling": {"count": 3, "percentage": 0.9}}}, "Safe Distance": {"total_count": 16, "percentage": 4.7, "keywords": {"following distance": {"count": 15, "percentage": 4.4}, "clearance": {"count": 1, "percentage": 0.3}}}}, "others": {"count": 89, "percentage": 26.3, "examples": ["C) Thoroughly checked mirrors and blind spots for approaching vehicles and yielded the right-of-way until the lane was clear.", "Applying gradual acceleration and smooth steering inputs suitable for the wet road surface.", "The driver of the sedan (Vehicle A) should have stopped at the edge of the main road, looked for oncoming traffic, and waited for a safe gap before entering.", "The driver of the silver car should have yielded to straight-through traffic and waited for a safe gap before crossing.", "The Audi driver should have waited for a safe gap in traffic before changing lanes.", "The red car driver should have waited for the oncoming traffic to clear before starting the left turn.", "Performing a thorough visual check of all mirrors and blind spots before initiating the lane change.", "The truck driver should have planned the turn in advance, moved to the rightmost lane, and checked blind spots before turning.", "The bus driver ensuring all passenger doors were securely closed before putting the vehicle in motion.", "Conducting regular vehicle maintenance with a focus on tires, suspension, and steering components."]}}};
+
+    // Dimension Distribution chart
+    const dimLabels = Object.keys(dimDistData).filter(k => k !== 'Unknown');
+    const dimValues = dimLabels.map(k => dimDistData[k]);
+    new Chart(document.getElementById('dimDist'), {
+      type: 'doughnut',
+      data: { labels: dimLabels, datasets: [{ data: dimValues, backgroundColor: ['#60a5fa','#34d399','#fbbf24','#f87171','#a78bfa','#22d3ee'] }] },
+      options: { plugins: { legend: { position: 'right' } } }
+    });
+
+    // Others percentage bar chart
+    const dimNames = Object.keys(dimsDetail);
+    const othersPerc = dimNames.map(n => (dimsDetail[n].others && dimsDetail[n].others.percentage) ? dimsDetail[n].others.percentage : 0);
+    new Chart(document.getElementById('othersBar'), {
+      type: 'bar',
+      data: { labels: dimNames, datasets: [{ label: 'Others %', data: othersPerc, backgroundColor: '#f87171' }] },
+      options: { scales: { y: { beginAtZero: true, ticks: { callback: (v)=> v+'%' } } } }
+    });
+
+    // Helper: build category chart for a dimension
+    function buildCategoryChart(canvasId, dimKey) {
+      const dim = dimsDetail[dimKey];
+      if (!dim || !dim.top_categories) return;
+      const catNames = Object.keys(dim.top_categories);
+      const catPerc = catNames.map(c => dim.top_categories[c].percentage || 0);
+      new Chart(document.getElementById(canvasId), {
+        type: 'bar',
+        data: { labels: catNames, datasets: [{ label: 'Category %', data: catPerc, backgroundColor: '#34d399' }] },
+        options: { indexAxis: 'y', scales: { x: { beginAtZero: true, ticks: { callback: (v)=> v+'%' } } } }
+      });
+    }
+
+    buildCategoryChart('cat_wl', 'Weather & Light');
+    buildCategoryChart('cat_te', 'Traffic Environment');
+    buildCategoryChart('cat_rc', 'Road Configuration');
+    buildCategoryChart('cat_at', 'Accident Type');
+    buildCategoryChart('cat_ac', 'Accident Cause');
+    buildCategoryChart('cat_ap', 'Accident Prevention');
+  </script>
+</body>
+</html>
