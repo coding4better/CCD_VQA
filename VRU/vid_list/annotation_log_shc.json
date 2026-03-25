@@ -1,0 +1,86 @@
+{
+  "000117.mp4": {
+    "video_name": "000117.mp4",
+    "verdict": "incorrect",
+    "note": "Q3错误，没有斑马线",
+    "timestamp": "2026-03-11T21:27:33.968520"
+  },
+  "000125.mp4": {
+    "video_name": "000125.mp4",
+    "verdict": "incorrect",
+    "note": "Q1雪天",
+    "timestamp": "2026-03-11T21:29:52.621432"
+  },
+  "000032.mp4": {
+    "video_name": "000032.mp4",
+    "verdict": "correct",
+    "note": "",
+    "timestamp": "2026-03-15T02:30:42.145937"
+  },
+  "000062.mp4": {
+    "video_name": "000062.mp4",
+    "verdict": "incorrect",
+    "note": "Q4理解错误，是右侧车辆突然变道导致的事故\nQ5也错了，红车并没有发生碰撞\nQ6的选项也是错误的，应该避免突然变道",
+    "timestamp": "2026-03-11T21:35:27.073751"
+  },
+  "000134.mp4": {
+    "video_name": "000134.mp4",
+    "verdict": "incorrect",
+    "note": "车与车之间的碰撞，无行人",
+    "timestamp": "2026-03-11T21:37:03.352729"
+  },
+  "000148.mp4": {
+    "video_name": "000148.mp4",
+    "verdict": "incorrect",
+    "note": "Q5应该是C\nQ6是D",
+    "timestamp": "2026-03-11T21:39:40.183386"
+  },
+  "000150.mp4": {
+    "video_name": "000150.mp4",
+    "verdict": "incorrect",
+    "note": "不是黑色汽车，是右侧的公交车",
+    "timestamp": "2026-03-11T21:41:22.387468"
+  },
+  "000195.mp4": {
+    "video_name": "000195.mp4",
+    "verdict": "correct",
+    "note": "",
+    "timestamp": "2026-03-11T21:45:18.918316"
+  },
+  "000205.mp4": {
+    "video_name": "000205.mp4",
+    "verdict": "incorrect",
+    "note": "和强光没关系，是后车追尾，导致的连环车祸",
+    "timestamp": "2026-03-11T21:46:17.854047"
+  },
+  "000249.mp4": {
+    "video_name": "000249.mp4",
+    "verdict": "incorrect",
+    "note": "三岔路口，因为转弯没减速避让，所以撞上了",
+    "timestamp": "2026-03-15T19:00:49.624489"
+  },
+  "000258.mp4": {
+    "video_name": "000258.mp4",
+    "verdict": "incorrect",
+    "note": "前车急刹，导致刹车距离不足，刹不住。",
+    "timestamp": "2026-03-15T19:01:55.126450"
+  },
+  "000311.mp4": {
+    "video_name": "000311.mp4",
+    "verdict": "incorrect",
+    "note": "undefined了",
+    "timestamp": "2026-03-15T19:02:37.411856"
+  },
+  "000317.mp4": {
+    "video_name": "000317.mp4",
+    "verdict": "incorrect",
+    "note": "超车的时候前车变道发生碰撞",
+    "timestamp": "2026-03-15T19:03:27.476257"
+  },
+  "000339.mp4": {
+    "video_name": "000339.mp4",
+    "verdict": "incorrect",
+    "note": "前车突然掉头导致后车发生碰撞",
+    "timestamp": "2026-03-15T19:04:17.107171"
+  }
+}
