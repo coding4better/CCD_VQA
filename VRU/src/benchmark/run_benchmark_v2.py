@@ -73,84 +73,106 @@ def load_video_frames(video_path: str, max_frames: int = 50, target_fps: float =
 
 def load_questions_from_csv(csv_path):
     questions_per_video = []
-    with open(csv_path, encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        fieldnames = reader.fieldnames or []
+    encodings_to_try = ['utf-8-sig', 'utf-8', 'gb18030', 'cp1252', 'latin1']
+    last_error = None
 
-        # 新格式: 每行一题 (video_id/question_id/question/correct_answer/option_n)
-        if 'video_id' in fieldnames and 'question' in fieldnames and 'correct_answer' in fieldnames:
-            video_to_qas = {}
-            for row in reader:
-                video_number = (row.get('video_id') or '').strip()
-                q_text = (row.get('question') or '').strip()
-                correct_answer = (row.get('correct_answer') or '').strip()
+    for encoding in encodings_to_try:
+        try:
+            with open(csv_path, encoding=encoding) as f:
+                reader = csv.DictReader(f)
+                fieldnames = reader.fieldnames or []
 
-                if not video_number or not q_text or not correct_answer:
-                    continue
+                # 新格式: 每行一题 (video_id/question_id/question/correct_answer/option_n)
+                if 'video_id' in fieldnames and 'question' in fieldnames and 'correct_answer' in fieldnames:
+                    video_to_qas = {}
+                    for row in reader:
+                        video_number = (row.get('video_id') or '').strip()
+                        q_text = (row.get('question') or '').strip()
+                        correct_answer = (row.get('correct_answer') or '').strip()
 
-                options = [correct_answer]
-                option_idx = 1
-                while True:
-                    option_key = f'option_{option_idx}'
-                    if option_key not in row:
-                        break
-                    wrong_opt = (row.get(option_key) or '').strip()
-                    if wrong_opt:
-                        options.append(wrong_opt)
-                    option_idx += 1
+                        if not video_number or not q_text or not correct_answer:
+                            continue
 
-                original_correct_idx = 0
-                idx_list = list(range(len(options)))
-                random.shuffle(idx_list)
-                shuffled_options = [options[j] for j in idx_list]
-                correct_index = idx_list.index(original_correct_idx) + 1
+                        options = [correct_answer]
+                        option_idx = 1
+                        while True:
+                            option_key = f'option_{option_idx}'
+                            if option_key not in row:
+                                break
+                            wrong_opt = (row.get(option_key) or '').strip()
+                            if wrong_opt:
+                                options.append(wrong_opt)
+                            option_idx += 1
 
-                qa = {
-                    'question': q_text,
-                    'options': shuffled_options,
-                    'correct_index': correct_index,
-                    'question_id': int(row.get('question_id') or 0)
-                }
-                video_to_qas.setdefault(video_number, []).append(qa)
+                        original_correct_idx = 0
+                        idx_list = list(range(len(options)))
+                        random.shuffle(idx_list)
+                        shuffled_options = [options[j] for j in idx_list]
+                        correct_index = idx_list.index(original_correct_idx) + 1
 
-            # 保持题目顺序稳定
-            for video_number in sorted(video_to_qas.keys()):
-                qas = sorted(video_to_qas[video_number], key=lambda x: x.get('question_id', 0))
-                for qa in qas:
-                    qa.pop('question_id', None)
-                questions_per_video.append({'video_number': video_number, 'qas': qas})
+                        qa = {
+                            'question': q_text,
+                            'options': shuffled_options,
+                            'correct_index': correct_index,
+                            'question_id': int(row.get('question_id') or 0)
+                        }
+                        video_to_qas.setdefault(video_number, []).append(qa)
 
-        # 旧格式: 每行一个视频，列为 q1_text/q1_ans_correct/q1_ans_wrongk
-        else:
-            for row in reader:
-                video_number = row['video_number']
-                qas = []
-                for i in range(1, 7):
-                    q_text = row.get(f'q{i}_text', None)
-                    if not q_text:
-                        continue
-                    options = []
-                    answer = row.get(f'q{i}_ans_correct', None)
-                    if answer:
-                        options.append(answer)
-                    for k in range(1, 6):
-                        wrong_key = f'q{i}_ans_wrong{k}'
-                        wrong_opt = row.get(wrong_key, None)
-                        if wrong_opt and wrong_opt.strip():
-                            options.append(wrong_opt)
-                    if not options:
-                        continue
-                    original_correct_idx = 0
-                    idx_list = list(range(len(options)))
-                    random.shuffle(idx_list)
-                    shuffled_options = [options[j] for j in idx_list]
-                    correct_index = idx_list.index(original_correct_idx) + 1
-                    qas.append({
-                        'question': q_text,
-                        'options': shuffled_options,
-                        'correct_index': correct_index
-                    })
-                questions_per_video.append({'video_number': video_number, 'qas': qas})
+                    # 保持题目顺序稳定
+                    for video_number in sorted(video_to_qas.keys()):
+                        qas = sorted(video_to_qas[video_number], key=lambda x: x.get('question_id', 0))
+                        for qa in qas:
+                            qa.pop('question_id', None)
+                        questions_per_video.append({'video_number': video_number, 'qas': qas})
+
+                # 旧格式: 每行一个视频，列为 q1_text/q1_ans_correct/q1_ans_wrongk
+                else:
+                    for row in reader:
+                        video_number = row['video_number']
+                        qas = []
+                        for i in range(1, 7):
+                            q_text = row.get(f'q{i}_text', None)
+                            if not q_text:
+                                continue
+                            options = []
+                            answer = row.get(f'q{i}_ans_correct', None)
+                            if answer:
+                                options.append(answer)
+                            for k in range(1, 6):
+                                wrong_key = f'q{i}_ans_wrong{k}'
+                                wrong_opt = row.get(wrong_key, None)
+                                if wrong_opt and wrong_opt.strip():
+                                    options.append(wrong_opt)
+                            if not options:
+                                continue
+                            original_correct_idx = 0
+                            idx_list = list(range(len(options)))
+                            random.shuffle(idx_list)
+                            shuffled_options = [options[j] for j in idx_list]
+                            correct_index = idx_list.index(original_correct_idx) + 1
+                            qas.append({
+                                'question': q_text,
+                                'options': shuffled_options,
+                                'correct_index': correct_index
+                            })
+                        questions_per_video.append({'video_number': video_number, 'qas': qas})
+
+            if encoding != 'utf-8-sig':
+                print(f"  ℹ️ CSV 编码回退成功: {encoding} ({csv_path})")
+            break
+        except UnicodeDecodeError as e:
+            last_error = e
+            questions_per_video = []
+            continue
+
+    if not questions_per_video and last_error is not None:
+        raise UnicodeDecodeError(
+            last_error.encoding,
+            last_error.object,
+            last_error.start,
+            last_error.end,
+            f"CSV 解码失败，尝试编码: {encodings_to_try}，原始错误: {last_error.reason}"
+        )
 
     if MAX_VIDEOS > 0:
         questions_per_video = questions_per_video[:MAX_VIDEOS]
