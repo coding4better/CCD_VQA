@@ -30,9 +30,10 @@ if qa_csv_env:
 else:
     QA_CSV_LIST = default_csv_list
 
-RESULTS_DIR = Path(os.getenv('BENCHMARK_RESULTS_DIR', str(BENCHMARK_DIR / 'results')))
+RESULTS_DIR = Path(os.getenv('BENCHMARK_RESULTS_DIR', str(BENCHMARK_DIR / 'result')))
 VIDEO_DIR = Path(os.getenv('BENCHMARK_VIDEO_DIR', str(PROJECT_ROOT / 'data' / 'crash' / 'videos' / 'Crash-1500')))
 MAX_VIDEOS = int(os.getenv('BENCHMARK_MAX_VIDEOS', '0'))
+PARALLEL_MODELS = os.getenv('BENCHMARK_PARALLEL_MODELS', '0').strip() in {'1', 'true', 'True'}
 
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
@@ -338,6 +339,7 @@ print(f"{'='*70}")
 print(f"项目根目录: {PROJECT_ROOT}")
 print(f"视频目录: {VIDEO_DIR}")
 print(f"结果目录: {RESULTS_DIR}")
+print(f"模型并行: {'开启' if PARALLEL_MODELS else '关闭(默认串行，更稳定)'}")
 if MAX_VIDEOS > 0:
     print(f"小规模模式: 每个CSV只跑前 {MAX_VIDEOS} 个视频")
 
@@ -391,12 +393,15 @@ for csv_path in QA_CSV_LIST:
     questions_per_video = load_questions_from_csv(csv_path)
     # 传递当前csv路径给run_model_inference
     run_model_inference.current_csv_path = csv_path
-    if len(models_to_run) == 1:
-        print(f"  串行模式（单模型）")
-        result = run_model_inference(models_to_run[0], questions_per_video)
-        summary = [result]
+    if len(models_to_run) == 1 or not PARALLEL_MODELS:
+        print(f"  串行模式（{len(models_to_run)} 个模型）")
+        summary = []
+        for model_name in models_to_run:
+            run_model_inference.current_csv_path = csv_path
+            result = run_model_inference(model_name, questions_per_video)
+            summary.append(result)
     else:
-        print(f"  并行模式（{len(models_to_run)} 个模型，显存充足）")    
+        print(f"  并行模式（{len(models_to_run)} 个模型）")
         threads = []
         results_dict = {}
         lock = threading.Lock()

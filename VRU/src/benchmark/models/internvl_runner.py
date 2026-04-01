@@ -7,7 +7,6 @@ from PIL import Image
 import numpy as np
 import torchvision.transforms as T
 from torchvision.transforms.functional import InterpolationMode
-import bitsandbytes
 
 # logger = logging.getLogger(__name__)
 
@@ -163,40 +162,86 @@ class InternVLRunner:
             load_path = model_path if model_path else model_id
             print(f"  ℹ️  使用加载路径: {load_path}")
             
+            # 某些失败路径会把进程默认设备污染为 meta，先强制重置。
+            if hasattr(torch, 'set_default_device'):
+                torch.set_default_device('cpu')
+            try:
+                import torch.utils._device as _torch_device_ctx
+                # None 表示使用真实默认设备（而非 meta 上下文）
+                _torch_device_ctx.CURRENT_DEVICE = None
+            except Exception:
+                pass
+
             # 加载tokenizer
             self.tokenizer = AutoTokenizer.from_pretrained(
                 load_path, trust_remote_code=True, use_fast=False, local_files_only=(model_path is not None)
             )
+
+            def _safe_from_pretrained(path, **kwargs):
+                # 每次实际加载前都重置一次默认设备，避免被上一次失败污染
+                if hasattr(torch, 'set_default_device'):
+                    torch.set_default_device('cpu')
+                try:
+                    import torch.utils._device as _torch_device_ctx_inner
+                    _torch_device_ctx_inner.CURRENT_DEVICE = None
+                except Exception:
+                    pass
+                return AutoModel.from_pretrained(path, **kwargs)
             
             # 加载模型：优先尝试 8bit；若该模型类不支持，则自动回退
             if 'internvl3' in self.model_name.lower():
                 print(f"  ℹ️  InternVL3 检测到，尝试修复 language_model.generate 问题")
 
-            common_load_kwargs = {
-                'torch_dtype': torch.bfloat16,
-                'low_cpu_mem_usage': True,
-                'use_flash_attn': False,
-                'trust_remote_code': True,
-                'device_map': 'auto',
-                'local_files_only': (model_path is not None),
-            }
+            # InternVL2/2.5 在部分 transformers 版本下，先走 load_in_8bit 分支会触发 meta tensor 状态污染。
+            # 因此这两个系列直接使用稳定参数加载，完全跳过 8bit 尝试。
+            is_internvl2_family = self.model_name.lower().startswith('internvl2')
 
-            try:
-                self.model = AutoModel.from_pretrained(
+            if is_internvl2_family:
+                print("  ℹ️ InternVL2/2.5 使用稳定加载模式（跳过 load_in_8bit）")
+                stable_load_kwargs = {
+                    'torch_dtype': torch.float16,
+                    'low_cpu_mem_usage': False,
+                    'use_flash_attn': False,
+                    'trust_remote_code': True,
+                    'device_map': None,
+                    '_fast_init': False,
+                    'local_files_only': (model_path is not None),
+                }
+
+                self.model = _safe_from_pretrained(
                     load_path,
-                    load_in_8bit=True,
-                    **common_load_kwargs,
+                    **stable_load_kwargs,
                 ).eval()
-                print("  ✓ 使用 8bit 量化加载 InternVL")
-            except TypeError as e:
-                if 'load_in_8bit' in str(e):
-                    print("  ⚠️ 当前 InternVL 版本不支持 load_in_8bit，回退到标准加载")
-                    self.model = AutoModel.from_pretrained(
+                if self.device == 'cuda':
+                    self.model = self.model.to(self.device)
+                print("  ✓ 使用稳定参数加载 InternVL2/2.5 成功")
+            else:
+                common_load_kwargs = {
+                    'torch_dtype': torch.bfloat16,
+                    'low_cpu_mem_usage': True,
+                    'use_flash_attn': False,
+                    'trust_remote_code': True,
+                    'device_map': 'auto',
+                    'local_files_only': (model_path is not None),
+                }
+
+                # 非 InternVL2/2.5 仍保留分级回退策略
+                try:
+                    self.model = _safe_from_pretrained(
                         load_path,
+                        load_in_8bit=True,
                         **common_load_kwargs,
                     ).eval()
-                else:
-                    raise
+                    print("  ✓ 使用 8bit 量化加载 InternVL")
+                except TypeError as e:
+                    if 'load_in_8bit' in str(e):
+                        print("  ⚠️ 当前 InternVL 版本不支持 load_in_8bit，回退到标准加载")
+                        self.model = _safe_from_pretrained(
+                            load_path,
+                            **common_load_kwargs,
+                        ).eval()
+                    else:
+                        raise
 
             # InternVL3 额外修复 language_model.generate
             if 'internvl3' in self.model_name.lower() and hasattr(self.model, 'language_model'):
