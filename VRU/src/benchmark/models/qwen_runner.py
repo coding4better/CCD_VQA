@@ -108,14 +108,14 @@ class QwenRunner:
             print(f"  ❌ 加载失败: {e}")
             raise
     
-    def predict(self, video_number, prompt, video_frames):
+    def predict(self, video_number, prompt, video_frames, num_options=4):
         """推理选择题，使用全部视频帧"""
         if self.is_api:
-            return self._predict_api(prompt)
+            return self._predict_api(prompt, num_options=num_options)
         else:
-            return self._predict_local(video_number, prompt, video_frames)
+            return self._predict_local(video_number, prompt, video_frames, num_options=num_options)
     
-    def _predict_local(self, video_number, prompt, video_frames):
+    def _predict_local(self, video_number, prompt, video_frames, num_options=4):
         """本地推理，可自定义使用的帧数（内存优化）"""
         if self.model is None:
             print(f"  ❌ 模型未加载")
@@ -181,7 +181,7 @@ class QwenRunner:
             # DEBUG: 打印模型的原始输出
             print(f"  📝 {self.model_name} 原始响应: {repr(response)}")
             
-            choices = self._parse_choices(response)
+            choices = self._parse_choices(response, num_options=num_options)
             print(f"  ✓ {self.model_name} 推理完成: {video_number}, 解析结果: {choices}")
             
             # 推理后清理
@@ -205,7 +205,7 @@ class QwenRunner:
             print(f"  ❌ 推理失败: {e}")
             return [0, 0, 0, 0, 0, 0]
     
-    def _predict_api(self, prompt):
+    def _predict_api(self, prompt, num_options=4):
         """API 推理（Qwen VL API）"""
         try:
             import os
@@ -229,7 +229,7 @@ class QwenRunner:
             )
             
             response = resp.choices[0].message.content
-            choices = self._parse_choices(response)
+            choices = self._parse_choices(response, num_options=num_options)
             print(f"  ✓ {self.model_name} API 推理完成")
             return choices
             
@@ -237,12 +237,17 @@ class QwenRunner:
             print(f"  ❌ API 推理失败: {e}")
             return [1, 1, 1, 1, 1, 1]
     
-    def _parse_choices(self, response: str) -> list:
+    def _parse_choices(self, response: str, num_options: int = 4) -> list:
         """解析选项序号 - 支持多种格式"""
+        if num_options <= 0:
+            num_options = 4
+
+        max_opt = str(num_options)
+        opt_char_class = f"[1-{max_opt}]"
         choices = []
         
         # 模式1: "Q1:1 Q2:2" 格式（优先级最高）
-        pattern1 = r'[Qq]\s*(\d+)\s*[：:]\s*([1-3])'
+        pattern1 = rf'[Qq]\s*(\d+)\s*[：:]\s*({opt_char_class})'
         matches = re.findall(pattern1, response)
         
         if matches and len(matches) >= 6:
@@ -251,7 +256,7 @@ class QwenRunner:
             return choices
         
         # 模式2: "题1:1" 中文格式
-        pattern2 = r'题\s*(\d+)\s*[：:]\s*([1-3])'
+        pattern2 = rf'题\s*(\d+)\s*[：:]\s*({opt_char_class})'
         matches2 = re.findall(pattern2, response)
         if matches2 and len(matches2) >= 6:
             matches2.sort(key=lambda x: int(x[0]))
@@ -260,7 +265,7 @@ class QwenRunner:
         
         # 模式3: 简单数字序列，但要更智能地选择前6个
         # 优先选择那些看起来像答案的（即紧跟在问号或数字后面的）
-        pattern3 = r'[1-3]'
+        pattern3 = opt_char_class
         all_numbers = re.findall(pattern3, response)
         
         # 尝试找包含"ANSWERS"或答案标记之后的数字
@@ -282,7 +287,7 @@ class QwenRunner:
             choices = [1] * 6
         
         # 过滤和填充
-        choices = [c if 1 <= c <= 3 else 1 for c in choices]
+        choices = [c if 1 <= c <= num_options else 1 for c in choices]
         while len(choices) < 6:
             choices.append(1)
         

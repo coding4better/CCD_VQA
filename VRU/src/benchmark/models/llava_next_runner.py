@@ -59,7 +59,7 @@ class LLaVANextRunner:
             print(f"  ❌ 加载失败: {e}")
             raise
     
-    def predict(self, video_number, prompt, video_frames):
+    def predict(self, video_number, prompt, video_frames, num_options=4):
         """推理选择题，使用关键帧进行多模态理解
         
         Args:
@@ -128,7 +128,7 @@ class LLaVANextRunner:
             )
             
             # 从响应中解析选项序号
-            choices = self._parse_choices(response)
+            choices = self._parse_choices(response, num_options=num_options)
             
             # 调试输出
             print(f"  🔍 DEBUG - 原始响应: {response[:200]}")
@@ -142,7 +142,7 @@ class LLaVANextRunner:
             traceback.print_exc()
             return [1, 1, 1, 1, 1, 1]
     
-    def _parse_choices(self, response: str) -> list:
+    def _parse_choices(self, response: str, num_options: int = 4) -> list:
         """从模型响应中解析选项序号
         
         期望格式（优先级从高到低）：
@@ -156,9 +156,14 @@ class LLaVANextRunner:
         """
         choices = []
         response = response.strip()
+        if num_options <= 0:
+            num_options = 4
+
+        max_opt = str(num_options)
+        opt_char_class = f"[1-{max_opt}]"
         
         # 1️⃣ 匹配 "A1: 1\nA2: 2..." 或类似格式
-        an_pattern = r'[Aa]\d+\s*[:：]\s*([1-4])'
+        an_pattern = rf'[Aa]\d+\s*[:：]\s*({opt_char_class})'
         an_matches = re.findall(an_pattern, response)
         if len(an_matches) >= 6:
             choices = [int(m) for m in an_matches[:6]]
@@ -168,20 +173,20 @@ class LLaVANextRunner:
         answers_pattern = r'[Aa]nswers?\s*[:：]\s*([\d\s,]+)'
         answers_match = re.search(answers_pattern, response)
         if answers_match:
-            numbers = re.findall(r'([1-4])', answers_match.group(1))
+            numbers = re.findall(rf'({opt_char_class})', answers_match.group(1))
             if len(numbers) >= 6:
                 choices = [int(n) for n in numbers[:6]]
                 return choices
         
         # 3️⃣ 匹配 "Answer: X" 格式
-        answer_pattern = r'Answer\s*[:：]\s*([1-4])'
+        answer_pattern = rf'Answer\s*[:：]\s*({opt_char_class})'
         answer_matches = re.findall(answer_pattern, response)
         if len(answer_matches) >= 6:
             choices = [int(m) for m in answer_matches[:6]]
             return choices
         
         # 4️⃣ 匹配 "1:1 2:2 3:3..." 格式
-        pattern1 = r'(\d+)\s*[:：]\s*([1-4])'
+        pattern1 = rf'(\d+)\s*[:：]\s*({opt_char_class})'
         matches = re.findall(pattern1, response)
         if matches and len(matches) >= 6:
             matches.sort(key=lambda x: int(x[0]))
@@ -189,7 +194,7 @@ class LLaVANextRunner:
             return choices
         
         # 5️⃣ 尝试匹配逗号分隔的格式
-        comma_pattern = r'(?:^|[^\d])([1-4])(?:[,，\s]|$)'
+        comma_pattern = rf'(?:^|[^\d])({opt_char_class})(?:[,，\s]|$)'
         comma_matches = re.findall(comma_pattern, response)
         if len(comma_matches) >= 6:
             choices = [int(m) for m in comma_matches[:6]]

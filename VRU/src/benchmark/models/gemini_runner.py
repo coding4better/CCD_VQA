@@ -59,7 +59,7 @@ class GeminiRunner:
         except:
             pass  # 代理配置是可选的
     
-    def predict(self, video_number, prompt, video_frames):
+    def predict(self, video_number, prompt, video_frames, num_options=4):
         """推理选择题，API默认纯文本，支持全部视频帧
         
         地理位置限制问题的解决方案：
@@ -103,7 +103,7 @@ class GeminiRunner:
                     # 如果成功，提取文本
                     if response and hasattr(response, 'text'):
                         text = response.text
-                        choices = self._parse_choices(text)
+                        choices = self._parse_choices(text, num_options=num_options)
                         print(f"  ✓ {self.model_name} 推理完成: {video_number} (模型: {model_name})")
                         return choices
                         
@@ -144,12 +144,17 @@ class GeminiRunner:
             print(f"  ❌ 推理异常: {e}")
             return [1, 1, 1, 1, 1, 1]
     
-    def _parse_choices(self, response: str) -> list:
+    def _parse_choices(self, response: str, num_options: int = 4) -> list:
         """解析选项序号"""
+        if num_options <= 0:
+            num_options = 4
+
+        max_opt = str(num_options)
+        opt_char_class = f"[1-{max_opt}]"
         choices = []
         
-        # 匹配 "题号:答案" 格式，答案限制在1-4
-        pattern1 = r'(\d+):([1-4])'
+        # 匹配 "题号:答案" 格式
+        pattern1 = rf'(\d+):({opt_char_class})'
         matches = re.findall(pattern1, response)
         
         if matches and len(matches) >= 6:
@@ -157,18 +162,18 @@ class GeminiRunner:
             choices = [int(m[1]) for m in matches[:6]]
         else:
             # 匹配关键词后的数字
-            pattern2 = r'(?:答案|选项|option|answer)\s*[：:]*\s*([1-4])'
+            pattern2 = rf'(?:答案|选项|option|answer)\s*[：:]*\s*({opt_char_class})'
             matches2 = re.findall(pattern2, response.lower())
             if len(matches2) >= 6:
                 choices = [int(m) for m in matches2[:6]]
             else:
-                # 匹配独立的1-4数字（word boundary）
-                numbers = re.findall(r'\b([1-4])\b', response)
+                # 匹配独立数字（word boundary）
+                numbers = re.findall(rf'\b({opt_char_class})\b', response)
                 if len(numbers) >= 6:
                     choices = [int(n) for n in numbers[:6]]
         
         # 过滤掉无效选项
-        choices = [c if 1 <= c <= 4 else 1 for c in choices]
+        choices = [c if 1 <= c <= num_options else 1 for c in choices]
         
         while len(choices) < 6:
             choices.append(1)

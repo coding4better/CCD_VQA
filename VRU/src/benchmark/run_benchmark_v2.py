@@ -11,7 +11,7 @@ from models.model_zoo import get_model_list, get_model_runner
 
 BENCHMARK_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BENCHMARK_DIR.parents[2]
-OPTION_DATA_DIR = PROJECT_ROOT / 'VRU' / 'src' / 'option_generate' / 'data'
+MULTI_VERSION_DATA_DIR = PROJECT_ROOT / 'VRU' / 'vid_list' / 'multi_version_data'
 
 
 def _split_env_csv(value: str):
@@ -19,10 +19,10 @@ def _split_env_csv(value: str):
 
 
 default_csv_list = [
-    OPTION_DATA_DIR / 'generated_options_2opts_20260327_085451.csv',
-    OPTION_DATA_DIR / 'generated_options_3opts_20260327_085451.csv',
-    OPTION_DATA_DIR / 'generated_options_4opts_20260327_085451.csv',
-    OPTION_DATA_DIR / 'generated_options_5opts_20260327_085451.csv',
+    MULTI_VERSION_DATA_DIR / 'generated_options_2opts_20260327_085451.csv',
+    MULTI_VERSION_DATA_DIR / 'generated_options_3opts_20260327_085451.csv',
+    MULTI_VERSION_DATA_DIR / 'generated_options_4opts_20260327_085451.csv',
+    MULTI_VERSION_DATA_DIR / 'generated_options_5opts_20260327_085451.csv',
 ]
 qa_csv_env = os.getenv('BENCHMARK_QA_CSV_LIST', '').strip()
 if qa_csv_env:
@@ -122,8 +122,12 @@ def build_single_question_prompt(qa_index, qa):
         格式化的单题 prompt 字符串
     """
     q_text = qa['question'] if qa['question'] else ""
+    num_options = len(qa.get('options', []))
+    if num_options <= 0:
+        num_options = 4
+    option_numbers = ', '.join(str(i) for i in range(1, num_options + 1))
     
-    prompt = f"Answer this multiple choice question. Respond with ONLY the option number (1, 2, 3, or 4). No explanation.\n\n"
+    prompt = f"Answer this multiple choice question. Respond with ONLY one number from: {option_numbers}. No explanation.\n\n"
     prompt += f"Question {qa_index}: {q_text}\n"
     
     for opt_idx, opt in enumerate(qa['options'], 1):
@@ -163,9 +167,16 @@ def run_model_inference(model_name, questions_per_video):
             for qa_idx, qa in enumerate(qas, 1):
                 # 为每个题目构造单独的 prompt
                 single_prompt = build_single_question_prompt(qa_idx, qa)
+                num_options = len(qa.get('options', []))
+                if num_options <= 0:
+                    num_options = 4
                 
                 # 推理单个问题（传入相同的视频帧）
-                choice_list = runner.predict(video_number, single_prompt, video_frames)
+                try:
+                    choice_list = runner.predict(video_number, single_prompt, video_frames, num_options=num_options)
+                except TypeError:
+                    # 兼容尚未支持 num_options 参数的旧版 runner
+                    choice_list = runner.predict(video_number, single_prompt, video_frames)
                 
                 # 提取第一个数字作为答案
                 answer = choice_list[0] if choice_list else 0
