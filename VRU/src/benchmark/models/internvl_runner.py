@@ -168,51 +168,49 @@ class InternVLRunner:
                 load_path, trust_remote_code=True, use_fast=False, local_files_only=(model_path is not None)
             )
             
-            # 加载模型 - 根据模型版本选择不同的加载方式
-            # InternVL3 系列需要特殊处理
+            # 加载模型：优先尝试 8bit；若该模型类不支持，则自动回退
             if 'internvl3' in self.model_name.lower():
                 print(f"  ℹ️  InternVL3 检测到，尝试修复 language_model.generate 问题")
-                
-                # 先尝试标准加载
+
+            common_load_kwargs = {
+                'torch_dtype': torch.bfloat16,
+                'low_cpu_mem_usage': True,
+                'use_flash_attn': False,
+                'trust_remote_code': True,
+                'device_map': 'auto',
+                'local_files_only': (model_path is not None),
+            }
+
+            try:
                 self.model = AutoModel.from_pretrained(
                     load_path,
-                    torch_dtype=torch.bfloat16,
-                    low_cpu_mem_usage=True,
-                    use_flash_attn=False,
-                    trust_remote_code=True,
-                    device_map="auto",
                     load_in_8bit=True,
-                    local_files_only=(model_path is not None)
+                    **common_load_kwargs,
                 ).eval()
-                
-                # 检查并修复 language_model
-                if hasattr(self.model, 'language_model'):
-                    lm = self.model.language_model
-                    print(f"  ℹ️  language_model 类型: {type(lm).__name__}")
-                    
-                    # 如果 language_model 没有 generate，尝试从父类继承
-                    if not hasattr(lm, 'generate') or not callable(getattr(lm, 'generate', None)):
-                        print(f"  ⚠️  修复 language_model.generate 缺失")
-                        # 直接从 PreTrainedModel 和 GenerationMixin 继承所有方法
-                        from transformers.generation.utils import GenerationMixin
-                        from transformers.modeling_utils import PreTrainedModel
-                        
-                        # 动态添加 GenerationMixin 到类的基类
-                        if GenerationMixin not in lm.__class__.__bases__:
-                            lm.__class__.__bases__ = lm.__class__.__bases__ + (GenerationMixin,)
-                            print(f"  ✓ 已添加 GenerationMixin 到 {type(lm).__name__}")
-            else:
-                # InternVL2/2.5 使用原有的 8-bit 量化加载方式
-                self.model = AutoModel.from_pretrained(
-                    load_path,
-                    torch_dtype=torch.bfloat16,
-                    low_cpu_mem_usage=True,
-                    use_flash_attn=False,
-                    trust_remote_code=True,
-                    device_map="auto",
-                    load_in_8bit=True,
-                    local_files_only=(model_path is not None)
-                ).eval()
+                print("  ✓ 使用 8bit 量化加载 InternVL")
+            except TypeError as e:
+                if 'load_in_8bit' in str(e):
+                    print("  ⚠️ 当前 InternVL 版本不支持 load_in_8bit，回退到标准加载")
+                    self.model = AutoModel.from_pretrained(
+                        load_path,
+                        **common_load_kwargs,
+                    ).eval()
+                else:
+                    raise
+
+            # InternVL3 额外修复 language_model.generate
+            if 'internvl3' in self.model_name.lower() and hasattr(self.model, 'language_model'):
+                lm = self.model.language_model
+                print(f"  ℹ️  language_model 类型: {type(lm).__name__}")
+
+                # 如果 language_model 没有 generate，尝试从父类继承
+                if not hasattr(lm, 'generate') or not callable(getattr(lm, 'generate', None)):
+                    print(f"  ⚠️  修复 language_model.generate 缺失")
+                    from transformers.generation.utils import GenerationMixin
+
+                    if GenerationMixin not in lm.__class__.__bases__:
+                        lm.__class__.__bases__ = lm.__class__.__bases__ + (GenerationMixin,)
+                        print(f"  ✓ 已添加 GenerationMixin 到 {type(lm).__name__}")
             
             # 设置必要的 token IDs（InternVL 必须设置）
             if hasattr(self.model, 'img_context_token_id'):
