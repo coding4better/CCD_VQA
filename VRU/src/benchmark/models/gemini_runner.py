@@ -59,7 +59,7 @@ class GeminiRunner:
         except:
             pass  # 代理配置是可选的
     
-    def predict(self, video_number, prompt, video_frames, num_options=4):
+    def predict(self, video_number, prompt, video_frames, num_options=4, expected_count=6):
         """推理选择题，API默认纯文本，支持全部视频帧
         
         地理位置限制问题的解决方案：
@@ -70,7 +70,7 @@ class GeminiRunner:
         try:
             if not self.api_key or not self.genai:
                 print(f"  ❌ API 未正确初始化")
-                return [1, 1, 1, 1, 1, 1]
+                return [1] * max(1, expected_count)
             
             # 模型列表（按优先级排序）
             # Flash 模型通常地理限制较少
@@ -103,7 +103,7 @@ class GeminiRunner:
                     # 如果成功，提取文本
                     if response and hasattr(response, 'text'):
                         text = response.text
-                        choices = self._parse_choices(text, num_options=num_options)
+                        choices = self._parse_choices(text, num_options=num_options, expected_count=expected_count)
                         print(f"  ✓ {self.model_name} 推理完成: {video_number} (模型: {model_name})")
                         return choices
                         
@@ -117,13 +117,13 @@ class GeminiRunner:
                         print(f"  💡 解决方案: 设置代理或 VPN")
                         print(f"     export HTTP_PROXY=http://...:port")
                         print(f"     export HTTPS_PROXY=https://...:port")
-                        return [1, 1, 1, 1, 1, 1]
+                        return [1] * max(1, expected_count)
                     
                     # 认证/配额错误 - API KEY 问题
                     elif any(x in error_msg for x in ['invalid', 'unauthorized', 'quota', 'permission', 'api_key']):
                         print(f"  ❌ API 认证/配额错误: {model_error}")
                         print(f"  💡 检查 API KEY 是否有效或已达配额限制")
-                        return [1, 1, 1, 1, 1, 1]
+                        return [1] * max(1, expected_count)
                     
                     # 模型不存在
                     elif any(x in error_msg for x in ['not found', '404']):
@@ -138,16 +138,18 @@ class GeminiRunner:
             # 所有模型都失败
             print(f"  ❌ 所有模型尝试失败")
             print(f"  最后一个错误: {last_error}")
-            return [1, 1, 1, 1, 1, 1]
+            return [1] * max(1, expected_count)
             
         except Exception as e:
             print(f"  ❌ 推理异常: {e}")
-            return [1, 1, 1, 1, 1, 1]
+            return [1] * max(1, expected_count)
     
-    def _parse_choices(self, response: str, num_options: int = 4) -> list:
+    def _parse_choices(self, response: str, num_options: int = 4, expected_count: int = 6) -> list:
         """解析选项序号"""
         if num_options <= 0:
             num_options = 4
+        if expected_count <= 0:
+            expected_count = 1
 
         max_opt = str(num_options)
         opt_char_class = f"[1-{max_opt}]"
@@ -157,28 +159,28 @@ class GeminiRunner:
         pattern1 = rf'(\d+):({opt_char_class})'
         matches = re.findall(pattern1, response)
         
-        if matches and len(matches) >= 6:
+        if matches and len(matches) >= expected_count:
             matches.sort(key=lambda x: int(x[0]))
-            choices = [int(m[1]) for m in matches[:6]]
+            choices = [int(m[1]) for m in matches[:expected_count]]
         else:
             # 匹配关键词后的数字
             pattern2 = rf'(?:答案|选项|option|answer)\s*[：:]*\s*({opt_char_class})'
             matches2 = re.findall(pattern2, response.lower())
-            if len(matches2) >= 6:
-                choices = [int(m) for m in matches2[:6]]
+            if len(matches2) >= expected_count:
+                choices = [int(m) for m in matches2[:expected_count]]
             else:
                 # 匹配独立数字（word boundary）
                 numbers = re.findall(rf'\b({opt_char_class})\b', response)
-                if len(numbers) >= 6:
-                    choices = [int(n) for n in numbers[:6]]
+                if len(numbers) >= expected_count:
+                    choices = [int(n) for n in numbers[:expected_count]]
         
         # 过滤掉无效选项
         choices = [c if 1 <= c <= num_options else 1 for c in choices]
         
-        while len(choices) < 6:
+        while len(choices) < expected_count:
             choices.append(1)
         
-        return choices[:6]
+        return choices[:expected_count]
     
     def release(self):
         """API 模型无需释放本地资源"""

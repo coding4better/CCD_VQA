@@ -108,18 +108,18 @@ class QwenRunner:
             print(f"  ❌ 加载失败: {e}")
             raise
     
-    def predict(self, video_number, prompt, video_frames, num_options=4):
+    def predict(self, video_number, prompt, video_frames, num_options=4, expected_count=6):
         """推理选择题，使用全部视频帧"""
         if self.is_api:
-            return self._predict_api(prompt, num_options=num_options)
+            return self._predict_api(prompt, num_options=num_options, expected_count=expected_count)
         else:
-            return self._predict_local(video_number, prompt, video_frames, num_options=num_options)
+            return self._predict_local(video_number, prompt, video_frames, num_options=num_options, expected_count=expected_count)
     
-    def _predict_local(self, video_number, prompt, video_frames, num_options=4):
+    def _predict_local(self, video_number, prompt, video_frames, num_options=4, expected_count=6):
         """本地推理，可自定义使用的帧数（内存优化）"""
         if self.model is None:
             print(f"  ❌ 模型未加载")
-            return [0, 0, 0, 0, 0, 0]
+            return [0] * max(1, expected_count)
         
         try:
             # 清理旧的显存
@@ -181,7 +181,7 @@ class QwenRunner:
             # DEBUG: 打印模型的原始输出
             print(f"  📝 {self.model_name} 原始响应: {repr(response)}")
             
-            choices = self._parse_choices(response, num_options=num_options)
+            choices = self._parse_choices(response, num_options=num_options, expected_count=expected_count)
             print(f"  ✓ {self.model_name} 推理完成: {video_number}, 解析结果: {choices}")
             
             # 推理后清理
@@ -200,12 +200,12 @@ class QwenRunner:
                 print(f"     3. 清理其他进程的GPU占用")
             else:
                 print(f"  ❌ 推理失败: {e}")
-            return [0, 0, 0, 0, 0, 0]
+            return [0] * max(1, expected_count)
         except Exception as e:
             print(f"  ❌ 推理失败: {e}")
-            return [0, 0, 0, 0, 0, 0]
+            return [0] * max(1, expected_count)
     
-    def _predict_api(self, prompt, num_options=4):
+    def _predict_api(self, prompt, num_options=4, expected_count=6):
         """API 推理（Qwen VL API）"""
         try:
             import os
@@ -214,7 +214,7 @@ class QwenRunner:
             api_key = os.getenv("DASHSCOPE_API_KEY")
             if not api_key:
                 print("  ❌ 未设置 DASHSCOPE_API_KEY 环境变量")
-                return [0, 0, 0, 0, 0, 0]
+                return [0] * max(1, expected_count)
             
             client = OpenAI(
                 api_key=api_key,
@@ -229,18 +229,20 @@ class QwenRunner:
             )
             
             response = resp.choices[0].message.content
-            choices = self._parse_choices(response, num_options=num_options)
+            choices = self._parse_choices(response, num_options=num_options, expected_count=expected_count)
             print(f"  ✓ {self.model_name} API 推理完成")
             return choices
             
         except Exception as e:
             print(f"  ❌ API 推理失败: {e}")
-            return [1, 1, 1, 1, 1, 1]
+            return [1] * max(1, expected_count)
     
-    def _parse_choices(self, response: str, num_options: int = 4) -> list:
+    def _parse_choices(self, response: str, num_options: int = 4, expected_count: int = 6) -> list:
         """解析选项序号 - 支持多种格式"""
         if num_options <= 0:
             num_options = 4
+        if expected_count <= 0:
+            expected_count = 1
 
         max_opt = str(num_options)
         opt_char_class = f"[1-{max_opt}]"
@@ -250,17 +252,17 @@ class QwenRunner:
         pattern1 = rf'[Qq]\s*(\d+)\s*[：:]\s*({opt_char_class})'
         matches = re.findall(pattern1, response)
         
-        if matches and len(matches) >= 6:
+        if matches and len(matches) >= expected_count:
             matches.sort(key=lambda x: int(x[0]))
-            choices = [int(m[1]) for m in matches[:6]]
+            choices = [int(m[1]) for m in matches[:expected_count]]
             return choices
         
         # 模式2: "题1:1" 中文格式
         pattern2 = rf'题\s*(\d+)\s*[：:]\s*({opt_char_class})'
         matches2 = re.findall(pattern2, response)
-        if matches2 and len(matches2) >= 6:
+        if matches2 and len(matches2) >= expected_count:
             matches2.sort(key=lambda x: int(x[0]))
-            choices = [int(m[1]) for m in matches2[:6]]
+            choices = [int(m[1]) for m in matches2[:expected_count]]
             return choices
         
         # 模式3: 简单数字序列，但要更智能地选择前6个
@@ -272,26 +274,26 @@ class QwenRunner:
         if 'ANSWERS' in response.upper():
             answer_section = response[response.upper().rfind('ANSWERS'):]
             numbers = re.findall(pattern3, answer_section)
-            if len(numbers) >= 6:
-                choices = [int(n) for n in numbers[:6]]
+            if len(numbers) >= expected_count:
+                choices = [int(n) for n in numbers[:expected_count]]
                 return choices
         
         # 最后的备选：只取最后6个数字
-        if len(all_numbers) >= 6:
-            choices = [int(n) for n in all_numbers[-6:]]
+        if len(all_numbers) >= expected_count:
+            choices = [int(n) for n in all_numbers[-expected_count:]]
             return choices
         
         # 如果完全找不到，发出警告
         if not choices:
             print(f"  ⚠️ 警告：无法从响应解析选项。响应: {response[-200:]}")
-            choices = [1] * 6
+            choices = [1] * expected_count
         
         # 过滤和填充
         choices = [c if 1 <= c <= num_options else 1 for c in choices]
-        while len(choices) < 6:
+        while len(choices) < expected_count:
             choices.append(1)
         
-        return choices[:6]
+        return choices[:expected_count]
     
     def release(self):
         """释放资源"""

@@ -242,10 +242,20 @@ def run_model_inference(model_name, questions_per_video):
                 
                 # 推理单个问题（传入相同的视频帧）
                 try:
-                    choice_list = runner.predict(video_number, single_prompt, video_frames, num_options=num_options)
+                    choice_list = runner.predict(
+                        video_number,
+                        single_prompt,
+                        video_frames,
+                        num_options=num_options,
+                        expected_count=1
+                    )
                 except TypeError:
-                    # 兼容尚未支持 num_options 参数的旧版 runner
-                    choice_list = runner.predict(video_number, single_prompt, video_frames)
+                    try:
+                        # 兼容只支持 num_options 参数的 runner
+                        choice_list = runner.predict(video_number, single_prompt, video_frames, num_options=num_options)
+                    except TypeError:
+                        # 兼容尚未支持 num_options 参数的旧版 runner
+                        choice_list = runner.predict(video_number, single_prompt, video_frames)
                 
                 # 提取第一个数字作为答案
                 answer = choice_list[0] if choice_list else 0
