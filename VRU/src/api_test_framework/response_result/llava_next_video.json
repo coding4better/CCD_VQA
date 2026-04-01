@@ -1,0 +1,346 @@
+{
+  "task": "Dense_Captioning",
+  "timestamp": "2025-11-27T19:18:31.767808",
+  "total_videos": 21,
+  "models_used": [
+    "llava_next_video"
+  ],
+  "videos": [
+    {
+      "video_id": "000003",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a car crash that occurred on a city street during the daytime. The weather conditions were clear and sunny, with no visible rain or snow. The road was a two-way street with a concrete surface. The traffic configuration consisted of multiple cars and a truck, with some vehicles parked on the side of the road. The vehicles involved in the crash included a silver car, a black car, and a white truck. The silver car was driving on the right side of the road, while the black car was on the left side. The white truck was parked on the side of the road. The silver car was moving at a high speed, and the black car was following it closely. The black car suddenly braked, causing the silver car to collide with it. The silver car's trajectory was towards the right side of the road, while the black car was moving towards the left side. The collision resulted in the silver car hitting the black car and the white truck, causing significant damage to all three vehicles. The silver car's driver was wearing a white shirt and black pants, while the black car's driver was wearing a red shirt and black pants. The final impact was a head-on collision between the silver car and the black car, resulting in a severe crash that damaged all three vehicles."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 29.96754288673401
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:19:01.918619"
+    },
+    {
+      "video_id": "000018",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video captures a severe traffic collision that occurred on a city street. The scene is set in a snowy environment, with the road covered in a layer of white, reflecting the cold weather conditions. The vehicles involved in the crash include a red car, a black car, and a bus. The red car, which is in the foreground, is seen moving towards the left side of the frame, while the black car is positioned in the middle of the road. The bus, which is in the background, is heading towards the right side of the frame. The red car's trajectory suggests that it was moving at a high speed, as it appears to have veered off course and collided with the black car, causing a significant impact. The black car, in turn, was hit by the red car and is now facing the opposite direction, indicating a sudden stop. The bus, which was not directly involved in the collision, continues its journey to the right. The scene is chaotic, with the red car's position indicating a sudden stop, the black car's change in direction, and the bus's uninterrupted movement. The video highlights the dangers of high-speed driving and the importance of maintaining a safe distance from other vehicles on the road, especially in adverse weather conditions."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 24.28585147857666
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:19:26.385825"
+    },
+    {
+      "video_id": "000023",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a severe traffic accident on a multi-lane highway with a clear sky and dry road conditions. A red car is seen driving in the right lane, moving at a high speed, and suddenly veers to the left, colliding with a large truck in the adjacent lane. The truck, a large commercial vehicle with a white trailer, is in motion, traveling in the same direction as the red car. The collision results in a significant impact, causing the red car to be pushed into the left lane and the truck to be pushed to the right. The red car's trajectory is altered, and it is now heading towards the left side of the road. The truck's trajectory is also affected, as it is pushed to the right, away from the red car. The vehicles' movements are unpredictable and abrupt, indicating a lack of control or attention from the driver of the red car. The collision is a result of the red car's reckless driving behavior, as it veers into the truck's path without any indication of stopping or slowing down. The scene is chaotic, with the vehicles' positions and trajectories changing rapidly after the impact. The environment is a typical highway setting with multiple lanes, and the vehicles are typical of commercial and personal transportation. The weather is clear, with no visible signs of rain or other adverse conditions. The video highlights the dangers of high-speed driving and the importance of maintaining safe distances between vehicles to avoid such accidents."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 27.095683574676514
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:19:53.658099"
+    },
+    {
+      "video_id": "000031",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a snowy city street scene where a silver car is driving on the right side of the road, moving at a moderate speed. The car is in the right lane, and there is a blue car in the left lane, both vehicles are in motion. The silver car is approaching a red traffic light, which is visible in the video. As the light turns red, the silver car slows down and stops, while the blue car continues to move forward. The blue car then collides with the silver car from behind, causing it to spin and come to a stop. The silver car's trajectory is altered by the collision, and it is pushed to the left side of the road. The blue car's trajectory remains unchanged, and it continues on its path. The weather conditions are snowy, and the road appears to be a city street with buildings on both sides. The silver car is a four-door sedan, and the blue car is a two-door coupe. Both vehicles are in good condition, with no visible damage or indication of malfunction. The silver car's driver is wearing a black jacket and the blue car's driver is not visible in the video. The collision is a rear-end collision, and the final impact is the silver car being pushed to the left side of the road."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 24.717710971832275
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:20:18.543515"
+    },
+    {
+      "video_id": "000033",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video captures a severe traffic collision on a multi-lane highway during a sunny day. The scene is dominated by a white car, which is seen driving at a high speed on the right lane of the highway. The car suddenly veers to the left, causing a head-on collision with a silver car that is driving in the opposite direction. The silver car, which is a compact SUV, is seen wearing a black top and is positioned in the left lane. The white car, with a black roof, is moving towards the right side of the road, while the silver car is moving towards the left side. The white car's trajectory is erratic, and it appears to have been traveling at a high speed before the collision. The silver car is stationary after the impact, indicating a significant force was involved in the collision. The video does not provide any information about the pedestrians or their clothing, but it is clear that the focus is on the vehicles and their movements. The road type is a multi-lane highway, and the environment is urban, with buildings visible in the background. The collision is a clear example of a head-on collision, where the white car's erratic movement and high speed led to a direct impact with the silver car, resulting in a severe crash."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 24.125494718551636
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:20:42.832000"
+    },
+    {
+      "video_id": "000039",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a snowy city street scene where a silver car is driving on the right side of the road, approaching an intersection. The car is moving at a moderate speed, and the driver is wearing a black jacket. As the car reaches the intersection, it encounters a black SUV that is also moving in the same direction, but on the left side of the road. The SUV driver is wearing a red jacket. The silver car's trajectory is towards the left side of the road, while the SUV's trajectory is towards the right. The collision occurs when the silver car's front end makes contact with the side of the black SUV, causing the silver car to veer to the right and collide with a red car parked on the right side of the road. The impact is severe, resulting in the silver car being pushed into the red car and both vehicles being damaged. The road is a two-way street with buildings on both sides, and the weather is snowy, which may have contributed to the reduced visibility and traction for the drivers. The video captures the dynamics of the collision, showing the silver car's movement and the final impact with the red car."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 23.592620611190796
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:21:06.590336"
+    },
+    {
+      "video_id": "000048",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a snowy city street scene where a black car is driving at a high speed, possibly in excess of 50 mph, and is seen approaching a red light. The car is in the right lane of a two-way street, and there is a white car in the left lane. The black car is weaving in and out of traffic, passing other vehicles, and is seen making a sudden turn to the left. The driver of the black car is not wearing a seatbelt. As the black car approaches the red light, it loses control and crashes into a silver car, causing it to spin and flip over. The silver car is stationary at the time of the collision. The black car's trajectory is erratic, and it appears to be moving at a high speed before the collision. The weather conditions are snowy, and the road is a two-way street with a mix of cars and pedestrians. The black car's driver is wearing dark clothing and the silver car's driver is wearing light clothing. The black car is a four-door sedan, and the silver car is a four-door sedan. The collision results in the black car being severely damaged and the silver car being totaled."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 23.727601051330566
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:21:30.483128"
+    },
+    {
+      "video_id": "000059",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a snowy city street scene where a black car is driving at a high speed, possibly in excess of 50 mph, and abruptly veers to the right, causing it to collide with a silver car. The black car's trajectory is erratic, and it appears to have been traveling at a high rate of speed before the collision. The silver car is stationary, and the black car's driver is seen wearing dark clothing, possibly a jacket and pants, and the vehicle is a four-door sedan. The black car's driver is seen making a sudden turn, which is the primary cause of the crash. The road is covered in snow, and the environment is urban, with tall buildings and trees lining the street. The silver car is a compact vehicle, and the collision results in a significant impact, with the black car's front end hitting the silver car's rear end. The black car's driver is seen in the immediate aftermath of the crash, and the silver car's driver is not visible. The black car's trajectory is erratic, and it appears to have been traveling at a high rate of speed before the collision."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 22.92428731918335
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:21:53.560706"
+    },
+    {
+      "video_id": "000066",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a car crash that occurred on a city street on a sunny day. The car, a black sedan, was traveling at a high speed and veered off the road, hitting a concrete barrier. The driver, wearing a white shirt, was not wearing a seatbelt and was thrown from the vehicle upon impact. The car's trajectory was from the left lane to the right lane, and it appears to have been moving at a high rate of speed when it veered off the road. The concrete barrier is located on the right side of the street, and the car's final impact was with it. The street is lined with buildings and trees, and the weather is clear and sunny. The car's speed and trajectory suggest that the driver may have been reckless or distracted, leading to the accident. The video provides a clear view of the car's movement and the impact with the barrier, highlighting the severity of the crash."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 20.570798635482788
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:22:14.298805"
+    },
+    {
+      "video_id": "000071",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a snowy road scene where a car is driving on the right side of the road, approaching a red car that is stopped in the middle of the road. The red car is facing the opposite direction of the oncoming car. The oncoming car is moving at a high speed, and the driver of the red car is wearing a black jacket and a black hat. The road is covered in snow, and the environment is rural with no visible traffic or pedestrians. The red car is a compact car, and the oncoming car is a larger vehicle. The oncoming car's trajectory is towards the right side of the road, while the red car is stationary. The oncoming car's driver makes a sudden and aggressive lane change, moving into the right lane and colliding with the red car. The impact is severe, causing the red car to spin and come to a stop. The oncoming car's driver is wearing a white shirt and is not visible in the video. The collision results in the red car being pushed off the road and into a snowbank, and the oncoming car coming to a stop on the road. The video captures the dynamics of the collision, including the high speed of the oncoming car, the sudden lane change, and the impact that causes the red car to spin and stop."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 24.772146463394165
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:22:39.222523"
+    },
+    {
+      "video_id": "000074",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video captures a severe traffic collision on a snowy day. The scene unfolds on a two-lane road with a clear sky overhead. A black car, moving at a high speed, is seen approaching from the left lane, while a white bus is positioned in the right lane. The black car, traveling at a high rate of speed, is seen making a sudden turn towards the right, attempting to pass the bus. The bus driver, not anticipating the car's maneuver, is unable to react in time and the two vehicles collide. The black car's trajectory is altered, and it veers off the road, coming to a stop in the right lane. The bus, unable to stop in time, continues on its path, hitting the car and causing it to spin out of control. The impact is forceful, with the black car's front end crumpling and the bus's front bumper sustaining damage. The weather conditions are snowy, with the road appearing slick and potentially hazardous. The vehicles are in motion, with the black car's speed and trajectory being the primary factors leading to the collision. The bus driver's inability to react in time highlights the importance of vigilance and awareness in such conditions."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 24.162919759750366
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:23:03.537273"
+    },
+    {
+      "video_id": "000078",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a severe traffic collision on a two-lane road with a clear sky and dry pavement. A large truck, moving at a high speed, is seen approaching from the opposite direction, and a car is seen driving in the same lane. The truck driver is wearing a white shirt and black pants, while the car driver is in a black shirt. The truck driver is seen making a sudden and aggressive lane change, attempting to pass the car on the right side, but the car driver is unable to react in time, resulting in a head-on collision. The truck driver's vehicle is a red and white semi-truck, and the car is a silver sedan. The collision occurs at a high speed, causing the truck to overturn and come to a stop on the right side of the road, while the car is pushed off the road and into a snowy ditch. The truck driver is seen in the immediate aftermath of the crash, appearing shocked and disoriented. The video highlights the importance of vigilance and adherence to traffic rules to avoid such accidents."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 22.127397537231445
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:23:25.821571"
+    },
+    {
+      "video_id": "000083",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video captures a car crash in a city street setting. The scene is set on a clear day with a dry road surface. The traffic is heavy, with multiple cars and a truck visible in the background. The vehicles are in motion, with some cars moving in the same direction as the camera and others in the opposite direction. The car in focus is a silver sedan, and it is seen driving in the same direction as the camera. The driver of the car is wearing a black jacket and a white shirt. As the car approaches, it suddenly veers to the right, causing it to collide with a pedestrian who is wearing a black jacket and a white shirt. The pedestrian is standing on the sidewalk, and the car hits them at a 45-degree angle. The impact is severe, causing the car to spin and come to a stop. The pedestrian is thrown onto the hood of the car, and the car's front end is crumpled. The video provides a detailed view of the crash, showing the trajectory of the car and the pedestrian, the speed of the car, and the behavior of the driver. The collision is a result of the driver's sudden and unexpected maneuver, which led to a head-on impact with the pedestrian."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 24.480548858642578
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:23:50.453410"
+    },
+    {
+      "video_id": "000087",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video captures a severe car crash that occurred on a snowy day in a city. The scene is set on a busy street with multiple lanes and traffic lights. The vehicles involved in the crash include a black car, a white car, and a silver car. The black car, which is the main focus of the video, is seen driving on the right side of the road, while the white car is on the left side. The silver car is in the middle of the road. The black car is seen moving towards the white car, which is stationary, and the silver car is moving towards the black car. The black car's trajectory is towards the white car, and it eventually collides with it, causing a violent impact. The black car's speed is high, and it appears to be out of control. The white car is stationary, and the silver car is moving at a moderate pace. The weather conditions are snowy, and the road is covered in snow, making it slippery. The environment is urban, with buildings and traffic lights visible in the background. The black car's driver is wearing a black jacket, while the white car's driver is in a white jacket. The silver car's driver is not visible in the video. The crash is a result of the black car's reckless driving and failure to maintain a safe distance from the white car, leading to a head-on collision."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 26.37269949913025
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:24:16.983366"
+    },
+    {
+      "video_id": "000109",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a serious traffic accident on a city street. The scene is set on a cloudy day, with a wet road surface, indicating recent rain. The vehicles involved in the crash include a red car, a white bus, and a white van. The red car, which is in the foreground, is seen moving towards the right side of the frame, while the white bus and white van are in the background. The red car is in motion, traveling at a high speed, and appears to be weaving in and out of traffic. It suddenly veers to the left, causing a collision with the white van. The impact is severe, with the red car's front end crumpling and the white van's front end being pushed into the air. The white van's driver is wearing a white shirt and the red car's driver is wearing a black shirt. The red car's trajectory is erratic, and it seems to have been driving recklessly before the collision. The white van's driver is not visible in the video. The scene is chaotic, with other vehicles and pedestrians visible in the background, and the overall environment suggests an urban setting with buildings and city infrastructure."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 23.540528774261475
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:24:40.684537"
+    },
+    {
+      "video_id": "000115",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a rainy day in a city, with a wet road surface reflecting the surrounding environment. A silver car is driving on the right side of the road, moving at a moderate speed, and appears to be in the right lane. Suddenly, a black car comes from the left side of the road, crossing into the silver car's lane, causing a head-on collision. The black car's trajectory is erratic, and it seems to have been speeding up before the collision. The silver car's driver is wearing a white shirt and is seen braking to avoid the collision, but the impact is still severe. The black car's driver is wearing a black jacket and is not visible in the video. The silver car's front end is crumpled, and the black car's front end is also damaged. The silver car's driver is wearing a white shirt and is visible in the video, but the black car's driver is not. The silver car's trajectory is altered by the collision, and it comes to a stop on the right side of the road. The black car's trajectory is also altered, and it comes to a stop on the left side of the road. The collision results in a significant impact, and the silver car's driver is seen braking to avoid the collision. The black car's driver is not visible in the video. The silver car's driver is wearing a white shirt, and the black car's driver is not. The silver car's front end is crumpled, and the black car's front end is also damaged. The silver car's driver is visible in the video, and the black car's driver is not."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 30.671539545059204
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:25:11.521967"
+    },
+    {
+      "video_id": "000130",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a serious traffic accident on a two-lane road with a wet surface, likely due to recent rain. The scene is set in a suburban area with a mix of commercial and residential buildings. The road is lined with trees and a few pedestrians can be seen walking on the sidewalk. The vehicles involved in the crash include a white car, a black car, and a truck. The white car is driving on the right lane, while the black car is in the left lane. The truck is positioned in the middle lane. The white car is seen moving towards the black car, which is in the right lane, while the truck is in the middle lane. The black car is moving towards the white car, which is in the left lane. The white car suddenly brakes, causing the black car to collide with it. The black car's trajectory is altered, and it veers off the road, hitting the truck in the middle lane. The white car's trajectory is also affected, as it veers off the road and collides with the black car. The vehicles come to a halt after the impact, and the scene is chaotic with debris scattered on the road. The weather conditions are rainy, and the road appears to be wet, which may have contributed to the accident. The vehicles involved are a white car, a black car, and a truck, and their colors are white, black, and silver. The pedestrians on the sidewalk are dressed in casual clothing, and there are no visible signs of any other vehicles or pedestrians in the immediate vicinity. The accident highlights the importance of cautious driving, especially in wet conditions, and the potential dangers of sudden braking or lane changes."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 30.556867361068726
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:25:42.238983"
+    },
+    {
+      "video_id": "000136",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a snowy roadway scene with a black car driving at a high speed, possibly in excess of 50 mph, as indicated by the blurred motion of the vehicle. The car is seen approaching a red traffic light, which is not visible in the video, but its presence is implied by the car's trajectory. The driver of the black car is wearing a black jacket and appears to be in a hurry, as evidenced by the car's speed and the driver's focus on the road ahead. The car is in the right lane of a multi-lane road, and there are other vehicles in the left lane, including a red bus and a white car. The road is surrounded by buildings, and the weather is snowy, with snow covering the ground and the vehicles. The black car's trajectory is such that it is heading towards the right side of the road, and it is about to collide with a pedestrian who is wearing a white jacket and a black hat. The pedestrian is standing on the right side of the road, and the car's speed and trajectory suggest that the collision is imminent. The pedestrian appears to be unaware of the car's approach, and there is no indication of any attempt to avoid the collision. The final impact is not visible in the video, but the car's speed and trajectory suggest a severe collision."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 26.032068967819214
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:26:08.428275"
+    },
+    {
+      "video_id": "000137",
+      "frames_count": 1,
+      "responses": {
+        "llava_next_video": " The video depicts a severe traffic collision that occurred on a clear day with a dry road surface. The scene is set in a suburban area with a two-lane road, and the vehicles involved are a black sedan and a white SUV. The black sedan, traveling at a high speed, was in the right lane while the white SUV was in the left lane. The sedan driver, wearing a red shirt, was driving aggressively and tailgating the SUV, which was driven by a person in a blue shirt. The sedan driver's aggressive driving behavior led to them following the SUV too closely, causing them to lose control and swerve into the left lane, resulting in a head-on collision with the SUV. The impact was so severe that both vehicles were pushed off the road and into a ditch, with the sedan ending up on its side and the SUV on its roof. The collision was a result of the sedan driver's reckless driving and failure to maintain a safe distance from the SUV, leading to a catastrophic outcome."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 16.871164321899414
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:26:25.308528"
+    },
+    {
+      "video_id": "000142",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a serious car crash that occurred on a city street. The scene is set in a busy urban environment with tall buildings and a clear sky overhead. The road is paved and appears to be a multi-lane street with traffic in both directions. The vehicles involved in the crash are a black car and a white car. The black car is seen driving on the right side of the road, moving towards the left side of the frame, while the white car is on the left side of the road, moving towards the right side of the frame. The black car is wearing a black top and black pants, while the white car is white in color. The black car is traveling at a high speed, and as it approaches the white car, it makes a sudden turn to the left, causing a collision. The impact is severe, resulting in the black car being pushed into the right side of the frame and the white car being pushed to the left. The black car's trajectory is erratic, and its speed is high, leading to the unexpected turn. The white car's trajectory is also erratic, as it tries to avoid the collision but is unable to do so in time. The final impact is a head-on collision between the two cars, with the black car on the right side of the frame and the white car on the left side. The scene is chaotic, and the vehicles are damaged, indicating a significant impact."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 25.77994728088379
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:26:51.242986"
+    },
+    {
+      "video_id": "000156",
+      "frames_count": 25,
+      "responses": {
+        "llava_next_video": " The video depicts a serious traffic accident on a two-lane road with a clear sky and dry pavement. A large truck, painted in a dark color, is seen driving on the right lane, moving at a high speed. The truck driver is wearing a white shirt and black pants. As the truck approaches a pedestrian crossing, it suddenly veers to the left, causing a collision with a car in the left lane. The car is white and black, and the driver is wearing a red shirt. The truck driver's trajectory is erratic, and the impact is severe, resulting in the truck being pushed to the right side of the road and the car being pushed to the left. The truck's speed and trajectory suggest a lack of attention and control, leading to the accident. The pedestrian crossing is unattended, and the truck driver's actions indicate a disregard for traffic rules and safety."
+      },
+      "errors": {
+        "llava_next_video": null
+      },
+      "latencies_seconds": {
+        "llava_next_video": 20.206643104553223
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:27:11.620496"
+    }
+  ]
+}

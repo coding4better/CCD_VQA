@@ -1,0 +1,6 @@
+video_id,model_a,model_b,similarity
+000003,qwen2_vl_7b,mock_model_b,0.24095087638891155
+000039,qwen2_vl_7b,mock_model_b,0.23364437015984252
+000071,qwen2_vl_7b,mock_model_b,0.4489507985250098
+000109,qwen2_vl_7b,mock_model_b,0.3202077749023898
+000137,qwen2_vl_7b,mock_model_b,0.3114674823745339

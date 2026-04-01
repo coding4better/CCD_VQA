@@ -1,0 +1,346 @@
+{
+  "task": "Dense_Captioning",
+  "timestamp": "2025-11-27T18:51:48.631238",
+  "total_videos": 21,
+  "models_used": [
+    "qwen2_vl_7b"
+  ],
+  "videos": [
+    {
+      "video_id": "000003",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a city street during daylight hours. The weather appears clear with good visibility. The road is a two-lane street with a central divider, and there are buildings and commercial establishments lining both sides. The traffic configuration includes several vehicles, including cars and a truck, moving in both directions. The vehicles are spaced out, indicating a moderate flow of traffic.\n\nIn the sequence, a car is seen moving towards the camera, followed by another car that appears to be in the same lane. The second car then suddenly changes lanes, crossing the central divider and entering the opposing lane. This maneuver is executed without signaling, causing a potential hazard for oncoming traffic.\n\nAs the second car enters the opposing lane, it collides with a vehicle coming from the opposite direction. The collision is frontal, and both vehicles come to a stop after the impact. The first vehicle involved in the collision appears to be a sedan, while the second vehicle is a larger vehicle, possibly a truck or SUV.\n\nAfter the collision, the vehicles remain stationary, and there is no immediate indication of any emergency response or traffic redirection. The aftermath of the collision shows the vehicles with visible damage, and there are no visible pedestrians or other obstacles in the immediate vicinity.\n\nThe dynamics of the collision suggest that the second vehicle's sudden lane change was the primary cause of the accident, as it directly led to the frontal collision with the oncoming vehicle. The lack of signaling and the improper lane change are key factors in this traffic incident."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 64.70710229873657
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:52:53.517873"
+    },
+    {
+      "video_id": "000018",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 8.51 GiB. GPU 0 has a total capacity of 19.50 GiB of which 1.12 GiB is free. Including non-PyTorch memory, this process has 18.37 GiB memory in use. Of the allocated memory 11.36 GiB is allocated by PyTorch, and 6.85 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 35.47599697113037
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:53:29.167890"
+    },
+    {
+      "video_id": "000023",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 584.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 458.31 MiB is free. Including non-PyTorch memory, this process has 19.04 GiB memory in use. Of the allocated memory 17.91 GiB is allocated by PyTorch, and 987.44 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 28.587117195129395
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:53:57.916878"
+    },
+    {
+      "video_id": "000031",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 584.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 360.31 MiB is free. Including non-PyTorch memory, this process has 19.13 GiB memory in use. Of the allocated memory 18.56 GiB is allocated by PyTorch, and 426.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 23.977307558059692
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:54:22.066230"
+    },
+    {
+      "video_id": "000033",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "Failed to load model"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 11.074714422225952
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:54:33.303130"
+    },
+    {
+      "video_id": "000039",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a city street during daylight hours. The weather appears to be overcast, with no visible precipitation, suggesting a cold but dry environment. The road is a multi-lane street with vehicles parked along both sides. The traffic configuration includes a mix of cars and a bus, with some vehicles moving in the same direction and others in the opposite direction.\n\nIn the sequence, a silver minivan is seen in the right lane, moving forward. As the video progresses, the minivan appears to slow down or stop, possibly due to a traffic signal or a pedestrian crossing the street. The minivan's behavior suggests it is reacting to a change in traffic conditions or an unexpected event.\n\nA black car is seen in the left lane, initially moving forward but then coming to a stop, indicating that the traffic signal has changed or there is an obstacle ahead. The black car's trajectory suggests it is following the silver minivan and is also reacting to the same traffic signal or event.\n\nThe dynamics of the collision involve the silver minivan and the black car. The minivan appears to be in the process of merging into the left lane when it collides with the black car. The collision is frontal, with both vehicles coming to a stop after the impact. The force of the collision is transmitted through the vehicles, causing them to skid and come to a halt.\n\nThe aftermath of the collision shows the vehicles involved in the accident, with visible damage to the front of the silver minivan and the front of the black car. Pedestrians are seen walking on the sidewalk, indicating that the incident occurred in a busy urban area with pedestrian activity.\n\nIn summary, the video captures a traffic collision involving a silver minivan and a black car on a city street during daylight hours. The collision is frontal, resulting in both vehicles coming to a stop after the impact. The environment is an urban setting with pedestrians and parked vehicles, and the weather conditions are overcast with no precipitation."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 57.700605154037476
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:55:31.172047"
+    },
+    {
+      "video_id": "000048",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 8.51 GiB. GPU 0 has a total capacity of 19.50 GiB of which 558.31 MiB is free. Including non-PyTorch memory, this process has 18.94 GiB memory in use. Of the allocated memory 11.36 GiB is allocated by PyTorch, and 7.42 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 37.298757791519165
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:56:08.643591"
+    },
+    {
+      "video_id": "000059",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 584.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 458.31 MiB is free. Including non-PyTorch memory, this process has 19.04 GiB memory in use. Of the allocated memory 17.91 GiB is allocated by PyTorch, and 988.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 19.316190004348755
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:56:28.121280"
+    },
+    {
+      "video_id": "000066",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 584.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 360.31 MiB is free. Including non-PyTorch memory, this process has 19.13 GiB memory in use. Of the allocated memory 18.55 GiB is allocated by PyTorch, and 429.08 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 19.605855464935303
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:56:47.898823"
+    },
+    {
+      "video_id": "000071",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a snowy, overcast day with reduced visibility on a two-lane road. The road appears to be covered with snow, indicating recent or ongoing snowfall. The traffic configuration consists of three vehicles: a car in the lead, followed by a truck, and another car trailing behind. The vehicles are moving in the same direction, with the car in the lead maintaining a moderate speed. The truck and the trailing car are maintaining a safe distance from the lead vehicle.\n\nAs the video progresses, the lead car begins to slow down, possibly due to reduced traction on the snowy road. The truck and the trailing car also adjust their speeds accordingly, maintaining a safe following distance. However, the lead car suddenly veers off the road, causing the truck and the trailing car to react. The truck driver attempts to brake and steer to avoid a collision, but the lead car continues to move off the road, causing the truck to skid and eventually come to a stop on the opposite side of the road.\n\nThe trailing car also attempts to brake and steer to avoid a collision, but due to the reduced visibility and slippery road conditions, the car skids and comes to a stop on the opposite side of the road as well. The aftermath of the collision shows the vehicles scattered across the road, with the lead car off the road, the truck on the opposite side of the road, and the trailing car also off the road. The video highlights the challenges of driving in snowy conditions, the importance of maintaining a safe following distance, and the potential for sudden changes in road conditions to lead to accidents."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 53.40297985076904
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:57:41.458312"
+    },
+    {
+      "video_id": "000074",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 8.51 GiB. GPU 0 has a total capacity of 19.50 GiB of which 558.31 MiB is free. Including non-PyTorch memory, this process has 18.94 GiB memory in use. Of the allocated memory 11.36 GiB is allocated by PyTorch, and 7.42 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 37.26989412307739
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:58:18.886813"
+    },
+    {
+      "video_id": "000078",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 584.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 458.31 MiB is free. Including non-PyTorch memory, this process has 19.04 GiB memory in use. Of the allocated memory 17.91 GiB is allocated by PyTorch, and 988.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 19.203701972961426
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:58:38.255328"
+    },
+    {
+      "video_id": "000083",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 584.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 360.31 MiB is free. Including non-PyTorch memory, this process has 19.13 GiB memory in use. Of the allocated memory 18.55 GiB is allocated by PyTorch, and 429.08 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 19.038371801376343
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:58:57.444584"
+    },
+    {
+      "video_id": "000087",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "Failed to load model"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 6.696740627288818
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:59:04.301964"
+    },
+    {
+      "video_id": "000109",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a city street with multiple vehicles, including a red van and several cars. The weather appears to be clear with good visibility, and the road is a typical urban street with multiple lanes and buildings lining both sides. The traffic configuration shows a mix of vehicles moving in different directions, with the red van in the center of the scene.\n\nIn the initial frames, the red van is seen driving ahead of the camera's vehicle. As the video progresses, the van appears to slow down or stop, causing the camera's vehicle to decelerate. The van then begins to move forward again, and the camera's vehicle follows suit. However, in the final frame, the red van suddenly stops, causing the camera's vehicle to come to a complete stop as well.\n\nThe dynamics of the collision involve the red van coming to a sudden stop, which forces the camera's vehicle to also stop abruptly. The van's movement appears to be erratic, causing the camera's vehicle to adjust its speed and trajectory to avoid a collision. The final impact is a hard stop, with both vehicles coming to a complete halt.\n\nOverall, the video captures a moment of potential danger on the road, with the red van's sudden braking causing a near-miss between the two vehicles. The clear weather and urban environment contribute to the visibility of the incident, allowing for a detailed analysis of the traffic dynamics and the potential risks involved."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 51.35123109817505
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T18:59:55.814761"
+    },
+    {
+      "video_id": "000115",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 8.51 GiB. GPU 0 has a total capacity of 19.50 GiB of which 558.31 MiB is free. Including non-PyTorch memory, this process has 18.94 GiB memory in use. Of the allocated memory 11.36 GiB is allocated by PyTorch, and 7.42 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 38.97940397262573
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:00:34.968376"
+    },
+    {
+      "video_id": "000130",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 584.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 458.31 MiB is free. Including non-PyTorch memory, this process has 19.04 GiB memory in use. Of the allocated memory 17.91 GiB is allocated by PyTorch, and 988.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 18.83814311027527
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:00:53.966260"
+    },
+    {
+      "video_id": "000136",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 584.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 360.31 MiB is free. Including non-PyTorch memory, this process has 19.13 GiB memory in use. Of the allocated memory 18.55 GiB is allocated by PyTorch, and 429.08 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 18.899152278900146
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:01:13.026994"
+    },
+    {
+      "video_id": "000137",
+      "frames_count": 1,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a severe traffic accident involving multiple vehicles on a multi-lane road. The weather appears to be clear with no visible precipitation, suggesting good visibility conditions. The road is a divided highway with multiple lanes in each direction, indicating it is likely a major thoroughfare.\n\nThe traffic configuration shows vehicles traveling in both directions, with at least one vehicle in each lane. The vehicles involved in the crash are a mix of cars and possibly a truck, though specific details on the types of vehicles are not clear. The vehicles involved in the crash are seen to be moving at a moderate speed, as indicated by the distance between them and the apparent force of the impact.\n\nThe dynamics of the collision are quite severe. One vehicle is seen to have veered off the road and into the opposing lane, causing a head-on collision with another vehicle. The vehicles involved in the crash are seen to be in close proximity to each other, with one vehicle appearing to be pushed into the opposite lane by the force of the impact. The final impact results in significant damage to the vehicles involved, with debris scattered across the road.\n\nPedestrians are not visible in the video, suggesting that the accident did not involve any pedestrians. The environment around the crash site appears to be a typical urban or suburban area with no visible signs of emergency services or other vehicles responding to the incident."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 25.53382158279419
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:01:38.579978"
+    },
+    {
+      "video_id": "000142",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 8.51 GiB. GPU 0 has a total capacity of 19.50 GiB of which 558.31 MiB is free. Including non-PyTorch memory, this process has 18.94 GiB memory in use. Of the allocated memory 11.36 GiB is allocated by PyTorch, and 7.42 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 37.08399057388306
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:02:15.822993"
+    },
+    {
+      "video_id": "000156",
+      "frames_count": 25,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 584.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 458.31 MiB is free. Including non-PyTorch memory, this process has 19.04 GiB memory in use. Of the allocated memory 17.91 GiB is allocated by PyTorch, and 988.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 19.56567406654358
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T19:02:35.567446"
+    }
+  ]
+}

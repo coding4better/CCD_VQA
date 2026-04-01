@@ -1,0 +1,346 @@
+{
+  "task": "Dense_Captioning",
+  "timestamp": "2025-11-27T15:36:44.114773",
+  "total_videos": 21,
+  "models_used": [
+    "qwen2_vl_7b"
+  ],
+  "videos": [
+    {
+      "video_id": "000003",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video appears to be a recording of a traffic incident captured from the perspective of a vehicle's dashboard camera. The scene takes place on a multi-lane road during daylight hours, with a timestamp of 18:21:45 on April 25, 2012. The weather seems clear, with no visible signs of rain or adverse weather conditions. The road is a typical urban street with buildings on both sides, including a construction site on the left.\n\nThe traffic configuration shows several vehicles, including cars and a truck, moving in both directions. The vehicles are spaced out, indicating a moderate flow of traffic. At the moment captured in the video, a silver car is seen moving towards the camera, while other vehicles are positioned further down the road.\n\nThe silver car appears to be in the process of making a turn or changing lanes, as it is positioned closer to the center of the road. The other vehicles are maintaining their lanes and distances, with no immediate signs of braking or emergency maneuvers.\n\nAs the silver car moves closer to the camera, it suddenly veers off the road, causing a collision with the vehicle from which the video is being recorded. The impact is severe, with the silver car colliding with the front of the recording vehicle, causing it to skid and come to a stop. The force of the collision is significant, as evidenced by the deformation of the vehicles and the visible damage to the front of the recording vehicle.\n\nThe aftermath of the collision shows the silver car on its side, with the recording vehicle also damaged. Pedestrians can be seen in the background, likely observing the incident. The video captures the entire sequence of events, from the initial movement of the silver car to the final impact and aftermath of the collision."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 50.766236543655396
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:37:35.008553"
+    },
+    {
+      "video_id": "000018",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a city street with multiple vehicles, including cars and a tram. The weather appears to be overcast, with no visible precipitation. The road is a multi-lane street with tram tracks running through it, indicating a mixed traffic environment. The traffic configuration includes a tram in the center of the road, with cars on either side. The vehicles are moving in the same direction as the tram.\n\nIn the first frame, the tram is visible in the center of the road, with cars on either side. The tram is moving forward, and the cars are following its path. The second frame shows the tram continuing to move forward, with the cars maintaining their positions relative to the tram. The third frame captures the tram passing the cars, with the tram's headlights on, indicating it is moving forward.\n\nIn the fourth frame, the tram is closer to the camera, with its headlights still on, suggesting it is moving at a moderate speed. The fifth frame shows the tram passing the cars, with the tram's headlights still on, indicating it is maintaining its forward motion. The sixth frame captures the tram passing the cars, with the tram's headlights still on, indicating it is maintaining its forward motion. The seventh frame shows the tram passing the cars, with the tram's headlights still on, indicating it is maintaining its forward motion. The eighth frame shows the tram passing the cars, with the tram's headlights still on, indicating it is maintaining its forward motion. The ninth frame shows the tram passing the cars, with the tram's headlights still on, indicating it is maintaining its forward motion. The tenth frame shows the tram passing the cars, with the tram's headlights still on, indicating it is maintaining its forward motion.\n\nThe dynamics of the collision are not evident in the video, as the tram appears to be moving smoothly and without any signs of collision. The vehicles on the road are following the tram's path, and there is no indication of any sudden stops or changes in direction. The video does not provide any information about the cause of the collision or any injuries that may have occurred."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 46.18158578872681
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:38:21.444159"
+    },
+    {
+      "video_id": "000023",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a sequence of events on a busy highway under overcast skies. The road is a multi-lane highway with clear lane markings and a median barrier. The traffic is moderate, with several vehicles, including cars and a large truck, moving in the same direction. The truck, which is a Schmitz brand, is seen in the right lane, while other vehicles are scattered across the lanes.\n\nIn the first frame, the truck is positioned in the right lane, and the traffic appears to be moving smoothly. As the sequence progresses, the truck's position shifts slightly, indicating it is maintaining its lane. In the second frame, the truck's position remains relatively unchanged, suggesting steady driving.\n\nIn the third frame, the truck's position shifts further to the right, indicating a possible lane change or an adjustment in its trajectory. This movement is subtle but noticeable, suggesting the driver might be maneuvering to avoid an obstacle or adjust their path.\n\nIn the fourth frame, the truck's position is more to the right, and the vehicle appears to be in the process of changing lanes. This movement is more pronounced, indicating a deliberate lane change.\n\nIn the fifth frame, the truck is seen further to the right, and the lane change appears to be complete. The truck is now in the rightmost lane, and the traffic flow seems to be unaffected by the maneuver.\n\nIn the sixth frame, the truck's position is more to the right, and the lane change is complete. The truck is now in the rightmost lane, and the traffic flow appears to be smooth.\n\nIn the seventh frame, the truck's position is more to the right, and the lane change appears to be complete. The truck is now in the rightmost lane, and the traffic flow appears to be smooth.\n\nIn the eighth frame, the truck's position is more to the right, and the lane change appears to be complete. The truck is now in the rightmost lane, and the traffic flow appears to be smooth.\n\nIn the ninth frame, the truck's position is more to the right, and the lane change appears to be complete. The truck is now in the rightmost lane, and the traffic flow appears to be smooth.\n\nIn the tenth frame, the truck's position is more to the right, and the lane change appears to be complete. The truck is now in the rightmost lane, and the traffic flow appears to be smooth.\n\nThe video sequence shows a truck maneuvering on a busy"
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 48.62631869316101
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:39:10.217923"
+    },
+    {
+      "video_id": "000031",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 3.42 GiB. GPU 0 has a total capacity of 19.50 GiB of which 82.31 MiB is free. Including non-PyTorch memory, this process has 19.40 GiB memory in use. Of the allocated memory 16.96 GiB is allocated by PyTorch, and 2.29 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 25.9573335647583
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:39:36.346699"
+    },
+    {
+      "video_id": "000033",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "Failed to load model"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 8.212451696395874
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:39:44.706576"
+    },
+    {
+      "video_id": "000039",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a sequence of events leading to a traffic collision on a city street. The weather appears to be overcast, with no visible precipitation, suggesting a cold but dry environment. The road is a typical urban street with multiple lanes, flanked by buildings on both sides. The traffic configuration includes a mix of vehicles, including cars and a bus, with some parked along the curb and others in motion.\n\nIn the initial frames, the vehicles are seen driving in a single file, with the bus in the center of the road and cars following behind. As the sequence progresses, a silver car in the right lane begins to slow down, indicating a potential hazard or change in traffic conditions. The bus, which was initially ahead of the silver car, also slows down, aligning with the silver car's movement.\n\nThe silver car then makes a sudden stop, causing the vehicle behind it to brake sharply to avoid a collision. This sudden braking action results in a chain reaction, with the following vehicles also braking to avoid a pile-up. The final frame shows the aftermath of the collision, with the silver car and the bus stopped in the middle of the road, surrounded by other vehicles that have come to a halt.\n\nThe dynamics of the collision suggest that the driver of the silver car may have been reacting to an unexpected event or hazard, leading to the sudden braking and subsequent collision. The other vehicles in the vicinity appear to have responded appropriately, reducing the risk of a more severe accident."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 35.41753101348877
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:40:20.269785"
+    },
+    {
+      "video_id": "000048",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a sequence of events on a snowy, urban street. The weather appears to be overcast with snowfall, creating a visibility reduction and slippery road conditions. The road is lined with parked cars on both sides, and the environment includes leafless trees and buildings, suggesting a cold, possibly winter season.\n\nIn the first frame, a vehicle is seen approaching from the left, moving towards the center of the street. The second frame shows the vehicle continuing its path, with the camera angle slightly shifted to the right, indicating the vehicle's movement. The third frame captures the vehicle almost directly in front of the camera, with the camera angle remaining consistent, suggesting the vehicle is moving at a moderate speed.\n\nIn the fourth frame, the vehicle appears to be stationary or moving very slowly, as indicated by the slight blur and the position relative to the parked cars. The fifth frame shows the vehicle has come to a complete stop, with the camera angle remaining consistent, indicating a potential deceleration or stop.\n\nThe sixth frame captures the vehicle in a stationary position, with the camera angle remaining consistent, suggesting the vehicle has come to a complete stop. The seventh frame shows the vehicle remains stationary, with the camera angle remaining consistent, indicating the vehicle has not moved.\n\nThe eighth frame shows the vehicle in a stationary position, with the camera angle remaining consistent, indicating the vehicle has not moved. The ninth frame shows the vehicle remains stationary, with the camera angle remaining consistent, indicating the vehicle has not moved.\n\nThe tenth frame shows the vehicle in a stationary position, with the camera angle remaining consistent, indicating the vehicle has not moved. The final frame shows the vehicle in a stationary position, with the camera angle remaining consistent, indicating the vehicle has not moved.\n\nThe dynamics of the collision are not explicitly shown in the video, but the sequence of events suggests that the vehicle may have been involved in a minor collision or a sudden stop, given the consistent stationary position of the vehicle in the subsequent frames. The video does not provide enough information to determine the exact nature of the collision or the cause of the vehicle's deceleration."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 41.66934847831726
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:41:02.058666"
+    },
+    {
+      "video_id": "000059",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a winter scene with a snowy road and a multi-lane street. The weather appears to be cold and overcast, with snow covering the ground and some trees. The road is lined with tall apartment buildings and a few trees, creating a residential area. The traffic configuration consists of multiple lanes with vehicles moving in both directions. The vehicles are a mix of cars and trucks, and they are traveling at a moderate speed.\n\nIn the video, a car is seen coming towards the camera, and another car is moving away from the camera. The car coming towards the camera appears to be in the left lane, while the other car is in the right lane. As the cars approach each other, they seem to be maintaining a safe distance from each other. However, at the moment of impact, the car coming towards the camera appears to be slightly closer to the other car than it should be, indicating a potential misjudgment of distance or speed.\n\nThe collision occurs when the two vehicles come into contact, causing the car coming towards the camera to be pushed forward and off the road. The other car appears to be pushed back, and both vehicles come to a stop. The aftermath of the collision shows the vehicles are damaged, with the car coming towards the camera appearing to have sustained more damage than the other car. The road is covered in snow, and the surrounding environment is affected by the impact, with some debris scattered around the area.\n\nThe dynamics of the collision suggest that the driver of the car coming towards the camera may have been unable to react in time to avoid the collision, leading to the accident. The other car, although initially in a safe position, was also affected by the impact, indicating that both drivers were at fault in this incident. The video highlights the importance of maintaining a safe distance and being vigilant while driving in winter conditions."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 38.43307065963745
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:41:40.603046"
+    },
+    {
+      "video_id": "000066",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 3.42 GiB. GPU 0 has a total capacity of 19.50 GiB of which 82.31 MiB is free. Including non-PyTorch memory, this process has 19.40 GiB memory in use. Of the allocated memory 16.96 GiB is allocated by PyTorch, and 2.28 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 20.925735473632812
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:42:01.680202"
+    },
+    {
+      "video_id": "000071",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a snowy, overcast day with limited visibility on a two-lane road. The road appears to be a rural or less-traveled route, with snow-covered fields on either side. The traffic configuration consists of three vehicles: a car in the lead, followed by a truck, and another car trailing behind. The vehicles are moving in the same direction, with the car in the lead maintaining a moderate speed.\n\nAs the video progresses, the car in the lead begins to slow down, possibly due to reduced traction on the snowy road. The truck behind it also slows down, maintaining a safe distance. The trailing car, however, continues at a steady speed and fails to react to the slowing vehicles ahead. This results in a collision where the trailing car collides with the truck, causing the truck to veer off the road and into the snow. The car in the lead also appears to be affected by the collision, though the extent of its damage is not clear from the footage.\n\nThe dynamics of the collision involve the trailing car's failure to decelerate in time, leading to a direct impact with the truck. The truck's movement off the road suggests it was unable to avoid the collision entirely. The aftermath shows the vehicles involved in the accident, with the truck partially buried in the snow, indicating the severity of the impact."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 34.8651237487793
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:42:36.649860"
+    },
+    {
+      "video_id": "000074",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic incident at an intersection on a clear day with a blue sky and some clouds. The road appears to be a typical urban street with snow on the sides, indicating a cold, possibly winter, environment. The traffic configuration includes multiple vehicles, including cars and a bus, stopped at a traffic light. The vehicles are positioned in a line, with the bus in the center and cars on either side.\n\nA pedestrian, dressed in a light-colored coat, is seen crossing the street from the left to the right side of the intersection. The pedestrian appears to be in a hurry, as they are moving quickly across the road. As the pedestrian reaches the center of the intersection, a car, which was initially stationary, begins to move forward, causing a collision with the pedestrian.\n\nThe car's trajectory is straight, and it appears to be moving at a moderate speed. The pedestrian is hit by the front of the car, and the force of the impact propels the pedestrian into the air. The pedestrian's body is thrown onto the road, and the car continues to move forward, causing the pedestrian to be dragged along the road.\n\nThe collision results in the pedestrian being struck by the car, and the pedestrian's body is thrown into the air. The car then comes to a stop, and the pedestrian is left lying on the road. The incident is captured from the perspective of a vehicle's dashboard camera, providing a clear view of the events leading up to and following the collision."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 35.46247887611389
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:43:12.222666"
+    },
+    {
+      "video_id": "000078",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a sequence of events on a two-lane road with a snowy environment, indicating cold weather conditions. The road is relatively straight with occasional curves and is bordered by trees and snow patches. The traffic configuration includes several vehicles, including a truck, a van, and a few cars, all moving in the same direction. The vehicles are spaced out, with the truck in the left lane and the van in the right lane, maintaining a safe distance from each other.\n\nIn the first frame, the vehicles are moving at a moderate speed, with the truck and van ahead of the camera vehicle. The second frame shows the truck and van maintaining their positions, with the truck slightly ahead of the van. In the third frame, the truck and van continue to lead, with the truck slightly ahead of the van, and the camera vehicle appears to be maintaining a steady speed.\n\nAs the sequence progresses, the vehicles maintain their lanes and distances, with the truck and van ahead of the camera vehicle. In the fifth frame, the truck and van continue to lead, with the camera vehicle maintaining a safe distance. The sixth frame shows the truck and van maintaining their positions, with the camera vehicle still following at a safe distance.\n\nIn the seventh frame, the truck and van continue to lead, with the camera vehicle maintaining a steady speed and distance. The eighth frame shows the truck and van maintaining their positions, with the camera vehicle still following at a safe distance. In the ninth frame, the truck and van continue to lead, with the camera vehicle maintaining a steady speed and distance.\n\nIn the tenth frame, the truck and van continue to lead, with the camera vehicle maintaining a steady speed and distance. The vehicles appear to be following the rules of the road, with no indication of an impending collision or any abnormal behavior.\n\nOverall, the video shows a typical traffic scenario on a two-lane road with moderate traffic, under cold weather conditions. The vehicles are maintaining a safe distance from each other, and there is no indication of any collision or abnormal behavior."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 39.961904764175415
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:43:52.343518"
+    },
+    {
+      "video_id": "000083",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 3.42 GiB. GPU 0 has a total capacity of 19.50 GiB of which 82.31 MiB is free. Including non-PyTorch memory, this process has 19.40 GiB memory in use. Of the allocated memory 16.96 GiB is allocated by PyTorch, and 2.28 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 20.979195594787598
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:44:13.428154"
+    },
+    {
+      "video_id": "000087",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "Failed to load model"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 5.596359491348267
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:44:19.137063"
+    },
+    {
+      "video_id": "000109",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a sequence of events leading to a collision on a city street. The scene is set during daylight hours, with clear weather conditions and a well-lit environment. The road appears to be a multi-lane street with buildings lining both sides. The traffic configuration includes a mix of vehicles, including cars and a red van in the foreground.\n\nIn the initial frames, the red van is seen driving ahead of the camera's vehicle. The van is moving in the same direction as the camera's vehicle, maintaining a safe distance. As the video progresses, the van begins to slow down and eventually comes to a stop, indicating that it may be preparing to make a turn or is reacting to a traffic signal.\n\nThe camera's vehicle continues to follow the van, maintaining a safe distance. However, in the subsequent frames, the van suddenly changes lanes and enters the path of the camera's vehicle, causing a collision. The van appears to be making a turn or changing lanes, while the camera's vehicle is unable to avoid the collision due to the sudden change in the van's direction.\n\nThe collision results in a significant impact, with both vehicles coming to a stop. The van is seen to be damaged, with visible deformation and possible structural damage. The camera's vehicle also appears to be affected, with visible damage to the rear end and possibly the side.\n\nThe aftermath of the collision shows the vehicles involved, with the van in a more central position on the road and the camera's vehicle slightly behind and to the side. Pedestrians and other vehicles can be seen in the background, indicating that the incident occurred in a busy urban area.\n\nOverall, the video captures the dynamics of a collision involving a van and a camera-equipped vehicle, highlighting the importance of maintaining a safe distance and being aware of the surroundings, especially in busy urban environments."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 39.43755793571472
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:44:58.688467"
+    },
+    {
+      "video_id": "000115",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a sequence of events leading to a vehicle accident on a wet, urban road. The weather appears to be rainy, with visible water on the road surface, indicating recent precipitation. The road is a two-lane street with a sidewalk on the left side and parked cars on both sides. The traffic configuration includes a mix of vehicles, including cars and a truck, moving in both directions.\n\nIn the initial frames, a white car is seen driving on the left side of the road, while other vehicles are parked or moving in the opposite direction. As the video progresses, the white car continues to move forward, and another vehicle, possibly a truck, enters the scene from the right side, heading towards the white car.\n\nThe critical moment occurs when the white car approaches a parked car on the right side of the road. The white car appears to be traveling at a moderate speed and is unable to avoid the parked car, resulting in a collision. The white car veers off the road, and the parked car is pushed forward, causing it to come to a stop in the middle of the road.\n\nThe aftermath of the collision shows the white car with significant damage to its front and side, indicating a forceful impact. The parked car is also damaged, with its front end pushed into the road. The scene is chaotic, with debris scattered around and the vehicles in various positions, indicating the severity of the accident.\n\nThe video captures the immediate aftermath of the collision, with emergency services likely on their way to the scene. The footage highlights the importance of safe driving practices, especially in adverse weather conditions, to prevent such accidents."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 36.733742475509644
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:45:35.626396"
+    },
+    {
+      "video_id": "000130",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a two-lane road with a central divider. The weather appears to be overcast, with no visible precipitation, suggesting a dry road surface. The road is flanked by a grassy median and a sidewalk on the right side. There are several vehicles on the road, including cars and trucks, which are moving in both directions. The traffic is moderate, with vehicles maintaining a safe distance from each other.\n\nIn the sequence of events, a silver car is seen moving in the same direction as the camera's viewpoint. As the silver car approaches, it suddenly veers off the road and into the path of oncoming traffic, causing a collision with a truck. The truck's trajectory is altered, and it collides with the silver car, resulting in a head-on collision. The silver car is pushed further into the oncoming lane, causing it to be hit by another vehicle from the opposite direction. The truck and the silver car are both involved in the subsequent collision, with the truck being pushed further into the oncoming lane and the silver car being hit by the second vehicle.\n\nThe dynamics of the collision are such that the truck and the silver car are initially in a head-on collision, with the truck being pushed into the oncoming lane. The second vehicle then collides with the truck and the silver car, resulting in a series of impacts that involve all three vehicles. The final impact is a direct collision between the truck and the second vehicle, with the silver car being caught in the middle of the incident. The video captures the immediate aftermath of the collision, with vehicles stopped and the aftermath of the accident visible on the road."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 37.18812561035156
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:46:12.932200"
+    },
+    {
+      "video_id": "000136",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 3.42 GiB. GPU 0 has a total capacity of 19.50 GiB of which 82.31 MiB is free. Including non-PyTorch memory, this process has 19.40 GiB memory in use. Of the allocated memory 16.96 GiB is allocated by PyTorch, and 2.28 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 21.547330856323242
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:46:34.592408"
+    },
+    {
+      "video_id": "000137",
+      "frames_count": 1,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "Failed to load model"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 5.307192325592041
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:46:39.907887"
+    },
+    {
+      "video_id": "000142",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a sequence of events leading to a collision on a city street. The weather appears to be overcast, with no visible precipitation, suggesting typical urban conditions. The road is a multi-lane street with buildings on both sides, indicating an urban environment. The traffic configuration includes multiple lanes in each direction, with vehicles moving in a standard flow.\n\nIn the initial frames, various vehicles are seen driving on the road, including a white van and a black car. The traffic appears to be moderate, with vehicles maintaining a safe distance from each other. As the sequence progresses, a black car is seen moving in the same direction as the viewer's vehicle, which is stationary.\n\nThe black car then suddenly changes lanes, crossing the path of the viewer's vehicle. This maneuver is executed without signaling, indicating a lack of communication or awareness of the surrounding traffic. The viewer's vehicle, likely a sedan, attempts to avoid the collision by braking and steering to the left, but the black car continues its path, resulting in a head-on collision.\n\nThe collision occurs with significant force, as evidenced by the deformation of the vehicles and the visible impact on the road. The black car is pushed into the opposite lane, while the viewer's vehicle is forced to stop, causing damage to both vehicles. Pedestrians are visible on the sidewalk, indicating that the incident occurred in a busy area with potential pedestrian traffic.\n\nThe aftermath of the collision shows the vehicles involved, with visible damage to the front of the black car and the front of the viewer's vehicle. The scene is chaotic, with debris scattered on the road and the immediate area around the vehicles. The video captures the immediate aftermath of the collision, highlighting the consequences of unsafe driving practices and the importance of maintaining situational awareness on the road."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 39.007646799087524
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:47:19.024541"
+    },
+    {
+      "video_id": "000156",
+      "frames_count": 10,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a sequence of events leading to a collision on a city street. The scene is set on a sunny day with clear skies, and the road appears to be a typical urban street with various vehicles and pedestrians. The traffic configuration includes a truck with a covered cargo area, a car, and a bus. The truck is positioned in the left lane, while the car and bus are in the right lane.\n\nAs the video progresses, the truck begins to move forward, and the car and bus follow suit. The truck then makes a sudden stop, causing the car and bus to brake sharply to avoid a collision. The car and bus come to a complete stop, and the truck remains stationary. The driver of the truck appears to be at fault for the incident, as they did not maintain a safe distance from the vehicle in front of them.\n\nThe dynamics of the collision involve the truck's sudden stop, which caused the car and bus to brake sharply to avoid a collision. The car and bus come to a complete stop, and the truck remains stationary. The driver of the truck appears to be at fault for the incident, as they did not maintain a safe distance from the vehicle in front of them."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 33.213366985321045
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-27T15:47:52.391803"
+    }
+  ]
+}

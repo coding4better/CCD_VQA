@@ -1,0 +1,346 @@
+{
+  "task": "Dense_Captioning",
+  "timestamp": "2025-11-30T16:45:27.095196",
+  "total_videos": 21,
+  "models_used": [
+    "internvl_best"
+  ],
+  "videos": [
+    {
+      "video_id": "000003",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a daytime scene on a multi-lane road with a timestamp indicating it was recorded on April 25, 2012, at 18:21:45. The weather appears clear with a blue sky. The road is relatively empty, with several cars parked on the right side and a few vehicles traveling in the opposite direction. The left side shows an unfinished building with exposed concrete and a partially constructed structure. Orange traffic cones are placed along the right side of the road, possibly indicating construction or a lane closure.\n\nThe traffic is moderate, with vehicles spaced out. The timestamp suggests the camera is mounted inside a moving vehicle, as indicated by the dashboard and windshield wipers. The vehicles on the road are mostly sedans and SUVs, with no pedestrians visible. The trajectory of the vehicles shows a slight divergence from the centerline, with some cars moving parallel to the road's edge. The vehicle in the foreground appears to be traveling at a moderate speed, as indicated by the dashboard's timestamp. The vehicle's trajectory suggests it may have veered slightly off the centerline, potentially leading to a collision with the parked cars on the right. The final impact seems to involve the vehicle in the foreground colliding with the parked cars, resulting in a potential rear-end collision."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 380.98113656044006
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T16:51:48.226090"
+    },
+    {
+      "video_id": "000018",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a street scene on November 22,  2012, at  14:18:29. The environment is urban, with multi-story residential buildings lining the street. The weather appears overcast, and the road is paved with tram tracks, indicating a mixed-use area with both vehicular and tram traffic. Several cars are visible, with one gray SUV in the foreground, its brake lights illuminated, suggesting it has come to a stop or is slowing down. A tram is approaching from the left, its headlights on, and other vehicles are scattered across the road. The traffic seems moderately congested, with cars positioned at varying distances from the tram. The SUV's trajectory is toward the tram, and it appears to have stopped or slowed down, possibly due to the approaching tram. The road is relatively clear of pedestrians, and the overall traffic flow is orderly. The SUV's behavior indicates a potential collision with the tram, as it is positioned directly in the path of the approaching tram."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 360.9743342399597
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T16:57:49.340576"
+    },
+    {
+      "video_id": "000023",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a scene on a multi-lane highway under overcast, cloudy skies. The road appears to be a typical highway with visible lane markings and guardrails. A large truck with a green tarp cover occupies the rightmost lane, while a red sedan is positioned in the center lane, slightly ahead of the truck. The traffic flow seems moderate, with other vehicles, including a black car, visible in the adjacent lanes. The weather is gloomy, with no visible rain but a general lack of sunlight, suggesting a possible overcast or early morning setting.\n\nThe red sedan is traveling in the rightmost lane, while the truck is in the adjacent lane. The truck's license plate reads \"SCHMITZ,\" indicating it may be from a German-speaking region. The sedan's brake lights are on, suggesting it may have been braking or slowing down. The trajectory of the vehicles shows the sedan moving straight, while the truck is slightly drifting to the right, possibly due to the red sedan's braking or lane change. The truck's rear lights are illuminated, indicating it may be preparing to exit the lane or react to the red sedan's movement. The overall dynamics suggest a potential collision between the sedan and the truck, with the sedan likely attempting to merge or change lanes. The truck's movement and the sedan's brake lights imply a sudden or abrupt change in speed or direction, leading to the collision."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 397.46251940727234
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T17:04:26.934720"
+    },
+    {
+      "video_id": "000031",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a collision on a multi-lane urban road during daytime, likely in a cold climate given the snow on the ground. The scene shows a black SUV on the left side of the road, which appears to have veered into the opposing lane, causing a collision with a silver minivan on the right. The black SUV's trajectory suggests it was attempting to change lanes or merge, while the silver minivan was proceeding straight. The road is marked with directional arrows, indicating a two-way traffic system. Surrounding buildings and commercial signs, including a McDonald's, are visible, suggesting a commercial area. The weather is overcast, and the road is partially cleared of snow. The vehicles' colors and types are typical for a city environment, with the black SUV and silver minivan being common models. The black SUV's behavior indicates a sudden maneuver, possibly due to a lane change or avoidance of an obstacle, while the silver minivan maintained its course. The collision appears to have occurred at moderate speed, with the black SUV's trajectory crossing into the opposing lane, resulting in a lateral impact with the minivan."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 374.5337827205658
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T17:10:41.599246"
+    },
+    {
+      "video_id": "000033",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a daytime scene on a multi-lane highway with a clear sky and some haze. The road is divided by a central barrier, and vehicles are traveling in both directions. A billboard displaying \"50\" is visible on the left side of the road. The traffic appears moderate, with several cars and a bus visible. The vehicles are moving at a steady pace, with no apparent signs of sudden braking or collision. The weather seems clear, but the haze suggests light pollution or dust in the air. The vehicles are mostly sedans and SUVs, with no distinctive clothing or features that indicate pedestrians. The trajectory of the vehicles shows them maintaining their lanes, with no abrupt changes in direction or collision. The overall dynamics suggest a typical traffic flow with no immediate signs of a crash."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 344.45942974090576
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T17:16:26.187452"
+    },
+    {
+      "video_id": "000039",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The image depicts a city street scene on a cloudy day, with snow visible on the ground and sides of the road. The street is lined with multi-story residential buildings on the left and commercial buildings, including a McDonald's, on the right. Vehicles are parked along both sides of the road, and a few cars are in motion. A blue banner stretches across the street, likely indicating a public event or advertisement. The timestamp indicates the video was recorded on January 26, 2013, at 11:04:53.\n\nThe traffic appears moderate, with cars moving in both directions. The trajectory of the vehicles suggests they are traveling at a steady pace. A dark-colored SUV is prominently visible in the right lane, moving forward. The SUV's trajectory seems to cross paths with another vehicle, possibly a sedan, in the opposite lane. The SUV's movement appears to be slightly erratic, indicating a potential collision. The road is paved and appears to be in good condition, with no visible potholes or significant debris. The weather conditions, with snow on the ground, suggest it is winter, and the overcast sky indicates cold temperatures. There are no visible pedestrians, and the overall environment looks calm aside from the potential collision."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 389.0134916305542
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T17:22:55.337068"
+    },
+    {
+      "video_id": "000048",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a scene on a snow-covered street in an urban area, dated January 29,  10:31:20. The environment is wintry, with leafless trees lining the road and a light snowfall visible. The road is partially cleared of snow, with a muddy section in the center. Several cars are parked along the sides, and a few pedestrians are walking on the sidewalks. The timestamp indicates the vehicle is moving forward, likely traveling at a moderate speed. The trajectory of the vehicle appears to be straight, moving toward the center of the road. The vehicle's front end is visible, suggesting it may have collided with another object or vehicle. The driver's side is closest to the camera, and the vehicle's headlights and windshield wipers are in view. The driver's clothing is not clearly visible, but it appears to be winter attire. The overall dynamics suggest a potential collision, with the vehicle's forward motion and the presence of other vehicles and pedestrians indicating a possible traffic incident."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 366.53624963760376
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T17:29:02.011190"
+    },
+    {
+      "video_id": "000059",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a traffic scene on a snow-covered road during what appears to be early morning or late afternoon, judging by the soft lighting and long shadows. The sky is clear, and the environment is urban, with multi-story residential buildings lining the right side of the road. A banner with indistinct text is visible on the left, partially obstructing the view. The road is moderately busy with several cars, including a black SUV in the foreground, moving in the same direction. The SUV's trajectory suggests it was traveling at a moderate speed, possibly approaching the right side of the road where the traffic is denser. The vehicles ahead of the SUV appear to be stationary or moving slowly, indicating potential congestion. The road surface is covered with snow, and the surrounding trees are bare, suggesting winter conditions. The timestamp on the video indicates it was recorded at 17:20. The vehicles' colors and styles are typical of urban driving, with no visible pedestrians. The SUV's trajectory and the positioning of other vehicles suggest a potential collision, though the exact nature of the crash is not visible in the provided frame."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 369.99689745903015
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T17:35:12.130151"
+    },
+    {
+      "video_id": "000066",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a scene on a city street on March  4,  2013, at  15:37:54. The road is a multi-lane street with clear lane markings, and the weather appears to be clear with no visible precipitation. The environment includes multi-story buildings on both sides of the street, with one prominently displaying a \"Kil Motors\" sign. The road is relatively empty, with a few pedestrians visible on the sidewalks. The traffic appears to be light, with no other vehicles in immediate proximity to the camera's position.\n\nThe vehicle from which the footage is taken is traveling straight down the center of the road, with its trajectory parallel to the lane markings. The vehicle's speed is moderate, as indicated by the timestamp. The vehicle's trajectory is consistent, moving forward without abrupt changes. There is no visible collision or crash in the footage, as the vehicle maintains a steady path down the road. The surrounding pedestrians are stationary, suggesting they are waiting or observing the scene. The overall dynamics suggest a calm traffic situation with no immediate signs of an accident."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 371.4789273738861
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T17:41:23.741831"
+    },
+    {
+      "video_id": "000071",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a snowy road scene on February 3,  2013, at  17:18:40. The road is covered with snow, and the visibility is low due to foggy or snowy weather conditions. The road is a two-lane highway with a clear centerline, and the vehicles ahead are traveling in the same direction. The vehicles ahead are a red pickup truck and a black car, both traveling at a moderate speed. The red truck is slightly ahead of the black car. The vehicles appear to be in motion, with the red truck slightly ahead and the black car following closely behind. The trajectory of the vehicles suggests they are maintaining a safe distance from each other. The road is bordered by snow-covered fields, and there are utility poles visible on the right side. The weather conditions and low visibility likely contribute to the cautious driving behavior observed. The vehicles' speed and trajectory indicate they are following the recommended safe distance, but the low visibility and snowy conditions may have increased the risk of a collision."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 371.38601207733154
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T17:47:35.248012"
+    },
+    {
+      "video_id": "000074",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The image depicts a traffic scene at an intersection during winter, evidenced by snow piled on the sides of the road and a clear sky with some clouds. The intersection is busy with several vehicles, including a black car in the center and a gray car to the right, both waiting at a green traffic light. The black car is positioned slightly ahead of the gray car. The traffic light is visible on the right, showing a green signal. The environment includes buildings in the background, some construction cranes, and leafless trees, indicating a cold season. The road surface appears wet, likely due to melting snow. The vehicles are stationary, suggesting a moment of traffic congestion. The black car's trajectory is forward, while the gray car appears to be moving slightly to the right. The gray car's front end is in contact with the black car, indicating a collision. The black car's front bumper is visibly damaged, and the gray car's front end is angled, suggesting a rear-end collision. The vehicles' colors and types are typical of urban traffic, with no distinctive clothing or features visible. The overall dynamics show a sudden collision between the two vehicles, likely due to a lack of proper yielding or a sudden stop."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 375.0621931552887
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T17:53:50.434938"
+    },
+    {
+      "video_id": "000078",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The image depicts a road scene on a cloudy day, with a timestamp indicating the date as March 20,  2016, and the time as 08:42:21. The road is a multi-lane street with snowbanks on both sides, suggesting winter conditions. The traffic consists of a red truck, a black car, and a white van, all traveling in the same direction. The vehicles are spaced relatively close to each other, with the red truck leading and the black car and white van following. The weather appears overcast, with no visible precipitation, and the road is clear of obstructions. The vehicles seem to be moving at a moderate speed, as indicated by the timestamp. The trajectory of the vehicles suggests they are traveling in a straight path, with the red truck slightly ahead of the black car and the white van. There is no visible collision or crash in the image, as the vehicles are aligned and moving in the same direction. The environment is typical of a suburban or urban area with leafless trees lining the road."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 370.51584672927856
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T18:00:01.074356"
+    },
+    {
+      "video_id": "000083",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a crash at an urban intersection during twilight, indicated by the timestamp of 3/11/2013 at  20:10:09. The scene shows a multi-lane street lined with parked cars on the right and a mix of commercial and residential buildings on the left. The sky is dim, suggesting early evening or late afternoon, with some residual daylight illuminating the area. The road appears to be paved and relatively clear of snow, indicating cold weather conditions.\n\nSeveral vehicles are present, with a white SUV in the foreground, partially obstructing the view. The SUV is in the process of turning left, as evidenced by its position and the driver's body orientation. The driver of the SUV is wearing dark clothing, making it difficult to discern specific details. The vehicle's trajectory is toward the intersection, where it appears to collide with another vehicle or pedestrian. The trajectory of the SUV suggests a sudden maneuver, possibly due to a change in traffic signal or pedestrian crossing.\n\nThe traffic light is red, and the SUV is in the right turn lane, indicating it was attempting to make a left turn. The driver's body is angled toward the intersection, and the vehicle's front end is close to the ground, suggesting a collision. The SUV's trajectory changes abruptly, indicating a collision with another vehicle or pedestrian. The impact seems to occur near the center of the intersection, with the SUV's front end likely colliding with the pedestrian or another vehicle.\n\nThe pedestrian, whose appearance is not clearly visible, is positioned near the SUV, possibly attempting to cross the street. The pedestrian's body is angled toward the SUV, suggesting a collision. The SUV's trajectory changes abruptly, indicating a collision with the pedestrian or another vehicle. The final impact appears to be a rear-end collision, as the SUV's front end is close to the ground, and the pedestrian is near the SUV's rear.\n\nOverall, the crash involves a vehicle attempting to make a left turn at an intersection, colliding with a pedestrian or another vehicle, resulting in a rear-end collision. The weather conditions and urban environment contribute to the complexity of the incident."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 467.0331561565399
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T18:07:48.230225"
+    },
+    {
+      "video_id": "000087",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a winter scene on an urban street intersection, where a vehicle is involved in a collision. The weather is overcast, with snow visible on the ground and rooftops, indicating cold conditions. The road is partially cleared of snow, with visible tire tracks and patches of ice. Traffic lights are green, allowing vehicles to proceed. \n\nOn the left side, a long red-brick building with numerous windows lines the the street, while on the right, a yellow multi-story building is visible. Several cars are present, with one vehicle in the foreground, likely the one involved in the collision, traveling straight and then veering to the right. Pedestrians are seen walking on the sidewalk, dressed in winter clothing. The vehicle in question appears to have been traveling at a moderate speed, as indicated by the visible tire marks and the trajectory of the vehicle. \n\nThe vehicle in the collision seems to have lost control, as it abruptly changes direction, colliding with another vehicle or object on the right side of the road. The impact appears to be sudden, with the vehicle's trajectory changing sharply. The surrounding traffic is moving in the same direction, with no immediate signs of a collision on the opposite side of the intersection. The overall dynamics suggest a sudden maneuver by the vehicle, leading to the collision."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 395.0527865886688
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T18:14:23.412720"
+    },
+    {
+      "video_id": "000109",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The image depicts a daytime urban street scene with moderate traffic. A bright red van, marked with the text \"Ullax\" and a phone number, is traveling in the right lane. The vehicle's license plate is visible, and it appears to be in motion. Surrounding the van are various other vehicles, including a black SUV and a white van, all moving in the same direction. The road is a multi-lane street with visible lane markings, and the environment includes multi-story buildings lining both sides of the road. The weather seems clear, with no visible precipitation. The traffic appears to be moving at a moderate speed, with no apparent signs of a collision. The van's trajectory is straight, and it maintains a consistent speed, suggesting it is not involved in the crash. The vehicles' colors and types are typical for an urban setting, with the red van being the most prominent."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 356.0087893009186
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T18:20:19.550488"
+    },
+    {
+      "video_id": "000115",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a scene of a wet, urban street during what appears to be overcast weather, evidenced by the reflective wet road surface and bare trees lining the street. The environment is a typical city street with parked cars on the right side and a few vehicles in motion. A white SUV is prominently featured in the center of the frame, traveling straight down the road. The SUV's trajectory is slightly off-center, suggesting it may have been swerving or reacting to something. The vehicle's headlights are on, indicating low visibility conditions. \n\nIn the background, there are several other cars, including a sedan and a motorcycle, moving in the same direction. The road is relatively narrow, with a sidewalk on the left side, partially covered in snow. A large billboard is visible on the left, displaying advertisements. The buildings on the right side of the street have commercial signage, and the architecture suggests a mix of modern and older structures. \n\nThe SUV's speed appears moderate, and it seems to be maintaining a steady path until it collides with another vehicle or object ahead. The impact is not immediately visible in the frame, but the SUV's trajectory changes abruptly, indicating a collision. The surrounding vehicles seem to be moving at a normal speed, with no visible signs of emergency response or collision aftermath. The overall dynamics suggest a sudden, possibly unavoidable, collision involving the SUV."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 393.69676423072815
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T18:26:53.380954"
+    },
+    {
+      "video_id": "000130",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a scene on a multi-lane road during daytime, with overcast weather conditions. The road is relatively empty, with a few vehicles traveling in the same direction. On the right side, there is a grassy area bordered by a temporary fence, and a commercial building with a \"PULL\" sign is visible in the background. A red truck is seen in the left lane, followed by a white van and a sedan ahead. The road surface appears wet, suggesting recent rain. The vehicles are moving at moderate speeds, with the red truck leading the group. The trajectory of the vehicles shows them maintaining a consistent lane position, with the red truck slightly ahead of the white van and sedan. The sedan appears to be slightly swerving or drifting, possibly due to a sudden maneuver or reaction to the red truck. The sedan's trajectory suggests a potential collision with the red truck, as it is positioned closer to the truck's path. The final impact seems to involve the sedan colliding with the red truck, resulting in a potential rear-end collision."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 357.8094873428345
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T18:32:51.321750"
+    },
+    {
+      "video_id": "000136",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a winter scene on a multi-lane road with snow on the sides and a light snowfall. The road is relatively clear, with a few vehicles traveling in both directions. The timestamp indicates the footage was taken on February 2,  2013, at 15:06:18. \n\nThe weather is overcast, and the environment appears cold, with snow-covered trees lining the street. The traffic is moderate, with a mix of cars and a bus traveling in the opposite direction. The vehicles are moving at a steady pace, with no apparent signs of urgency. \n\nA car is seen in the center lane, traveling straight ahead, while a pedestrian is visible on the right side of the road, walking away from the camera. The trajectory of the vehicles suggests they are maintaining a safe distance from each other. The car in the center lane appears to be slightly ahead of the bus, which is further ahead in the opposite direction. \n\nThe vehicle's speed seems moderate, and there is no indication of sudden braking or collision. The pedestrian is dressed in winter clothing, appropriate for the snowy conditions. The road markings are visible, and there are no visible obstacles or debris that could have contributed to the crash. The overall dynamics suggest a typical urban traffic scenario during winter, with no immediate signs of a collision."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 392.1867220401764
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T18:39:23.638405"
+    },
+    {
+      "video_id": "000137",
+      "frames_count": 1,
+      "responses": {
+        "internvl_best": "The crash video depicts a collision involving two vehicles on a roadway. The weather appears to be clear, with no visible precipitation. The road seems to be a multi-lane highway or a well-maintained urban road, with no visible lane markings or barriers. The traffic configuration shows a typical two-way road with no visible pedestrian activity. The vehicles involved are a sedan and a truck, both appearing to be in motion. The sedan, likely a passenger car, is traveling in the right lane, while the truck is in the left lane. The sedan's trajectory is slightly angled, suggesting it may have been attempting to overtake or change lanes. The truck's trajectory is more direct, indicating it was proceeding straight. The sedan's speed seems moderate, while the truck's speed is not clearly visible. The sedan's front end collides with the truck's rear, indicating a head-on collision. The final impact is abrupt, with the sedan's front end crumpling and the sedan's front wheels skidding. The truck's rear end remains relatively intact, suggesting the collision was a high-impact event. There is no visible damage to the sedan's front, while the truck's rear is visibly damaged."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 385.12306666374207
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T18:45:48.781443"
+    },
+    {
+      "video_id": "000142",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a city street scene with multiple vehicles in motion. The weather appears overcast, with a muted sky and no visible precipitation. The road is a multi-lane street with visible lane markings, and the environment includes tall residential buildings on both sides. Traffic is moderate, with cars and a truck visible. The timestamp indicates the date as April 5, 2013, and the time as 14:01 PM. \n\nThe vehicles are traveling in both directions, with the truck on the left side of the road and several cars on the right. The truck is positioned slightly ahead of the other vehicles, and its trajectory seems to be moving straight. The cars are spaced out, with some turning at the intersection ahead. The road surface appears dry, and there are no visible pedestrians. \n\nThe vehicle in the foreground, likely the one capturing the footage, is moving forward, and its trajectory suggests it is approaching the intersection. The truck and other vehicles are maintaining their lanes, and there is no immediate indication of a collision. The traffic seems orderly, with no abrupt movements or collisions observed in the captured moment."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 379.7837610244751
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T18:52:08.689994"
+    },
+    {
+      "video_id": "000156",
+      "frames_count": 20,
+      "responses": {
+        "internvl_best": "The video captures a daytime scene on a multi-lane road with clear skies and scattered clouds. A military-style vehicle with a covered cargo area is traveling in the left lane, while a white truck is in the adjacent lane ahead. To the the right, a green dump truck is parked on the side of the road. A traffic light is visible, showing a red signal. A large billboard with Cyrillic text advertises a metal processing plant, and a pedestrian crossing sign is mounted on a pole. The road appears to be a typical urban street with buildings and construction cranes in the background. The vehicles are moving at moderate speeds, with the military vehicle slightly ahead of the white truck. The dump truck is stationary, possibly due to a traffic signal or construction. The trajectory of the vehicles suggests the military vehicle is turning or changing lanes, while the white truck continues straight. The dump truck's position and the red light indicate it may be stopped or waiting to proceed. The overall traffic flow seems orderly, with no immediate signs of a collision."
+      },
+      "errors": {
+        "internvl_best": null
+      },
+      "latencies_seconds": {
+        "internvl_best": 366.62908959388733
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-11-30T18:58:15.449570"
+    }
+  ]
+}

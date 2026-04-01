@@ -1,0 +1,346 @@
+{
+  "task": "Dense_Captioning",
+  "timestamp": "2025-12-04T21:39:40.261513",
+  "total_videos": 21,
+  "models_used": [
+    "qwen2_vl_7b"
+  ],
+  "videos": [
+    {
+      "video_id": "000003",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a city street during daylight hours. The weather appears clear with no signs of precipitation. The road is a typical urban street with multiple lanes and a sidewalk on one side. The traffic configuration includes several vehicles, including cars and a truck, moving in both directions. The vehicles are of various colors and types, with some appearing to be in motion while others are stationary.\n\nIn the sequence, a car is seen moving towards the camera, followed by another car that appears to be in the process of making a turn or changing lanes. The turning car's trajectory intersects with the path of the oncoming car, resulting in a collision. The turning car's movement is abrupt and aggressive, causing the oncoming car to swerve to avoid the collision. The oncoming car's driver appears to be attempting to avoid the impact by steering sharply to the left, which leads to the car skidding and losing control.\n\nThe final impact occurs when the turning car collides with the oncoming car, causing both vehicles to come to a sudden stop. The turning car's front end is damaged, and the oncoming car's rear end is also visibly damaged. Pedestrians are present on the sidewalk, observing the incident, and there is no indication of any other vehicles or obstacles in the immediate vicinity.\n\nThe dynamics of the collision suggest that the turning car's driver was not paying attention to the traffic conditions or the oncoming vehicle, leading to the accident. The oncoming car's driver's attempt to avoid the collision resulted in a loss of control, further complicating the situation. The aftermath of the collision shows the vehicles involved and the pedestrians observing the incident, highlighting the potential consequences of such an event on the urban environment."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 61.81087136268616
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:40:42.226282"
+    },
+    {
+      "video_id": "000018",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a city street with multiple vehicles, including cars and a tram. The weather appears overcast, suggesting cloudy or possibly rainy conditions. The road is a multi-lane street with tram tracks visible, indicating it is a mixed-use road for both vehicles and trams. The traffic configuration includes a tram in the left lane, followed by several cars in the right lane. The tram is moving in the same direction as the cars, and the vehicles are maintaining a safe distance from each other.\n\nIn the sequence of frames, the tram is seen approaching a traffic light, which is currently red. As the tram approaches the intersection, the traffic light changes to green, allowing the tram to proceed. However, the tram does not immediately move forward, suggesting it might be waiting for the tram signal or for the tram to clear the intersection. Meanwhile, the cars in the right lane continue to move forward, maintaining their speed and trajectory.\n\nAs the tram eventually moves forward, it appears to be in the process of merging into the right lane, where the cars are traveling. This merging maneuver is a common practice in mixed-traffic environments to allow trams to share the road with other vehicles. The cars in the right lane adjust their speed and position to accommodate the merging tram, ensuring a smooth transition and preventing any potential collisions.\n\nThe dynamics of the collision, if any, are not evident in the provided frames. However, the overall scenario highlights the importance of traffic signals and the need for vehicles to follow traffic rules to maintain safety on mixed-use roads. The tram's behavior, including its decision to merge into the right lane, demonstrates the importance of coordination between different modes of transportation in urban environments."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 52.962287187576294
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:41:35.333288"
+    },
+    {
+      "video_id": "000023",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 6.82 GiB. GPU 0 has a total capacity of 19.50 GiB of which 4.75 GiB is free. Including non-PyTorch memory, this process has 14.73 GiB memory in use. Of the allocated memory 14.29 GiB is allocated by PyTorch, and 291.14 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 36.990376234054565
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:42:12.460760"
+    },
+    {
+      "video_id": "000031",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 468.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 264.31 MiB is free. Including non-PyTorch memory, this process has 19.23 GiB memory in use. Of the allocated memory 18.83 GiB is allocated by PyTorch, and 244.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 22.10425615310669
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:42:34.698312"
+    },
+    {
+      "video_id": "000033",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "Failed to load model"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 10.866166114807129
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:42:45.697220"
+    },
+    {
+      "video_id": "000039",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a city street during daylight hours. The weather appears to be overcast, with no visible precipitation, suggesting a cold but dry environment. The road is a multi-lane street with vehicles parked along both sides. The traffic configuration includes a mix of cars and trucks, with some vehicles moving in the same direction and others stopped or moving slowly.\n\nIn the sequence, a silver SUV is seen coming to a stop, likely due to a traffic signal or a pedestrian crossing. The vehicle's brake lights are on, indicating a deceleration or a complete stop. The surrounding vehicles are also stationary or moving at a reduced speed, suggesting that the traffic is either at a standstill or moving slowly.\n\nAs the video progresses, the silver SUV appears to be in the process of making a turn or changing lanes, as indicated by its position relative to the other vehicles and the road markings. The vehicle's trajectory suggests a slight turn to the left, aligning with the direction of the street.\n\nThe dynamics of the collision involve the silver SUV colliding with another vehicle, which is not visible in the frame but can be inferred from the subsequent events. The silver SUV's front end is seen to be damaged, with the hood and front bumper visibly crumpled. The vehicle's movement is halted, and it comes to a stop, indicating the force of the impact.\n\nThe aftermath of the collision shows the silver SUV stationary on the road, with its front end facing the direction of the street. The surrounding vehicles are also stationary, with some showing signs of minor damage, possibly from the initial impact or the subsequent traffic disruption.\n\nIn summary, the video captures a traffic collision on a city street during daylight hours, with overcast weather conditions. The traffic configuration includes a mix of vehicles, and the collision involves a silver SUV making a turn or changing lanes, resulting in damage to the vehicle and a temporary halt to traffic."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 50.095858573913574
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:43:35.928307"
+    },
+    {
+      "video_id": "000048",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a winter scene with snow-covered trees lining a street. The road appears to be a two-lane street with parked cars on both sides. The weather conditions are overcast, with light snowfall, creating a misty atmosphere. The vehicles are stationary, suggesting a traffic stop or a traffic jam. The time of day is not clear, but the lighting suggests it could be early morning or late afternoon.\n\nIn the video, a car is seen moving forward, approaching the stopped traffic. The car appears to be a sedan, and it is traveling at a moderate speed. As it approaches the stopped vehicles, it suddenly changes direction and veers off the road, causing it to collide with the parked cars on the right side of the street. The car then comes to a stop, and the scene remains static for a few seconds.\n\nThe dynamics of the collision are as follows: the sedan veers off the road, causing it to hit the parked cars on the right side. The force of the impact is transmitted through the sedan, causing it to come to a stop. The parked cars on the right side are pushed back slightly, indicating the force of the collision. The sedan's trajectory suggests that it was not able to stop in time, leading to the collision.\n\nThe video provides a clear view of the aftermath of the collision, with the sedan and the parked cars showing signs of damage. The scene is a typical example of a traffic collision caused by a driver failing to stop in time, leading to a collision with parked vehicles."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 46.60125494003296
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:44:22.665455"
+    },
+    {
+      "video_id": "000059",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 6.82 GiB. GPU 0 has a total capacity of 19.50 GiB of which 4.77 GiB is free. Including non-PyTorch memory, this process has 14.71 GiB memory in use. Of the allocated memory 14.29 GiB is allocated by PyTorch, and 271.14 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 31.84551501274109
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:44:54.643429"
+    },
+    {
+      "video_id": "000066",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 468.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 264.31 MiB is free. Including non-PyTorch memory, this process has 19.23 GiB memory in use. Of the allocated memory 18.83 GiB is allocated by PyTorch, and 244.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 17.928584575653076
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:45:12.710343"
+    },
+    {
+      "video_id": "000071",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a snowy, overcast day with limited visibility on a two-lane road. The road appears to be a rural or less-traveled route, with minimal markings and a smooth surface. The weather conditions are characterized by heavy snowfall, which reduces visibility and makes driving conditions hazardous. The traffic configuration consists of three vehicles: a lead vehicle, a following vehicle, and a vehicle in the opposite lane. The lead vehicle is a dark-colored car, while the following vehicle is a lighter-colored SUV. The vehicle in the opposite lane is a dark-colored truck.\n\nThe lead vehicle is traveling at a moderate speed, maintaining a safe distance from the following vehicle. The following vehicle is also traveling at a moderate speed, closely following the lead vehicle. The vehicle in the opposite lane is traveling at a slower speed, possibly due to the snowy conditions.\n\nAs the video progresses, the following vehicle begins to slow down, possibly due to the reduced visibility and slippery road conditions. The lead vehicle continues to maintain a safe distance from the following vehicle. The vehicle in the opposite lane maintains a safe distance from the following vehicle.\n\nSuddenly, the following vehicle begins to skid and lose control, causing it to veer off the road and into the opposite lane. The lead vehicle and the vehicle in the opposite lane attempt to avoid the collision, but the following vehicle collides with the lead vehicle and the vehicle in the opposite lane. The impact is severe, with the vehicles colliding head-on and causing significant damage to all three vehicles.\n\nThe aftermath of the collision is chaotic, with the vehicles coming to a stop and the occupants of the vehicles attempting to assess the situation. The road is blocked, and emergency services are called to the scene. The video provides a clear and detailed account of the collision, highlighting the importance of safe driving practices in hazardous weather conditions."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 49.70149230957031
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:46:02.533652"
+    },
+    {
+      "video_id": "000074",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a snowy day with clear skies. The road appears to be a busy intersection with multiple lanes and traffic signals. The environment includes a mix of residential and commercial buildings, with some construction sites visible in the background. The weather conditions are cold, with snow covering the ground and some areas of the road.\n\nThe traffic configuration shows several vehicles, including cars and a bus, stopped at a red traffic light. A pedestrian is seen crossing the street, likely trying to reach the opposite side of the intersection. The vehicles are stationary, and the traffic light is the primary factor causing the stop.\n\nAs the video progresses, the traffic light changes to green, and the vehicles begin to move. The bus in the center of the intersection is the first to start moving, followed by the other vehicles. The pedestrian continues to cross the street, and the vehicles maintain a steady speed as they navigate the intersection.\n\nHowever, a collision occurs when a vehicle, likely a car, fails to stop at the intersection and collides with the bus. The bus is pushed forward, and the car involved in the collision is seen moving backward. The pedestrian appears to be caught in the middle of the collision, with the bus and the car colliding directly in front of them.\n\nThe dynamics of the collision involve the bus being pushed forward by the car, causing the pedestrian to be in the path of the collision. The pedestrian's movements and the collision result in a significant impact, with the pedestrian likely being injured in the process. The video captures the immediate aftermath of the collision, with the vehicles and pedestrian in a precarious position.\n\nOverall, the video highlights the importance of adhering to traffic signals and maintaining a safe distance from other vehicles, especially in snowy and icy conditions. The collision serves as a reminder of the potential consequences of reckless driving and the need for drivers to be vigilant and cautious on the road."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 52.30551362037659
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:46:54.973849"
+    },
+    {
+      "video_id": "000078",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 6.82 GiB. GPU 0 has a total capacity of 19.50 GiB of which 4.77 GiB is free. Including non-PyTorch memory, this process has 14.71 GiB memory in use. Of the allocated memory 14.29 GiB is allocated by PyTorch, and 271.14 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 32.66850519180298
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:47:27.777255"
+    },
+    {
+      "video_id": "000083",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 468.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 224.31 MiB is free. Including non-PyTorch memory, this process has 19.27 GiB memory in use. Of the allocated memory 18.83 GiB is allocated by PyTorch, and 284.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 20.500452756881714
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:47:48.403190"
+    },
+    {
+      "video_id": "000087",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "Failed to load model"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 10.153160810470581
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:47:58.686496"
+    },
+    {
+      "video_id": "000109",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a city street with multiple vehicles, including a red van and several cars. The weather appears to be clear with good visibility, and the road is a typical urban street with multiple lanes and buildings lining both sides. The traffic configuration shows a mix of vehicles moving in different directions, with the red van in the center of the scene.\n\nIn the initial frames, the red van is seen driving ahead of the camera's vehicle. As the video progresses, the van continues to move forward, maintaining a consistent speed. Suddenly, the van begins to slow down and eventually comes to a stop, indicating that it may have encountered an obstacle or a traffic signal. The camera vehicle then follows the van's movement, adjusting its speed to match the van's deceleration.\n\nThe dynamics of the collision are not explicitly shown in the video, but it can be inferred that the van's sudden stop caused the camera vehicle to also slow down and eventually come to a stop. The final impact is not visible in the video, but the sequence of events suggests that the vehicles were involved in a minor collision or a close call, where both vehicles were able to avoid a more severe accident by braking in time.\n\nOverall, the video captures a typical urban traffic scenario with vehicles responding to changing traffic conditions, highlighting the importance of maintaining a safe following distance and being prepared to react to sudden changes in traffic flow."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 45.9050350189209
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:48:44.721371"
+    },
+    {
+      "video_id": "000115",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic incident on a wet, possibly rainy day, with a white car moving towards the camera. The road appears to be a two-lane street with a visible curb on the left side. The weather conditions seem to be overcast, contributing to the wet road surface. The traffic configuration includes a white car in the foreground, which is moving towards the camera, and other vehicles in the background, including a silver car that is partially visible. The environment consists of a commercial area with buildings and trees lining the street.\n\nAs the white car approaches, it appears to be traveling at a moderate speed. The driver of the white car then makes a sudden stop, causing the vehicle to skid and come to a halt in the middle of the road. The silver car in the background also appears to be slowing down or stopping, possibly due to the sudden halt of the white car. The dynamics of the collision involve the white car's sudden stop, which results in a skid and a partial blockage of the road. The silver car in the background seems to be reacting to the situation, likely trying to avoid a collision. The incident appears to be a minor traffic stop, with no significant damage to the vehicles involved."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 43.75650238990784
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:49:28.623113"
+    },
+    {
+      "video_id": "000130",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 6.82 GiB. GPU 0 has a total capacity of 19.50 GiB of which 4.75 GiB is free. Including non-PyTorch memory, this process has 14.73 GiB memory in use. Of the allocated memory 14.29 GiB is allocated by PyTorch, and 291.14 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 32.17737555503845
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:50:00.933277"
+    },
+    {
+      "video_id": "000136",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 468.00 MiB. GPU 0 has a total capacity of 19.50 GiB of which 264.31 MiB is free. Including non-PyTorch memory, this process has 19.23 GiB memory in use. Of the allocated memory 18.83 GiB is allocated by PyTorch, and 244.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 17.379343032836914
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:50:18.444598"
+    },
+    {
+      "video_id": "000137",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a city street with a clear sky and some clouds, indicating fair weather conditions. The road appears to be a multi-lane urban street with visible lane markings. The traffic configuration includes multiple vehicles, with one car in the left lane and another car in the right lane, both moving in the same direction. A pedestrian is seen crossing the street from the right side towards the left, wearing a red jacket and dark pants.\n\nAs the video progresses, the pedestrian continues to cross the street, while the vehicles maintain their lanes. The vehicles appear to be moving at a moderate speed, as indicated by the distance between them and the pedestrian. The traffic light is visible, showing a red signal for the pedestrian, indicating that they should stop.\n\nThe dynamics of the collision occur when the pedestrian, who has already crossed the street, is hit by a vehicle from behind. The vehicle appears to be a dark-colored car, which is moving in the same direction as the pedestrian. The pedestrian is struck by the rear of the vehicle, causing them to fall onto the road. The vehicle continues to move forward, and the pedestrian remains on the ground, indicating the severity of the impact.\n\nThe aftermath of the collision shows the pedestrian lying on the road, with emergency services likely on their way to the scene. The vehicles involved in the collision are stationary, with the dark-colored car positioned behind the pedestrian. The surrounding environment includes buildings, streetlights, and some snow on the ground, suggesting a cold season."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 46.65006470680237
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:51:05.221014"
+    },
+    {
+      "video_id": "000142",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": "system\nYou are a helpful assistant.\nuser\nProvide a detailed description of this crash video.\nUse clear and complete sentences in one paragraph with appropriate traffic and crash-related terminology.\nInclude descriptions of weather conditions, road type and environment, the traffic configuration and vehicle or pedestrian appearance (such as clothing, color, type).\nMention vehicle speed, trajectory, movements, and behavior.\nFocus on the dynamics of the collision, including vehicle movement, and final impact.\nassistant\nThe video depicts a traffic scenario on a city street with multiple vehicles and pedestrians. The weather appears to be overcast, with no visible precipitation, suggesting a cloudy day. The road is a multi-lane street with clear lane markings and is bordered by tall residential buildings on both sides. The traffic configuration includes a mix of cars, trucks, and pedestrians.\n\nIn the initial frames, vehicles are seen driving in both directions, with some cars changing lanes. A truck is visible on the left side of the road, and a car is seen on the right side. Pedestrians are present on the sidewalks, some of whom are crossing the street.\n\nAs the video progresses, a car in the left lane appears to slow down or stop, possibly due to a pedestrian crossing the street or a traffic signal. The car in the right lane also slows down, indicating that the traffic is likely responding to a change in the traffic flow or a potential hazard.\n\nIn the final frames, the car in the left lane comes to a complete stop, and the car in the right lane also stops, suggesting that a collision has occurred. The vehicles are closely positioned, indicating that the collision was likely a rear-end accident. The pedestrians on the sidewalks appear to be unaffected by the incident, and there is no visible damage to the vehicles, except for minor scuffs and dents.\n\nThe dynamics of the collision suggest that the vehicles were moving at a moderate speed, and the impact was relatively low-energy, as there is no significant damage to the vehicles or pedestrians. The traffic flow appears to be disrupted, with vehicles and pedestrians waiting for the situation to be resolved."
+      },
+      "errors": {
+        "qwen2_vl_7b": null
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 47.152416467666626
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:51:52.514343"
+    },
+    {
+      "video_id": "000156",
+      "frames_count": 20,
+      "responses": {
+        "qwen2_vl_7b": ""
+      },
+      "errors": {
+        "qwen2_vl_7b": "CUDA out of memory. Tried to allocate 6.82 GiB. GPU 0 has a total capacity of 19.50 GiB of which 4.75 GiB is free. Including non-PyTorch memory, this process has 14.73 GiB memory in use. Of the allocated memory 14.29 GiB is allocated by PyTorch, and 291.14 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "latencies_seconds": {
+        "qwen2_vl_7b": 32.35374069213867
+      },
+      "model_similarities": {},
+      "similarity_ranking": [],
+      "timestamp": "2025-12-04T21:52:25.000752"
+    }
+  ]
+}

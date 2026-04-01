@@ -1,0 +1,225 @@
+{
+  "model_name": "llava-7b",
+  "overall_accuracy": 0.3448275862068966,
+  "total_correct": 20,
+  "total_questions": 58,
+  "num_videos": 10,
+  "results": [
+    {
+      "video_number": "000003",
+      "choices": [
+        2,
+        1,
+        4,
+        3,
+        1,
+        2
+      ],
+      "correct": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "accuracy": 0.3333333333333333,
+      "num_questions": 6,
+      "correct_count": 2
+    },
+    {
+      "video_number": "000018",
+      "choices": [
+        2,
+        1,
+        4,
+        3,
+        1,
+        2
+      ],
+      "correct": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "accuracy": 0.3333333333333333,
+      "num_questions": 6,
+      "correct_count": 2
+    },
+    {
+      "video_number": "000023",
+      "choices": [
+        2,
+        1,
+        4,
+        3,
+        1
+      ],
+      "correct": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "accuracy": 0.4,
+      "num_questions": 5,
+      "correct_count": 2
+    },
+    {
+      "video_number": "000031",
+      "choices": [
+        2,
+        1,
+        4,
+        3,
+        1,
+        2
+      ],
+      "correct": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "accuracy": 0.3333333333333333,
+      "num_questions": 6,
+      "correct_count": 2
+    },
+    {
+      "video_number": "000033",
+      "choices": [
+        2,
+        1,
+        4,
+        3,
+        1,
+        2
+      ],
+      "correct": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "accuracy": 0.3333333333333333,
+      "num_questions": 6,
+      "correct_count": 2
+    },
+    {
+      "video_number": "000039",
+      "choices": [
+        2,
+        1,
+        4,
+        3,
+        1
+      ],
+      "correct": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "accuracy": 0.4,
+      "num_questions": 5,
+      "correct_count": 2
+    },
+    {
+      "video_number": "000048",
+      "choices": [
+        2,
+        1,
+        4,
+        3,
+        1,
+        2
+      ],
+      "correct": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "accuracy": 0.3333333333333333,
+      "num_questions": 6,
+      "correct_count": 2
+    },
+    {
+      "video_number": "000059",
+      "choices": [
+        2,
+        1,
+        4,
+        3,
+        1,
+        2
+      ],
+      "correct": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "accuracy": 0.3333333333333333,
+      "num_questions": 6,
+      "correct_count": 2
+    },
+    {
+      "video_number": "000066",
+      "choices": [
+        2,
+        1,
+        4,
+        3,
+        1,
+        2
+      ],
+      "correct": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "accuracy": 0.3333333333333333,
+      "num_questions": 6,
+      "correct_count": 2
+    },
+    {
+      "video_number": "000074",
+      "choices": [
+        2,
+        1,
+        4,
+        3,
+        1,
+        2
+      ],
+      "correct": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "accuracy": 0.3333333333333333,
+      "num_questions": 6,
+      "correct_count": 2
+    }
+  ]
+}

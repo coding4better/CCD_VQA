@@ -1,0 +1,41 @@
+{
+  "model_name": "qwen2_vl_7b",
+  "source_file": "results_qwen2_vl_7b.json",
+  "questions": {
+    "Q1": {
+      "accuracy": 0.65,
+      "correct": 65,
+      "total": 100
+    },
+    "Q2": {
+      "accuracy": 0.63,
+      "correct": 63,
+      "total": 100
+    },
+    "Q3": {
+      "accuracy": 0.48,
+      "correct": 48,
+      "total": 100
+    },
+    "Q4": {
+      "accuracy": 0.42,
+      "correct": 42,
+      "total": 100
+    },
+    "Q5": {
+      "accuracy": 0.6,
+      "correct": 60,
+      "total": 100
+    },
+    "Q6": {
+      "accuracy": 0.4362,
+      "correct": 41,
+      "total": 94
+    }
+  },
+  "overall": {
+    "accuracy": 0.537,
+    "correct": 319,
+    "total": 594
+  }
+}

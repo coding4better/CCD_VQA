@@ -1,0 +1,12 @@
+{
+  "task": "Dense_Captioning",
+  "timestamp": "2025-11-30T10:00:00",
+  "models_used": ["mock_model_b"],
+  "videos": [
+    {"video_id": "000003", "responses": {"mock_model_b": "Clear day urban two-lane road. Car swerves across divider causing frontal crash with oncoming truck; both vehicles stop damaged at impact point."}},
+    {"video_id": "000039", "responses": {"mock_model_b": "Overcast city street with parked cars. Minivan attempts merge, contacts black car frontally; both halt with minor front damage, pedestrians nearby unaffected."}},
+    {"video_id": "000071", "responses": {"mock_model_b": "Snowy two-lane rural road, three vehicles in sequence. Lead car loses control on slick surface; truck and trailing car skid, all come to rest off alignment."}},
+    {"video_id": "000109", "responses": {"mock_model_b": "Daylight urban traffic; red van brakes abruptly prompting sharp stop of following vehicle; near-miss rather than collision, illustrates sudden braking risk."}},
+    {"video_id": "000137", "responses": {"mock_model_b": "Multi-vehicle highway crash initiated by vehicle crossing lanes into opposing traffic causing severe head-on impact; debris scattered, no pedestrians visible."}}
+  ]
+}

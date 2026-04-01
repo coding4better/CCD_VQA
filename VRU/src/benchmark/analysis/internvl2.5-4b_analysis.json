@@ -1,0 +1,41 @@
+{
+  "model_name": "internvl2.5-4b",
+  "source_file": "results_internvl2.5-4b-8f.json",
+  "questions": {
+    "Q1": {
+      "accuracy": 0.84,
+      "correct": 84,
+      "total": 100
+    },
+    "Q2": {
+      "accuracy": 0.81,
+      "correct": 81,
+      "total": 100
+    },
+    "Q3": {
+      "accuracy": 0.71,
+      "correct": 71,
+      "total": 100
+    },
+    "Q4": {
+      "accuracy": 0.44,
+      "correct": 44,
+      "total": 100
+    },
+    "Q5": {
+      "accuracy": 0.55,
+      "correct": 55,
+      "total": 100
+    },
+    "Q6": {
+      "accuracy": 0.4787,
+      "correct": 45,
+      "total": 94
+    }
+  },
+  "overall": {
+    "accuracy": 0.6397,
+    "correct": 380,
+    "total": 594
+  }
+}

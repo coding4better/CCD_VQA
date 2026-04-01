@@ -1,0 +1,621 @@
+{
+  "task": "Dense_Captioning",
+  "timestamp": "2025-12-01T10:53:26.411480",
+  "total_videos": 21,
+  "models_used": [
+    "qwen_vl",
+    "gpt_4o_mini",
+    "gemini_2_0_flash"
+  ],
+  "videos": [
+    {
+      "video_id": "000003",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a traffic incident occurring on a multi-lane urban roadway during clear weather conditions with good visibility and dry pavement, as indicated by the timestamp of April 25, 2012, at 18:21:45. The road is a two-way asphalt street with moderate traffic flow, bordered by commercial buildings, construction sites, and low-rise structures. On the left side of the road, there is an unfinished multi-story building, while the right side features parked vehicles and a pedestrian walking along the sidewalk near a white wall. Vehicles are traveling in both directions, including sedans, SUVs, and a silver hatchback that becomes central to the event. At approximately 18:21:47, a silver hatchback traveling in the opposite direction begins to make a sudden left turn across lanes into the path of oncoming traffic. As it initiates the maneuver, it enters the camera vehicle’s lane from the far right, cutting across multiple lanes without signaling or yielding. The silver hatchback appears to be moving at a moderate speed but accelerates slightly during the turn, resulting in a near-miss collision with the camera vehicle. The driver of the camera vehicle reacts swiftly, swerving to the right to avoid impact, causing the front passenger-side of their vehicle to narrowly pass by the turning hatchback. The final impact is avoided due to evasive steering, though the proximity of the vehicles indicates a high-risk scenario. No pedestrians are directly involved, and no visible damage occurs to either vehicle. The incident underscores poor lane discipline and failure to adhere to right-of-way rules during a cross-traffic maneuver.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage, recorded on a clear day on a multi-lane urban road, shows a silver sedan approaching from the opposite direction. The sedan appears to be traveling at a moderate speed, but suddenly swerves left across the center line and into the oncoming lane of traffic. The dashcam vehicle, traveling at a similar speed, has little time to react. The silver sedan impacts the front driver's side of the dashcam vehicle. The impact causes a significant jolt to the dashcam vehicle, and the silver sedan comes to a stop in the middle of the road."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 15.546040773391724,
+        "gpt_4o_mini": 0.9235708713531494,
+        "gemini_2_0_flash": 11.540853261947632
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.2315197784001895
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.2315197784001895
+        ]
+      ],
+      "timestamp": "2025-12-01T10:53:55.913874"
+    },
+    {
+      "video_id": "000018",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a multi-lane urban roadway in an overcast, cloudy weather condition with no visible precipitation, resulting in wet road surfaces that may contribute to reduced traction. The environment consists of tall residential and commercial buildings lining both sides of the street, with leafless trees suggesting late autumn or early winter. The road is a wide, multi-lane asphalt surface featuring embedded tram tracks in the center, indicating a mixed-use traffic configuration with dedicated lanes for trams and general vehicular traffic. Traffic flows in both directions with moderate volume; vehicles include sedans, station wagons, a white delivery van, and a red articulated tram operating on overhead wires. At approximately 14:18:29, a dark-colored sedan is seen traveling in the right lane ahead of the dashcam vehicle, while a gray station wagon moves parallel in the adjacent lane. A red tram approaches from the opposite direction on the central trackway, its headlights illuminated. As the tram advances, it begins to move leftward into the adjacent lane, possibly due to a turn signal indication or a maneuver to avoid an obstacle. At 14:18:30, the tram’s trajectory shifts significantly toward the right side of the roadway, crossing into the path of oncoming traffic. By 14:18:31, the tram has fully entered the leftmost lane of the opposing traffic flow, colliding with the front of the dashcam vehicle, which results in a lateral impact. The force of the collision causes the dashcam vehicle to be pushed sharply to the right, disrupting its forward motion. The tram continues moving forward after impact, eventually exiting the frame. No pedestrians are observed in the immediate vicinity during the incident. The vehicles involved exhibit varying speeds, with the tram appearing to travel at moderate speed prior to the collision, while surrounding cars maintain steady traffic flow consistent with city driving conditions. The final impact is characterized by a sudden lateral displacement of the dashcam vehicle and a temporary obstruction of the roadway due to the tram’s encroachment into the wrong lane.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The video depicts a traffic incident on a multi-lane urban roadway with tram tracks running down the center. The weather appears overcast. The camera vehicle is traveling in the right lane of traffic. A dark grey sedan in the adjacent lane to the left makes an abrupt, unsignaled lane change to the right, directly into the path of an oncoming tram. The tram, traveling at a moderate speed, is unable to stop in time, and the front of the tram impacts the rear passenger side of the sedan. The sedan is pushed forward and slightly to the right by the force of the impact."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 13.206641435623169,
+        "gpt_4o_mini": 0.7232012748718262,
+        "gemini_2_0_flash": 5.425447463989258
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.4577541415458736
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.4577541415458736
+        ]
+      ],
+      "timestamp": "2025-12-01T10:54:17.180904"
+    },
+    {
+      "video_id": "000023",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a multi-lane highway scene under overcast weather conditions with a cloudy sky, indicating potential for reduced visibility and wet road surfaces. The roadway is a divided asphalt highway with multiple lanes in each direction, delineated by solid and broken white lane markings, and bordered by metal guardrails and commercial signage, suggesting an urban or suburban environment with nearby businesses and infrastructure such as power lines and billboards. Traffic is moderate, with vehicles traveling at speeds consistent with posted limits, approximately 50–60 km/h, based on the spacing and flow. A dark-colored pickup truck is visible in the left lane, partially in view, while a red sedan occupies the center lane ahead, maintaining steady forward motion. To the right, a large articulated truck with a green tarpaulin-covered trailer, bearing the \"Schmitz\" branding, travels in the adjacent lane, its brake lights intermittently illuminated, suggesting deceleration. As the sequence progresses, the red sedan begins to slow down, possibly due to traffic ahead, and the vehicle’s trajectory remains within its lane without deviation. There is no immediate collision or impact observed; however, the dynamics suggest a potential hazard as the gap between vehicles narrows slightly, indicating a need for increased following distance. The overall movement of vehicles appears orderly, with no abrupt maneuvers or signs of aggressive driving, though the proximity of the large truck and the smaller vehicles raises concerns about blind spots and limited reaction time in case of sudden braking. No pedestrians are present, and all vehicles maintain their respective lanes throughout the captured footage.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam video shows a multi-lane highway with moderate traffic flow under overcast weather conditions. The environment appears to be a suburban area with billboards and power lines visible along the roadside. The dashcam vehicle is traveling in the right lane, following a red sedan. A large, green semi-truck with a \"Schmitz\" trailer is traveling in the adjacent lane to the right of the red sedan. As traffic slows, the red sedan decelerates, and the semi-truck appears to drift slightly into the sedan's lane. The semi-truck's trailer then collides with the rear of the red sedan. The impact causes the sedan to abruptly decelerate and potentially spin, while the semi-truck continues forward, seemingly unaware of the collision. The dashcam vehicle also slows down to avoid becoming involved in the crash."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 11.658267736434937,
+        "gpt_4o_mini": 1.1417758464813232,
+        "gemini_2_0_flash": 5.430757999420166
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.3234750994063922
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.3234750994063922
+        ]
+      ],
+      "timestamp": "2025-12-01T10:54:37.139407"
+    },
+    {
+      "video_id": "000031",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a traffic incident occurring on a multi-lane urban roadway during overcast weather conditions with residual snow piled along the curbs, indicating recent winter precipitation and partially cleared roads. The environment consists of high-rise residential buildings flanking both sides of the street, with commercial signage visible, including a McDonald's, suggesting a densely developed city area. Traffic is moderate, with vehicles traveling in both directions; the road surface appears wet but not icy. In the sequence, a silver minivan directly ahead maintains a steady trajectory in the same lane as the camera vehicle, which follows at a safe distance. A dark-colored SUV approaches from the left side of the frame, executing a right turn across the path of an oncoming light gold minivan that is proceeding straight through the intersection. The turning SUV fails to yield properly, resulting in a near-miss collision as the two vehicles narrowly avoid impact by adjusting their trajectories— the gold minivan swerves slightly to the right while the SUV cuts sharply across the lane. No pedestrian is seen crossing at the moment of the event, although two individuals are observed walking on the sidewalk near the curb. The vehicles involved maintain low speeds consistent with urban traffic flow, and no final impact occurs, though the maneuver creates significant hazard due to improper turn execution and inadequate gap assessment. The silver minivan ahead remains unaffected throughout the incident, continuing forward without deviation.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam video, recorded on a cloudy day in an urban environment with snow present on the sides of the road, shows a multi-lane roadway with moderate traffic. The dashcam vehicle is traveling straight when a dark-colored SUV in the adjacent lane begins to make an abrupt and unsignaled left turn across the dashcam vehicle's path. The SUV's trajectory cuts directly in front of the dashcam vehicle, leaving insufficient time for the driver to react or brake effectively. The front of the dashcam vehicle impacts the rear passenger side of the SUV, causing a sudden deceleration and likely damage to both vehicles. The SUV appears to rotate slightly due to the impact, while the dashcam vehicle comes to an immediate stop."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 9.861491680145264,
+        "gpt_4o_mini": 1.3006882667541504,
+        "gemini_2_0_flash": 10.01889181137085
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.21009496556908133
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.21009496556908133
+        ]
+      ],
+      "timestamp": "2025-12-01T10:55:00.246880"
+    },
+    {
+      "video_id": "000033",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a multi-lane highway scene during daylight hours under clear weather conditions with moderate atmospheric haze, likely due to dust or pollution, which slightly reduces visibility. The road is a divided urban expressway with concrete barriers separating opposing traffic flows and multiple lanes in each direction; the pavement appears dry and free of debris. Vehicles are traveling at moderate speeds consistent with posted speed limits, indicated by a visible 50 km/h sign. Traffic flow is steady, with a mix of passenger cars, including sedans and minivans, predominantly white and light-colored, maintaining proper lane discipline. In the sequence, a silver sedan in the center lane begins to swerve erratically to the right, crossing into the adjacent lane without signaling, causing a sudden lateral movement that disrupts traffic flow. This maneuver forces a dark-colored vehicle directly behind it to brake sharply, resulting in a rear-end collision. The impact occurs with significant force, sending the silver sedan spinning counterclockwise and veering across two lanes before coming to rest diagonally across the roadway. The collision causes visible deformation on the rear bumper and trunk area of the silver vehicle, while the following car sustains damage to its front end. No pedestrians are present, and no other vehicles are involved in the immediate crash dynamics. The surrounding environment includes urban infrastructure such as high-rise buildings, billboards, streetlights, and overhead power lines, indicating a metropolitan setting.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage shows a daytime collision on a multi-lane highway in an urban environment with clear weather conditions. Traffic appears moderate, with vehicles traveling in the same direction. The dashcam vehicle is traveling in the center lane when the silver sedan ahead of it suddenly decelerates. The driver of the dashcam vehicle does not appear to react in time, and the vehicle impacts the rear of the silver sedan. The impact causes the silver sedan to jolt forward. The dashcam vehicle comes to an abrupt stop after the collision."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 9.145321369171143,
+        "gpt_4o_mini": 0.9275903701782227,
+        "gemini_2_0_flash": 5.2240118980407715
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.2902548596023675
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.2902548596023675
+        ]
+      ],
+      "timestamp": "2025-12-01T10:55:16.461657"
+    },
+    {
+      "video_id": "000039",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a winter urban roadway scene under overcast weather conditions with light snow on the ground and bare trees lining both sides of the street, indicating cold temperatures and reduced traction. The road is a two-way asphalt street with multiple lanes, flanked by multi-story residential buildings on the left and commercial structures on the right, including a yellow building with signage. Snowbanks are present along the curbs, particularly on the right side, where vehicles are parked. Traffic is moderate, with cars traveling in both directions and several vehicles parked along the roadside. A silver minivan is seen making a right turn from the rightmost lane into a parking area or driveway, but its trajectory is misjudged as it moves across the lane of traffic, causing a near-miss or minor collision with the recording vehicle. The minivan’s movement is abrupt and lacks proper clearance, resulting in a sudden lateral impact as it swings into the path of the oncoming vehicle. The recording vehicle, moving at a moderate speed typical for city driving, attempts to avoid the collision, but the minivan's rear end makes contact with the front passenger side of the recording vehicle. The final impact causes visible displacement of the minivan, which comes to rest partially in the roadway, while the recording vehicle continues forward with minimal deviation. No pedestrians are observed directly involved, though a few individuals are seen walking on the sidewalk in dark winter clothing. The overall incident highlights poor judgment during a right-turn maneuver in a potentially slippery environment, contributing to a low-speed collision.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage, recorded on a cloudy day in a city environment, shows a multi-lane road with parked vehicles along the side. The road surface appears to be wet or icy, with snow piled up on the shoulders. The dashcam vehicle is traveling at a moderate speed in the right lane. A silver minivan, traveling in the same direction in the left lane, begins to drift to the right, possibly due to a loss of traction on the slippery surface. The minivan continues to drift across the lanes and collides with the dashcam vehicle. The impact occurs on the driver's side front quarter panel of the dashcam vehicle, causing it to jerk slightly."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 9.554107666015625,
+        "gpt_4o_mini": 1.2388739585876465,
+        "gemini_2_0_flash": 6.050832033157349
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.26902844052000346
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.26902844052000346
+        ]
+      ],
+      "timestamp": "2025-12-01T10:55:34.342595"
+    },
+    {
+      "video_id": "000048",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a winter urban roadway scene on January 29, 2013, at approximately 10:31 AM, under overcast and snowy weather conditions with light snowfall reducing visibility and creating slippery road surfaces. The environment consists of a two-way, tree-lined city street with multi-story buildings on both sides, bare deciduous trees, and snow-covered sidewalks. Vehicles are parked along both curbsides, including sedans, SUVs, and a few vans, some partially covered in snow. Traffic is moderate, with vehicles traveling in both directions on the narrow asphalt roadway. The dashcam vehicle proceeds forward at a low to moderate speed, maintaining lane discipline. Ahead, a silver sedan is seen driving in the same direction, positioned slightly to the right of the centerline. As the dashcam vehicle continues, a white hatchback emerges from the left side of the frame, crossing the lane diagonally from the sidewalk area into the roadway, appearing to make an unscheduled or abrupt maneuver. The white hatchback's trajectory intersects with the path of the silver sedan, which attempts to brake and swerve to the right to avoid a collision. However, due to reduced traction from snow-covered pavement, the silver sedan loses control, veering sharply toward the right curb. It then collides with a parked dark-colored sedan on the right side of the road, causing visible deformation to its front bumper and fender. The impact results in the silver sedan coming to a stop, while the dashcam vehicle remains uninvolved. Pedestrians are visible on the sidewalks, dressed in heavy winter clothing, but no pedestrian interaction occurs during the incident. The overall dynamics reflect a loss-of-control crash initiated by a sudden cross-traffic movement, exacerbated by adverse winter road conditions, leading to a rear-end-type impact with a stationary vehicle.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage shows a vehicle traveling on a narrow, two-way city street with parked cars lining both sides under snowy weather conditions. The road surface appears wet and potentially slick. As the vehicle proceeds at a moderate speed, a pedestrian dressed in dark clothing begins to cross the street from left to right, emerging from between parked vehicles. The driver of the dashcam vehicle appears to not see the pedestrian until the last moment, and the vehicle impacts the pedestrian. The pedestrian is thrown forward upon impact."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 11.631454706192017,
+        "gpt_4o_mini": 0.9223794937133789,
+        "gemini_2_0_flash": 6.629686117172241
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.2765478678135801
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.2765478678135801
+        ]
+      ],
+      "timestamp": "2025-12-01T10:55:55.047565"
+    },
+    {
+      "video_id": "000059",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a winter urban driving scenario on a snow-covered two-lane road with moderate traffic, under clear skies and daylight conditions. The road surface is icy and partially cleared, with snow piled along the sides, indicating recent snowfall or plowing activity. Surrounding the roadway are multi-story residential buildings, evergreen trees, and pedestrian crossings marked by yellow diamond-shaped warning signs. Vehicles are traveling in both directions, with the recording vehicle following a dark-colored sedan directly ahead, which maintains a steady speed and trajectory in the right lane. On the right side of the road, several vehicles are parked parallel to the curb, including a silver hatchback and a black SUV. As the scene progresses, a pedestrian wearing dark winter clothing emerges from behind a parked silver car, stepping into the roadway near the crosswalk. The pedestrian moves laterally across the travel lane, prompting the lead vehicle to brake abruptly, activating its brake lights. The recording vehicle follows suit, decelerating sharply to avoid a rear-end collision. No actual impact occurs, but the sudden braking creates a hazardous situation due to reduced traction on the icy surface. The vehicles remain in motion throughout, with no evidence of loss of control or collision, though the event highlights the risks posed by pedestrians entering traffic lanes unexpectedly during adverse winter conditions.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage, recorded on a clear, cold day in a snowy, urban environment, shows a multi-lane road with moderate traffic flow. The dashcam vehicle is traveling at a moderate speed, following a dark-colored sedan. As the vehicles approach a pedestrian crosswalk marked with signage, two pedestrians, dressed in dark clothing, begin to cross the street. The dark-colored sedan ahead of the dashcam vehicle brakes suddenly, and the dashcam vehicle is unable to stop in time, resulting in a rear-end collision. The impact causes a jolt to the dashcam vehicle, and the dark-colored sedan is pushed slightly forward. After the collision, the pedestrians are seen continuing to cross the street, seemingly unaffected by the incident."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 12.327861785888672,
+        "gpt_4o_mini": 0.6745145320892334,
+        "gemini_2_0_flash": 5.269250869750977
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.23686424192335573
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.23686424192335573
+        ]
+      ],
+      "timestamp": "2025-12-01T10:56:14.618161"
+    },
+    {
+      "video_id": "000066",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a clear, sunny day with dry pavement and good visibility on a multi-lane urban roadway in a city environment, lined with tall residential and commercial buildings, sidewalks, streetlights, and traffic signals. The road is a wide, paved arterial route with marked lanes and pedestrian crossings, featuring moderate traffic flow and several pedestrians walking along the sidewalks or crossing at designated crosswalks. At approximately 15:37:56, a silver sedan enters the intersection from the left side of the frame, moving across the crosswalk at an angle and appearing to make a left turn without yielding to oncoming traffic. The vehicle's trajectory intersects with the path of the recording vehicle, which is traveling straight ahead in the center lane at a moderate speed. As the sedan completes its turn, it collides with the front passenger side of the recording vehicle, resulting in a glancing impact that causes slight lateral displacement of both vehicles. The collision occurs abruptly, with minimal deformation observed due to the low relative speed and shallow angle of impact. No significant skidding or braking marks are visible, indicating a controlled but unexpected maneuver by the turning vehicle. Following the impact, both vehicles continue forward with minor adjustments in direction, and no occupants are seen exiting or reacting dramatically. The surrounding environment remains stable, with no additional vehicles or pedestrians involved in the incident.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "On a clear day, a vehicle equipped with a dashcam travels along a straight, multi-lane urban road lined with buildings and sidewalks. The road is dry, and the driver maintains a consistent speed. As the vehicle approaches a crosswalk with a pedestrian signal, a pedestrian wearing dark clothing begins to cross the street from right to left. The driver does not appear to brake or swerve, and the vehicle strikes the pedestrian within the crosswalk. The impact occurs on the front right side of the vehicle, and the pedestrian is thrown forward. The vehicle comes to an abrupt stop immediately after the collision."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 9.334618091583252,
+        "gpt_4o_mini": 0.8362994194030762,
+        "gemini_2_0_flash": 6.989121198654175
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.24966512728233636
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.24966512728233636
+        ]
+      ],
+      "timestamp": "2025-12-01T10:56:33.512368"
+    },
+    {
+      "video_id": "000071",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a winter driving scenario on a two-lane rural roadway during a snowstorm, with reduced visibility due to heavy snowfall and overcast skies. The road surface is partially cleared but remains slick with residual snow and ice, creating hazardous traction conditions. The environment consists of open snowy fields on both sides, with minimal roadside infrastructure aside from utility poles spaced intermittently. Traffic is light, with two vehicles ahead: a red SUV in the left lane and a dark-colored sedan slightly to its right, both traveling in the same direction. The recording vehicle maintains a moderate speed, following at a safe distance behind the lead vehicles. As the scene progresses, the red SUV begins to decelerate and swerves slightly to the right, possibly attempting to avoid a patch of ice or respond to a loss of control. The dark sedan continues forward without significant deviation. The red SUV then loses traction, veers sharply to the right, crosses the centerline, and collides with the shoulder, resulting in a spin-out that causes it to rotate counterclockwise across the roadway. The impact occurs with a sudden lateral movement, and the vehicle comes to rest facing perpendicular to the travel direction, blocking part of the lane. No pedestrians are visible, and there is no evidence of additional collisions or secondary impacts. The incident highlights the dangers of reduced friction and limited visibility during adverse winter weather conditions.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage shows a two-lane rural highway covered in snow and ice, with limited visibility due to snowy weather conditions. The dashcam vehicle is traveling behind two other vehicles, a red SUV and a dark-colored sedan, both moving in the same direction. The red SUV appears to be slowing down, and the dark sedan behind it does not appear to slow down. The dark sedan then rear-ends the red SUV. The impact causes the red SUV to jolt forward. The dark sedan comes to an immediate stop after the collision."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 9.06034517288208,
+        "gpt_4o_mini": 0.827995777130127,
+        "gemini_2_0_flash": 4.291288375854492
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.3428057259796419
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.3428057259796419
+        ]
+      ],
+      "timestamp": "2025-12-01T10:56:49.247961"
+    },
+    {
+      "video_id": "000074",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a winter urban intersection under clear, partly cloudy skies with moderate sunlight, resulting in good visibility despite the presence of snowbanks lining both sides of the roadway. The road surface appears wet and partially cleared of snow, indicating recent plowing but with residual ice or slush that could affect traction. The traffic configuration includes a multi-lane signalized intersection with vehicles approaching from multiple directions; traffic lights are visible and show green for the through lane. In the foreground, the dashcam vehicle is stopped behind a dark-colored sedan (license plate H509TT 31) in the left lane, while a gray minivan occupies the right lane. A white sedan approaches from the left cross street and proceeds through the intersection without incident. As the scene progresses, a large blue and white articulated bus enters the intersection from the right, making a wide left turn across the path of oncoming traffic. The bus's trajectory intersects with the path of the dark sedan ahead of the dashcam vehicle, causing the sedan to brake abruptly to avoid a collision. The bus continues its turn, occupying the full width of the intersection, and passes closely alongside the sedan before completing its maneuver. No physical contact occurs between the vehicles, but the near-miss highlights poor judgment in turning radius and potential conflict zone management. There are no pedestrians visible, and all vehicles appear to be standard passenger cars and commercial buses with no distinctive markings or colors beyond typical paint schemes. The overall speed of vehicles seems moderate, consistent with urban conditions, though the bus’s slow movement suggests it was navigating cautiously. The final impact is avoided due to timely braking by the sedan, preventing a rear-end or side-swipe collision.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The video shows a daytime crash occurring at an urban intersection on a partly cloudy day with snow present on the sides of the road. The dashcam vehicle is approaching the intersection, which is controlled by a traffic signal that is green for the dashcam vehicle's direction of travel. Ahead, a dark-colored sedan is slowing down, presumably to stop for a vehicle ahead of it. A blue van enters the intersection from the left, traveling at a moderate speed. The dark-colored sedan, failing to stop in time, collides with the side of the van in a T-bone type collision. The impact occurs in the intersection, causing the van to rotate slightly."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 11.06791067123413,
+        "gpt_4o_mini": 1.4068739414215088,
+        "gemini_2_0_flash": 6.433308124542236
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.3088795312395095
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.3088795312395095
+        ]
+      ],
+      "timestamp": "2025-12-01T10:57:10.783535"
+    },
+    {
+      "video_id": "000078",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a multi-vehicle traffic scenario on a two-lane, undivided asphalt road during overcast weather conditions with patches of snow along the roadside, indicating cold temperatures and potential reduced traction. The environment consists of leafless trees, streetlights, and residential structures adjacent to the roadway, suggesting a suburban or semi-rural setting. Traffic is flowing in both directions, with vehicles maintaining consistent speeds; the dashcam vehicle is traveling at approximately 87 km/h. In the left lane, a red semi-truck with a white trailer is overtaking a dark-colored sedan that is positioned in the right lane. Simultaneously, a silver van occupies the far right lane ahead of the dashcam vehicle. As the red truck completes its overtaking maneuver, it begins to re-enter the right lane, closely approaching the silver van. At this moment, a white passenger car emerges from the opposite direction, crossing the centerline into the wrong lane, likely due to a loss of control or driver error. This vehicle collides with the rear of the silver van, causing it to be pushed forward and slightly to the left, resulting in a secondary impact with the dark sedan directly behind it. The collision sequence demonstrates a chain-reaction crash initiated by the opposing vehicle’s encroachment into the wrong lane, leading to a rear-end collision involving multiple vehicles. There are no visible pedestrians, and all vehicles involved appear to be standard commercial and passenger models with no distinguishing markings or colors other than those described. The final impact results in significant displacement of the vehicles involved, particularly the van and sedan, which are forced off their original trajectories, while the red truck continues forward without direct involvement.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage, recorded on a cloudy day on a straight, divided highway with snow visible on the shoulders, shows a line of vehicles traveling in the same direction. The dashcam vehicle, traveling at 87 km/h, is following a dark-colored hatchback, which is itself behind a red semi-truck and a white van. Suddenly, a white sedan in the adjacent lane attempts to merge into the lane occupied by the van, but misjudges the distance and strikes the rear driver's side of the van. The impact causes the sedan to spin out of control, crossing into the path of the dark-colored hatchback. The hatchback driver appears to brake, but is unable to avoid a collision, striking the sedan on its passenger side."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 11.0361328125,
+        "gpt_4o_mini": 0.629993200302124,
+        "gemini_2_0_flash": 7.763507604598999
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.3540116175361027
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.3540116175361027
+        ]
+      ],
+      "timestamp": "2025-12-01T10:57:31.540142"
+    },
+    {
+      "video_id": "000083",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a traffic incident occurring on an urban multi-lane road during twilight conditions on November 3, 2013, at approximately 8:10 PM, with overcast skies and wet pavement indicating recent precipitation or melting snow. The environment features commercial buildings with illuminated signage, parked vehicles along both sides of the roadway, and moderate traffic flow. A silver sedan is stopped in the right lane, positioned behind a vehicle ahead, with its brake lights illuminated. A pedestrian wearing dark clothing and a winter coat approaches the rear driver’s side of the sedan from the sidewalk, then forcefully pushes against the vehicle’s rear quarter panel, causing it to lurch forward slightly. The pedestrian appears agitated and repeatedly strikes the car’s body before stepping back. The sedan remains stationary throughout, with no indication of movement or collision with other vehicles. No significant speed changes are observed in surrounding traffic, which continues to flow smoothly in both directions. There is no visible damage to the sedan or any other vehicle, suggesting that the event was non-collisional but potentially aggressive in nature. The interaction ends with the pedestrian moving away from the vehicle, while traffic continues as normal.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage, dated March 11, 2013, at 20:10:09, shows a crash occurring at an urban intersection with multiple lanes and parked vehicles along the sides of the road. The weather appears to be overcast, and the road surface is wet. The traffic configuration includes vehicles moving in both directions and pedestrians present. A pedestrian wearing dark clothing is seen walking between parked vehicles and into the roadway. A light-colored sedan, traveling at a moderate speed, strikes the pedestrian. The pedestrian is impacted by the front of the sedan, causing the pedestrian to fall to the ground. The sedan comes to an immediate stop after the collision."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 9.193168640136719,
+        "gpt_4o_mini": 1.0935564041137695,
+        "gemini_2_0_flash": 7.569600343704224
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.3179333509970606
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.3179333509970606
+        ]
+      ],
+      "timestamp": "2025-12-01T10:57:50.662754"
+    },
+    {
+      "video_id": "000087",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a winter urban roadway scene under overcast weather conditions with snow-covered sidewalks and partially cleared road surfaces, indicating reduced traction and potentially hazardous driving conditions. The road is a multi-lane asphalt street lined with tall residential and institutional buildings, featuring overhead trolleybus wires, traffic signals, and pedestrian crossings. Traffic is moderate, with vehicles traveling in both directions; the lead vehicle ahead is a silver sedan moving at a moderate speed in the same lane as the camera-equipped vehicle. Pedestrians are visible on both sides of the road, some crossing the street at designated crosswalks, dressed in dark winter clothing appropriate for cold temperatures. As the vehicles approach an intersection with green traffic signals, a pedestrian crosses from the right side into the path of the silver sedan. The sedan begins to decelerate but fails to avoid contact, resulting in a collision where the pedestrian is struck and thrown forward, causing the vehicle to swerve slightly to the left before coming to a stop. The impact occurs in the rightmost travel lane, and the final position of the sedan shows it stopped abruptly with its rear end facing the camera vehicle, while emergency response or bystander activity is not yet evident in the immediate aftermath.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage shows a multi-lane urban road with snow on the shoulders and sidewalks, indicating cold weather conditions. The road is straight, with buildings lining both sides and overhead trolley wires. Traffic signals are visible, showing a green light for the dashcam vehicle's direction of travel. Several pedestrians, dressed in dark winter clothing, are crossing the street at a marked crosswalk. As the dashcam vehicle approaches the crosswalk at a moderate speed, a silver sedan, traveling in the opposite direction, makes a left turn directly into the path of the pedestrians. The vehicle strikes multiple pedestrians in the crosswalk. The dashcam vehicle slows down and comes to a stop shortly after the impact."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 7.894979953765869,
+        "gpt_4o_mini": 0.8082501888275146,
+        "gemini_2_0_flash": 5.9413001537323
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.35036907617629715
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.35036907617629715
+        ]
+      ],
+      "timestamp": "2025-12-01T10:58:07.540815"
+    },
+    {
+      "video_id": "000109",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a traffic incident occurring on a multi-lane urban roadway during clear weather conditions with bright sunlight and no precipitation, providing good visibility. The road surface is dry asphalt, marked with lane dividers, and surrounded by multi-story residential and commercial buildings, indicating an urban environment. Traffic is moderate, with vehicles traveling in both directions, including a red minibus directly ahead of the camera vehicle, which appears to be a passenger car equipped with a dashcam. The red minibus, displaying a visible license plate and advertising text on its rear, maintains a steady trajectory in the center lane at a moderate speed consistent with city traffic flow. As the scene progresses, a dark-colored sedan enters the frame from the right side, executing a sudden left turn across the path of the camera vehicle, which results in a near-miss or minor collision. The sedan’s abrupt maneuver appears to violate proper right-of-way rules, as it crosses into the lane of oncoming traffic without sufficient clearance. The camera vehicle begins to swerve slightly to avoid impact, but the sedan’s front end makes contact with the side of the camera vehicle, causing a lateral displacement and a noticeable jolt. The final impact involves a glancing blow between the two vehicles, with the sedan continuing forward while the camera vehicle remains largely stable. No pedestrians are visible in the immediate vicinity, and there is no evidence of debris or significant damage beyond the initial point of contact.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The video shows a rear-end collision on a sunny day on a multi-lane urban roadway with light traffic. The camera vehicle, a dark-colored sedan, is traveling at a moderate speed in the same direction as a bright orange van. The van is moving at a slower speed in the same lane. As the sedan approaches the van from behind, it does not appear to decelerate. The sedan impacts the rear of the van with significant force, causing a sudden deceleration of both vehicles. The primary point of impact is the front of the sedan and the rear of the van. The van appears to move forward slightly upon impact."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 12.654594421386719,
+        "gpt_4o_mini": 0.72121262550354,
+        "gemini_2_0_flash": 6.625347375869751
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.29703076778810605
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.29703076778810605
+        ]
+      ],
+      "timestamp": "2025-12-01T10:58:29.135083"
+    },
+    {
+      "video_id": "000115",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a wet, overcast urban roadway with moderate traffic under rainy weather conditions, resulting in a slick, reflective asphalt surface that reduces traction. The road is a two-lane undivided street with parked vehicles lining the right curb, primarily sedans and SUVs of various colors including silver, white, and gray. On the left side, there is a sidewalk bordered by leafless trees and commercial signage, indicating a mixed-use area with retail establishments. A silver station wagon approaches from the opposite direction, traveling in the oncoming lane at a moderate speed. As it nears the center of the roadway, it makes an abrupt left turn across the travel lanes, crossing into the path of the recording vehicle, which is moving forward in its designated lane. The station wagon's trajectory is erratic and appears to be a sudden maneuver without signaling or yielding, possibly due to driver distraction or misjudgment. The vehicle’s tires lose grip on the wet pavement, causing it to skid slightly before making contact with a parked silver sedan on the right side of the road. The impact occurs on the rear driver’s side of the parked car, pushing it forward and causing visible deformation. The collision results in minor damage to both vehicles, with no visible ejection or rollover. No pedestrians are present during the incident, and the overall scene suggests a failure to maintain proper lane discipline and adequate control under adverse weather conditions.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The video shows a motor vehicle collision on a wet, two-lane road in an urban environment with parked vehicles on the right side. The weather appears overcast, and there is evidence of melting snow. A white SUV is traveling at a moderate speed in the oncoming lane. Suddenly, a silver station wagon pulls out from the parking lane on the right side of the road, directly into the path of the oncoming SUV. The SUV attempts to brake, but due to the wet road conditions, it is unable to stop in time. The front of the SUV impacts the driver's side of the station wagon, causing significant damage to both vehicles. The station wagon spins slightly from the force of the impact, while the SUV comes to an abrupt stop."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 9.228424072265625,
+        "gpt_4o_mini": 0.8397433757781982,
+        "gemini_2_0_flash": 7.3085408210754395
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.3367903414304908
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.3367903414304908
+        ]
+      ],
+      "timestamp": "2025-12-01T10:58:48.995077"
+    },
+    {
+      "video_id": "000130",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a traffic incident occurring on a two-lane asphalt road in an urban or semi-urban environment under overcast weather conditions, with wet road surfaces suggesting recent rainfall. The roadway is bordered by grassy verges, trees on the left, and commercial structures with signage on the right, including a visible \"РЫБА\" (FISH) sign indicating nearby businesses. Traffic flows in both directions, with multiple vehicles present, including a red semi-truck with a white trailer traveling in the opposite lane, several sedans, and a green truck further ahead. A silver sedan, initially positioned in the right lane, attempts to make a left turn across the oncoming traffic lane without yielding, causing a hazardous situation. As it begins its turn, it crosses into the path of an approaching vehicle—a dark-colored sedan—traveling at moderate speed in the same direction as the camera vehicle. The silver sedan’s trajectory is erratic and improperly timed, leading to a near-miss or minor collision as the dark sedan swerves sharply to avoid impact. The silver car continues its turn but appears to lose control slightly, veering off the paved surface onto the shoulder. No pedestrians are visible in the scene, and all vehicles involved appear to be standard passenger cars and commercial trucks. The overall dynamics suggest a failure in proper lane discipline and intersection maneuvering, resulting in a dangerous interaction that could have escalated into a more severe crash had evasive action not been taken.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The video depicts a crash occurring on a wet, two-lane highway with a commercial area visible on the right. The weather appears overcast. Traffic is moderate, with a mix of passenger vehicles and large trucks traveling in both directions. A silver sedan, approaching from a side street on the right, attempts to cross the highway. The sedan appears to misjudge the speed and distance of oncoming traffic, and proceeds into the intersection. A dark-colored vehicle traveling in the near lane is unable to avoid the sedan, and the front of the dark vehicle impacts the driver's side of the silver sedan. The impact causes the sedan to rotate clockwise, coming to rest partially off the roadway. The dark vehicle also appears to sustain damage to its front end."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 8.18587350845337,
+        "gpt_4o_mini": 0.6605474948883057,
+        "gemini_2_0_flash": 6.0503599643707275
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.4124570283838431
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.4124570283838431
+        ]
+      ],
+      "timestamp": "2025-12-01T10:59:05.388236"
+    },
+    {
+      "video_id": "000136",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video depicts a winter urban roadway scene with snow-covered shoulders and partially cleared asphalt lanes under overcast weather conditions, resulting in reduced visibility and slippery road surfaces. The environment consists of multi-story residential buildings on both sides of the wide, multi-lane road, with overhead power lines and traffic signage visible. A pedestrian wearing dark clothing and purple pants is seen walking along the right shoulder, moving parallel to traffic flow. In the left lane, a red articulated bus is traveling ahead, while several cars, including a black sedan directly ahead of the camera vehicle, are navigating the roadway. As the vehicles proceed, the black sedan begins to lose traction due to the icy conditions, initiating a skid that causes it to veer sharply to the right across lanes. The driver attempts to regain control by steering, but the vehicle continues to rotate and ultimately collides with the pedestrian who had stepped into the roadway. The impact occurs at moderate speed, sending the pedestrian to the ground, while the sedan comes to rest off-center in the right lane, having sustained visible damage to its rear bumper and side panel. The collision dynamics illustrate a loss-of-control scenario exacerbated by adverse weather and potential misjudgment of the pedestrian’s movement into the travel lane.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage shows a multi-lane roadway in an urban environment during snowy weather conditions. The road surface appears wet and possibly icy. Traffic is moderate, with vehicles traveling in both directions. A pedestrian, wearing light-colored pants and a dark jacket, is seen walking across the roadway from right to left, against traffic. The pedestrian is walking at a normal pace and does not appear to be aware of the approaching vehicles. A dark-colored sedan, traveling at a moderate speed in the lane closest to the pedestrian, strikes the pedestrian with its front end. The pedestrian is thrown forward upon impact. The sedan immediately brakes and comes to a stop shortly after the collision."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 9.564211130142212,
+        "gpt_4o_mini": 0.6779694557189941,
+        "gemini_2_0_flash": 7.399556398391724
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.3768660020199274
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.3768660020199274
+        ]
+      ],
+      "timestamp": "2025-12-01T10:59:24.755412"
+    },
+    {
+      "video_id": "000137",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a winter urban intersection under clear but bright daylight conditions, with the sun low in the sky causing glare and reflections on the wet asphalt surface. The road is a multi-lane arterial roadway with marked lanes, pedestrian crossings, and traffic signals; snowbanks line the curbsides, indicating recent snowfall and partially melted conditions, which likely contribute to reduced traction. The traffic configuration includes vehicles approaching from multiple directions, with a red traffic signal visible at the intersection ahead. A dark-colored sedan, positioned in the right lane, begins to make a left turn across the intersection while another vehicle, a silver or light-colored sedan, approaches from the opposite direction at moderate speed. As the dark sedan initiates its turn, it fails to yield properly and collides with the oncoming vehicle in the crosswalk area, resulting in a T-bone collision. The impact causes the dark sedan to rotate sharply counterclockwise, while the oncoming vehicle is pushed sideways into the adjacent lane. Pedestrians are present near the sidewalk, including one individual wearing a bright red jacket who appears to be crossing the street just after the crash occurs. The vehicles involved exhibit significant lateral movement during the collision, with debris and potential tire marks suggesting sudden deceleration and loss of control due to the slippery road surface. The final impact results in both vehicles coming to rest off-center within the intersection, obstructing traffic flow and highlighting a failure in proper intersection navigation and right-of-way adherence.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The dashcam footage shows a sunny day on a wet, urban roadway with residual snow on the sides. The dashcam vehicle is stopped at a crosswalk, facing a traffic signal that is red. A dark-colored sedan is seen approaching the intersection from the right, appearing to attempt a left turn across oncoming traffic. The sedan proceeds into the intersection at a moderate speed, failing to yield to oncoming traffic. A silver sedan traveling straight through the intersection collides with the dark sedan's passenger side. The impact causes both vehicles to rotate slightly, with the dark sedan coming to rest partially blocking the crosswalk. A pedestrian wearing a red jacket is seen walking on the sidewalk near the intersection."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 8.967191219329834,
+        "gpt_4o_mini": 0.8854861259460449,
+        "gemini_2_0_flash": 7.508427381515503
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.4522004513174075
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.4522004513174075
+        ]
+      ],
+      "timestamp": "2025-12-01T10:59:43.230987"
+    },
+    {
+      "video_id": "000142",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a multi-lane urban roadway during overcast weather conditions, with light traffic and residual snow along the curbside, indicating a late winter or early spring environment. The road is a wide asphalt surface with clearly marked lanes, surrounded by tall residential buildings and commercial structures, including a visible billboard and storefronts. Traffic is flowing in both directions, with vehicles such as sedans, vans, and small delivery trucks present. A black sedan, traveling in the same direction as the recording vehicle, initiates a left turn across multiple lanes from the right-hand side of the road without signaling, cutting sharply across the path of oncoming traffic. The vehicle’s trajectory is erratic and unexpected, moving diagonally into the adjacent lane where the recording vehicle is traveling. As the black sedan completes its maneuver, it collides with the front passenger side of the recording vehicle, causing a sudden impact that results in visible deformation of the sedan's front end and displacement of debris, including what appears to be a plastic bag or object on the dashboard. The collision occurs at moderate speed, likely between 30–40 km/h, resulting in a lateral impact with no rollover or ejection. Pedestrians are visible on sidewalks but not involved in the incident. The overall scene suggests poor judgment in lane usage and failure to yield, contributing to the crash dynamics.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The video shows a dashcam view from a vehicle traveling on a multi-lane urban road during daylight hours with overcast weather. The road is straight with a dashed white line separating lanes. There is moderate traffic flow in both directions. As the dashcam vehicle approaches an intersection, a dark-colored sedan, traveling from left to right, enters the intersection and crosses the path of the dashcam vehicle. The sedan appears to be attempting a left turn across oncoming traffic. The dashcam vehicle, traveling at a moderate speed, is unable to stop in time and collides with the sedan's front passenger side. The impact causes the sedan to rotate slightly clockwise. The dashcam vehicle comes to an abrupt stop after the collision."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 8.08499264717102,
+        "gpt_4o_mini": 0.8293979167938232,
+        "gemini_2_0_flash": 7.646902322769165
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.3081772662305392
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.3081772662305392
+        ]
+      ],
+      "timestamp": "2025-12-01T11:00:02.230689"
+    },
+    {
+      "video_id": "000156",
+      "frames_count": 4,
+      "responses": {
+        "qwen_vl": "The video captures a traffic incident occurring on a two-lane asphalt road in an urban-industrial area under clear, sunny weather conditions with scattered clouds, providing good visibility. The roadway is lined with utility poles, overhead power lines, and commercial signage, including a large billboard for \"Металлопрокат,\" indicating the presence of industrial activity. A brown canvas-covered cargo truck, bearing the license plate Y610EY 124, is traveling ahead of the camera vehicle in the same direction, maintaining a moderate speed consistent with urban traffic flow. As the scene progresses, a dark-colored sedan enters from the left side of the frame, crossing the intersection and merging into the lane ahead of the truck. The sedan appears to be accelerating and attempting to pass the truck on the left, but due to insufficient clearance and timing, it collides with the rear-left corner of the truck. The impact causes the sedan to veer sharply to the right, its rear end swinging out as it loses control, while the truck continues forward with minimal deviation due to its mass. The collision occurs at a relatively low speed, resulting in minor damage to both vehicles, though no occupants are visibly ejected or injured. There are no pedestrians present, and traffic signals indicate a yellow light at the intersection, suggesting that the vehicles may have been approaching the intersection during a transitional phase of the signal cycle. The environment includes construction materials stacked along the roadside and a green military-style dump truck parked near the curb, further emphasizing the industrial character of the location.",
+        "gpt_4o_mini": "",
+        "gemini_2_0_flash": "The video shows a daytime crash occurring on a dry, paved road in what appears to be an urban or industrial area. The dashcam vehicle is traveling on a multi-lane road with a traffic signal ahead. A large, olive-green truck with a canvas-covered cargo bed is traveling in the same direction in the lane to the right of the dashcam vehicle. As the dashcam vehicle approaches an intersection with a red traffic signal, the truck begins to make a right turn across the dashcam vehicle's lane. The dashcam vehicle does not appear to slow down, and the front of the dashcam vehicle impacts the rear of the truck's cargo bed. The impact causes the dashcam vehicle to decelerate rapidly."
+      },
+      "errors": {
+        "qwen_vl": null,
+        "gpt_4o_mini": "OpenAI account deactivated or invalid API key",
+        "gemini_2_0_flash": null
+      },
+      "latencies_seconds": {
+        "qwen_vl": 11.505757093429565,
+        "gpt_4o_mini": 0.7605056762695312,
+        "gemini_2_0_flash": 6.49946665763855
+      },
+      "model_similarities": {
+        "qwen_vl_vs_gemini_2_0_flash": 0.2383506975398597
+      },
+      "similarity_ranking": [
+        [
+          "qwen_vl_vs_gemini_2_0_flash",
+          0.2383506975398597
+        ]
+      ],
+      "timestamp": "2025-12-01T11:00:23.554976"
+    }
+  ]
+}
