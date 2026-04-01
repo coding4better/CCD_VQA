@@ -348,17 +348,55 @@ for m in model_list:
 
 for csv_path in QA_CSV_LIST:
     csv_path = str(csv_path)
+    csv_basename = os.path.splitext(os.path.basename(csv_path))[0]
     print(f"\n➡️ 处理VQA文件: {csv_path}")
+
+    # 检查哪些模型已经有结果，哪些需要跑
+    models_to_run = []
+    models_already_done = []
+    for model_name in model_list:
+        result_file = RESULTS_DIR / f'results_{model_name}-single_qa-{csv_basename}.json'
+        if result_file.exists():
+            models_already_done.append((model_name, result_file))
+        else:
+            models_to_run.append(model_name)
+    
+    # 打印已完成和待运行的模型
+    if models_already_done:
+        print(f"  ✓ 已有结果的模型 ({len(models_already_done)}):")
+        for model_name, result_file in models_already_done:
+            print(f"    - {model_name}: {result_file.name}")
+    
+    if not models_to_run:
+        print(f"  ℹ️ 跳过：所有模型都已完成此CSV的评测")
+        print(f"\n{'='*70}")
+        print(f"📈 运行总结 (文件: {csv_path})")
+        print(f"{'='*70}\n")
+        print(f"{'模型':<25} {'准确率':<12} {'状态':<12}")
+        print("-" * 70)
+        for model_name, result_file in models_already_done:
+            with open(result_file, 'r', encoding='utf-8') as f:
+                result_data = json.load(f)
+                accuracy = result_data.get('overall_accuracy', 0)
+                print(f"{model_name:<25} {accuracy:.2%}         {'✓':<12}")
+        print(f"{'='*70}")
+        print(f"\n💾 结果已保存到: {RESULTS_DIR}/")
+        print(f"✅ {csv_path} 处理完成！")
+        continue
+    
+    print(f"  🔄 待运行的模型 ({len(models_to_run)}):")
+    for model_name in models_to_run:
+        print(f"    - {model_name}")
 
     questions_per_video = load_questions_from_csv(csv_path)
     # 传递当前csv路径给run_model_inference
     run_model_inference.current_csv_path = csv_path
-    if len(model_list) == 1:
+    if len(models_to_run) == 1:
         print(f"  串行模式（单模型）")
-        result = run_model_inference(model_list[0], questions_per_video)
+        result = run_model_inference(models_to_run[0], questions_per_video)
         summary = [result]
     else:
-        print(f"  并行模式（{len(model_list)} 个模型，显存充足）")    
+        print(f"  并行模式（{len(models_to_run)} 个模型，显存充足）")    
         threads = []
         results_dict = {}
         lock = threading.Lock()
@@ -367,13 +405,23 @@ for csv_path in QA_CSV_LIST:
             result = run_model_inference(model_name, questions_per_video)
             with lock:
                 results_dict[model_name] = result
-        for model_name in model_list:
+        for model_name in models_to_run:
             thread = threading.Thread(target=thread_wrapper, args=(model_name,), daemon=False)
             threads.append(thread)
             thread.start()
         for thread in threads:
             thread.join()
-        summary = [results_dict[m] for m in model_list]
+        summary = [results_dict[m] for m in models_to_run]
+    
+    # 合并已完成的结果
+    for model_name, result_file in models_already_done:
+        with open(result_file, 'r', encoding='utf-8') as f:
+            result_data = json.load(f)
+            summary.append({
+                'model': model_name,
+                'accuracy': result_data.get('overall_accuracy', 0),
+                'status': 'success'
+            })
 
     print(f"\n{'='*70}")
     print(f"📈 运行总结 (文件: {csv_path})")

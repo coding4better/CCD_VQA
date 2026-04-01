@@ -21,10 +21,12 @@ def get_model_list():
       * 并行合计: ~26GB（80GB GPU 充足）
     """
     default_models = [
-        # 使用 Qwen2.5-VL-7B-Instruct 本地推理
+        # 使用 Qwen2.5-VL-7B-Instruct 本地推理（已下载，推荐）
         'qwen2_5_vl_7b',
-        # Gemini 模型（API 调用）
-        'gemini-2.5-pro',
+        # 使用 InternVL2.5-2B 本地推理（已下载，推荐）
+        'internvl2.5-2b',
+        # Gemini 模型（API 调用，需要设置 GEMINI_API_KEY 环境变量）
+        # 'gemini-2.5-pro',
     ]
 
     env_models = os.getenv('BENCHMARK_MODELS', '').strip()

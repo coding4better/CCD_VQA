@@ -108,6 +108,7 @@ class InternVLRunner:
         """加载 InternVL 系列模型"""
         try:
             from transformers import AutoModel, AutoTokenizer
+            import os
             
             print(f"  📥 加载 {self.model_name}...")
             
@@ -133,9 +134,38 @@ class InternVLRunner:
             if not model_id:
                 raise ValueError(f"不支持的模型: {self.model_name}")
             
+            # 尝试从本地缓存加载（类似 Qwen 的方式）
+            huggingface_cache = os.path.expanduser("~/.cache/huggingface/hub")
+            local_model_paths = [
+                os.path.join(huggingface_cache, model_id.replace('/', '-')),
+                os.path.join(huggingface_cache, f"models--{model_id.replace('/', '--')}"),
+                os.path.join(huggingface_cache, model_id.split('/')[-1]),
+            ]
+            
+            model_path = None
+            for path in local_model_paths:
+                if os.path.exists(path):
+                    if os.path.exists(os.path.join(path, "config.json")):
+                        model_path = path
+                        print(f"  ✓ 找到本地模型: {path}")
+                        break
+                    # 如果是 snapshots 目录，查找第一个 snapshot
+                    elif os.path.isdir(path):
+                        snapshots = os.listdir(path)
+                        if snapshots:
+                            snapshot_path = os.path.join(path, snapshots[0])
+                            if os.path.exists(os.path.join(snapshot_path, "config.json")):
+                                model_path = snapshot_path
+                                print(f"  ✓ 找到本地模型 (snapshot): {snapshot_path}")
+                                break
+            
+            # 如果找不到本地路径，则使用 HuggingFace ID（会尝试网络下载）
+            load_path = model_path if model_path else model_id
+            print(f"  ℹ️  使用加载路径: {load_path}")
+            
             # 加载tokenizer
             self.tokenizer = AutoTokenizer.from_pretrained(
-                model_id, trust_remote_code=True, use_fast=False
+                load_path, trust_remote_code=True, use_fast=False, local_files_only=(model_path is not None)
             )
             
             # 加载模型 - 根据模型版本选择不同的加载方式
@@ -145,13 +175,14 @@ class InternVLRunner:
                 
                 # 先尝试标准加载
                 self.model = AutoModel.from_pretrained(
-                    model_id,
+                    load_path,
                     torch_dtype=torch.bfloat16,
                     low_cpu_mem_usage=True,
                     use_flash_attn=False,
                     trust_remote_code=True,
                     device_map="auto",
-                    load_in_8bit=True
+                    load_in_8bit=True,
+                    local_files_only=(model_path is not None)
                 ).eval()
                 
                 # 检查并修复 language_model
@@ -173,13 +204,14 @@ class InternVLRunner:
             else:
                 # InternVL2/2.5 使用原有的 8-bit 量化加载方式
                 self.model = AutoModel.from_pretrained(
-                    model_id,
+                    load_path,
                     torch_dtype=torch.bfloat16,
                     low_cpu_mem_usage=True,
                     use_flash_attn=False,
                     trust_remote_code=True,
                     device_map="auto",
-                    load_in_8bit=True
+                    load_in_8bit=True,
+                    local_files_only=(model_path is not None)
                 ).eval()
             
             # 设置必要的 token IDs（InternVL 必须设置）
@@ -197,7 +229,7 @@ class InternVLRunner:
             traceback.print_exc()
             raise
     
-    def predict(self, video_number, prompt, video_frames, num_frames=10, num_options=3):
+    def predict(self, video_number, prompt, video_frames, num_frames=10, num_options=3, expected_count=6):
         """推理选择题 - 参考VRU-Accident实现
         
         Args:
@@ -206,13 +238,14 @@ class InternVLRunner:
             video_frames: numpy数组 (num_frames, H, W, 3)
             num_frames: 要使用的帧数（如果为None，自动根据加载的帧数调整，最多8帧）
             num_options: 每题的选项数（3, 4, 或 5）
+            expected_count: 期望的答案数量（默认 6，单题时为 1）
         
         Returns:
             choices: 选项序号列表
         """
         if self.model is None:
             print(f"  ❌ 模型未加载")
-            return [0] * 6
+            return [0] * max(1, expected_count)
         
         try:
             # 0. 动态控制 token 预算（估算字符/4 作为 token）
@@ -299,9 +332,8 @@ class InternVLRunner:
                     return_history=True
                 )
             
-            # 4. 从prompt中提取题目数量
-            q_matches = re.findall(r'Q(\d+):', prompt)
-            num_questions = len(q_matches) if q_matches else 6
+            # 4. 使用 expected_count 而非从 prompt 提取（单题模式）
+            num_questions = expected_count
             
             # 5. 解析选项
             response_preview = response if len(response) < 150 else response[:150] + "..."
@@ -314,7 +346,7 @@ class InternVLRunner:
             print(f"  ❌ 推理失败: {e}")
             import traceback
             traceback.print_exc()
-            return [0] * 6
+            return [0] * max(1, expected_count)
     
     def _parse_choices(self, response: str, num_questions: int = 6, num_options: int = 3) -> list:
         """解析选项序号
