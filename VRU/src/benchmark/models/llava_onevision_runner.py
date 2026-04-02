@@ -23,16 +23,19 @@ class LLaVAOneVisionRunner:
 
     def _load_model(self):
         try:
+            import os
             from transformers import AutoProcessor, LlavaOnevisionForConditionalGeneration
 
             model_id = "llava-hf/llava-onevision-qwen2-7b-ov-hf"
+            cache_dir = os.getenv('HF_LOCAL_DIR_ROOT', None)
             print(f"  📥 加载 {self.model_name} ({model_id}) ...")
 
-            self.processor = AutoProcessor.from_pretrained(model_id)
+            self.processor = AutoProcessor.from_pretrained(model_id, cache_dir=cache_dir)
             self.model = LlavaOnevisionForConditionalGeneration.from_pretrained(
                 model_id,
                 torch_dtype=torch.float16,
                 device_map="auto",
+                cache_dir=cache_dir,
             ).eval()
 
             print(f"  ✓ {self.model_name} 加载成功")

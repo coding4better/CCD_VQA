@@ -21,10 +21,9 @@ def get_model_list():
       * 并行合计: ~26GB（80GB GPU 充足）
     """
     default_models = [
-        # 使用 Qwen2.5-VL-7B-Instruct 本地推理（已下载，推荐）
-        'qwen2_5_vl_7b',
-        # 使用 InternVL2.5-2B 本地推理（已下载，推荐）
-        'internvl2.5-2b',
+        # 使用 InternVL3 本地推理（推荐）
+        'internvl3-2b',
+        'internvl3-8b',
         # Gemini 模型（API 调用，需要设置 GEMINI_API_KEY 环境变量）
         # 'gemini-2.5-pro',
     ]
@@ -37,15 +36,18 @@ def get_model_list():
 
 def get_model_runner(model_name):
     """根据模型名返回对应的runner实例"""
+    normalized_name = (model_name or '').strip().lower()
+
     if model_name == 'llava-next-7b':
         from .llava_next_runner import LLaVANextRunner
         return LLaVANextRunner(model_name)
     elif model_name == 'llava-next-video-7b':
         from .llava_next_video_runner import LLaVANextVideoRunner
         return LLaVANextVideoRunner(model_name)
-    elif model_name == 'llava-onevision-7b':
+    elif normalized_name in {'llava-onevision-7b', 'llava-ov-7b', 'llaba-ov-7b'}:
         from .llava_onevision_runner import LLaVAOneVisionRunner
-        return LLaVAOneVisionRunner(model_name)
+        canonical_name = 'llava-onevision-7b'
+        return LLaVAOneVisionRunner(canonical_name)
     elif model_name.startswith('llava'):
         from .llava_runner import LLaVARunner
         return LLaVARunner(model_name)

@@ -4,15 +4,49 @@
 
 ## 快速开始
 
-### 1. 配置要运行的模型
+### 1. 下载并配置要运行的模型
 
-编辑 `models/model_zoo.py` 中的 `get_model_list()`，选择要评估的模型：
+如果你要直接跑 InternVL3-2B 和 InternVL3-8B，推荐先用批处理脚本完成下载和推理：
+
+```bash
+bash batch_download_and_run.sh
+```
+
+默认会先下载 `OpenGVLab/InternVL3-2B` 和 `OpenGVLab/InternVL3-8B`，然后逐个执行推理。
+
+### 运行参数总表
+
+下表是当前 `batch_download_and_run.sh` + `run_benchmark_v2.py` 的实际生效配置总览：
+
+| 参数项 | 当前值 | 说明 | 可改/不建议改 |
+|---|---:|---|---|
+| 默认模型 | `internvl3-2b,internvl3-8b` | 只跑这两个 InternVL3 版本 | 可改 |
+| 模型并行 | `0` | 串行执行，避免同时占用显存和系统资源 | 不建议改 |
+| 视频抽帧上限 | `32` | 每个视频先统一抽取最多 32 帧 | 可改 |
+| 抽帧速率 | `5 FPS` | `load_video_frames()` 的采样速率 | 可改 |
+| InternVL3 实际输入帧数 | `10` | `InternVLRunner.predict(..., num_frames=10)` 默认再采样到最多 10 帧 | 可改 |
+| 单题模式 | 开启 | 每个视频按题目逐题推理，而不是一次性回答整组题目 | 不建议改 |
+| 每次返回答案数 | `1` | 当前 `expected_count=1`，每次只解析一个选项编号 | 不建议改 |
+| 选项数 | 动态 | 按 CSV 里的题目选项数传入，通常是 3/4/5 | 不建议改 |
+| 模型下载根目录 | `/root/autodl-tmp/hf_models` | 默认下载到数据盘，避免写入系统盘缓存 | 可改 |
+| 结果目录 | `result/` | 每个模型单独保存 JSON 结果 | 不建议改 |
+| 已完成结果处理 | 自动跳过 | 若结果文件已存在，则直接复用，不重复跑 | 不建议改 |
+
+如果你要临时切换模型列表，可以通过环境变量覆盖：
+
+```bash
+MODELS_CSV="internvl3-2b" bash batch_download_and_run.sh
+```
+
+如果只想手动指定模型，也可以编辑 `models/model_zoo.py` 中的 `get_model_list()`。
+
+手动指定时可以这样写：
 
 ```python
 def get_model_list():
     return [
-        'internvl2.5-4b',      # 推荐
-        'llava',
+        'internvl3-2b',
+        'internvl3-8b',
     ]
 ```
 
@@ -21,6 +55,12 @@ def get_model_list():
 ```bash
 cd /home/24068286g/UString
 python VRU/src/benchmark/run_benchmark.py
+```
+
+如果你只评测当前这套 InternVL3 配置，直接在 `VRU/src/benchmark/` 下运行：
+
+```bash
+bash batch_download_and_run.sh
 ```
 
 ## 支持的模型

@@ -132,19 +132,43 @@ class InternVLRunner:
             model_id = model_map.get(self.model_name)
             if not model_id:
                 raise ValueError(f"不支持的模型: {self.model_name}")
+
+            def _candidate_model_paths(cache_root: str, repo_id: str):
+                repo_folder = repo_id.replace('/', '-')
+                candidates = [
+                    os.path.join(cache_root, repo_folder),
+                    os.path.join(cache_root, f"models--{repo_id.replace('/', '--')}")
+                ]
+                for candidate in candidates:
+                    if os.path.exists(candidate):
+                        yield candidate
+                        if os.path.isdir(candidate):
+                            try:
+                                for item in os.listdir(candidate):
+                                    snapshot_path = os.path.join(candidate, item)
+                                    if os.path.isdir(snapshot_path):
+                                        yield snapshot_path
+                            except Exception:
+                                pass
             
             # 尝试从本地缓存加载（类似 Qwen 的方式）
+            hf_local_dir_root = os.getenv('HF_LOCAL_DIR_ROOT', '/root/autodl-tmp/hf_models')
             huggingface_cache = os.path.expanduser("~/.cache/huggingface/hub")
             local_model_paths = [
-                os.path.join(huggingface_cache, model_id.replace('/', '-')),
-                os.path.join(huggingface_cache, f"models--{model_id.replace('/', '--')}"),
+                *list(_candidate_model_paths(hf_local_dir_root, model_id)),
+                *list(_candidate_model_paths(huggingface_cache, model_id)),
+                os.path.join(hf_local_dir_root, model_id.split('/')[-1]),
                 os.path.join(huggingface_cache, model_id.split('/')[-1]),
             ]
             
             model_path = None
             for path in local_model_paths:
                 if os.path.exists(path):
-                    if os.path.exists(os.path.join(path, "config.json")):
+                    if os.path.exists(os.path.join(path, "config.json")) and (
+                        os.path.exists(os.path.join(path, "tokenizer.json"))
+                        or os.path.exists(os.path.join(path, "tokenizer.model"))
+                        or os.path.exists(os.path.join(path, "vocab.json"))
+                    ):
                         model_path = path
                         print(f"  ✓ 找到本地模型: {path}")
                         break
@@ -153,7 +177,11 @@ class InternVLRunner:
                         snapshots = os.listdir(path)
                         if snapshots:
                             snapshot_path = os.path.join(path, snapshots[0])
-                            if os.path.exists(os.path.join(snapshot_path, "config.json")):
+                            if os.path.exists(os.path.join(snapshot_path, "config.json")) and (
+                                os.path.exists(os.path.join(snapshot_path, "tokenizer.json"))
+                                or os.path.exists(os.path.join(snapshot_path, "tokenizer.model"))
+                                or os.path.exists(os.path.join(snapshot_path, "vocab.json"))
+                            ):
                                 model_path = snapshot_path
                                 print(f"  ✓ 找到本地模型 (snapshot): {snapshot_path}")
                                 break
@@ -162,48 +190,126 @@ class InternVLRunner:
             load_path = model_path if model_path else model_id
             print(f"  ℹ️  使用加载路径: {load_path}")
             
-            # 某些失败路径会把进程默认设备污染为 meta，先强制重置。
+            # 某些失败路径会把进程默认设备污染为 meta，先强制重置到 CPU。
             if hasattr(torch, 'set_default_device'):
                 torch.set_default_device('cpu')
             try:
                 import torch.utils._device as _torch_device_ctx
-                # None 表示使用真实默认设备（而非 meta 上下文）
-                _torch_device_ctx.CURRENT_DEVICE = None
+                _torch_device_ctx.CURRENT_DEVICE = torch.device('cpu')
             except Exception:
                 pass
 
-            # 加载tokenizer
-            self.tokenizer = AutoTokenizer.from_pretrained(
-                load_path, trust_remote_code=True, use_fast=False, local_files_only=(model_path is not None)
-            )
+            # 加载 tokenizer：不同 transformers/tokenizers 组合对 fix_mistral_regex 兼容性不同。
+            # 优先显式关闭该修复，再做多级回退，避免 backend_tokenizer 相关异常。
+            tokenizer_base_kwargs = {
+                'trust_remote_code': True,
+                'local_files_only': (model_path is not None),
+            }
+            tokenizer_load_attempts = [
+                {'use_fast': False, 'fix_mistral_regex': False},
+                {'use_fast': True, 'fix_mistral_regex': False},
+                {'use_fast': False},
+                {'use_fast': True},
+            ]
+
+            tokenizer_last_error = None
+            self.tokenizer = None
+            for attempt_kwargs in tokenizer_load_attempts:
+                try:
+                    self.tokenizer = AutoTokenizer.from_pretrained(
+                        load_path,
+                        **tokenizer_base_kwargs,
+                        **attempt_kwargs,
+                    )
+                    print(f"  ✓ tokenizer 加载成功: {attempt_kwargs}")
+                    break
+                except Exception as e:
+                    tokenizer_last_error = e
+                    print(f"  ⚠️ tokenizer 加载尝试失败: {attempt_kwargs} -> {e}")
+
+            if self.tokenizer is None:
+                raise RuntimeError(f"Tokenizer 加载失败: {tokenizer_last_error}")
 
             def _safe_from_pretrained(path, **kwargs):
-                # 每次实际加载前都重置一次默认设备，避免被上一次失败污染
+                # 每次实际加载前都重置一次默认设备，避免被上一次失败污染为 meta
                 if hasattr(torch, 'set_default_device'):
                     torch.set_default_device('cpu')
                 try:
                     import torch.utils._device as _torch_device_ctx_inner
-                    _torch_device_ctx_inner.CURRENT_DEVICE = None
+                    _torch_device_ctx_inner.CURRENT_DEVICE = torch.device('cpu')
                 except Exception:
                     pass
-                return AutoModel.from_pretrained(path, **kwargs)
+
+                # 某些 InternVL 远程代码在 __init__ 里调用 torch.linspace(...).item()。
+                # 当外部上下文被污染到 meta 时，这里会直接触发 RuntimeError。
+                # 仅在模型加载阶段临时兜底，确保 linspace 默认在 CPU 上创建。
+                _orig_linspace = torch.linspace
+                _orig_mark_tied_weights = None
+
+                def _cpu_first_linspace(*args, **linspace_kwargs):
+                    if 'device' not in linspace_kwargs or linspace_kwargs.get('device') is None:
+                        linspace_kwargs['device'] = torch.device('cpu')
+                    return _orig_linspace(*args, **linspace_kwargs)
+
+                def _patch_mark_tied_weights():
+                    # 兼容某些 InternVL 远程模型类仅定义 _tied_weights_keys，
+                    # 但新版 transformers 期望 all_tied_weights_keys 的情况。
+                    nonlocal _orig_mark_tied_weights
+                    try:
+                        from transformers import modeling_utils as _modeling_utils
+                        _orig_mark_tied_weights = _modeling_utils.PreTrainedModel.mark_tied_weights_as_initialized
+
+                        def _compat_mark_tied_weights_as_initialized(self, loading_info):
+                            if not hasattr(self, 'all_tied_weights_keys'):
+                                tied_keys = getattr(self, '_tied_weights_keys', None)
+                                if isinstance(tied_keys, dict):
+                                    self.all_tied_weights_keys = tied_keys
+                                elif tied_keys:
+                                    self.all_tied_weights_keys = {k: None for k in tied_keys}
+                                else:
+                                    self.all_tied_weights_keys = {}
+                            return _orig_mark_tied_weights(self, loading_info)
+
+                        _modeling_utils.PreTrainedModel.mark_tied_weights_as_initialized = _compat_mark_tied_weights_as_initialized
+                    except Exception:
+                        _orig_mark_tied_weights = None
+
+                def _restore_mark_tied_weights():
+                    if _orig_mark_tied_weights is None:
+                        return
+                    try:
+                        from transformers import modeling_utils as _modeling_utils
+                        _modeling_utils.PreTrainedModel.mark_tied_weights_as_initialized = _orig_mark_tied_weights
+                    except Exception:
+                        pass
+
+                torch.linspace = _cpu_first_linspace
+                _patch_mark_tied_weights()
+                try:
+                    return AutoModel.from_pretrained(path, **kwargs)
+                finally:
+                    torch.linspace = _orig_linspace
+                    _restore_mark_tied_weights()
             
-            # 加载模型：优先尝试 8bit；若该模型类不支持，则自动回退
+            # 加载模型：InternVL2/2.5/3 统一采用稳定加载模式，避免 meta tensor 污染。
             if 'internvl3' in self.model_name.lower():
                 print(f"  ℹ️  InternVL3 检测到，尝试修复 language_model.generate 问题")
 
-            # InternVL2/2.5 在部分 transformers 版本下，先走 load_in_8bit 分支会触发 meta tensor 状态污染。
-            # 因此这两个系列直接使用稳定参数加载，完全跳过 8bit 尝试。
+            # InternVL2/2.5/3 在部分 transformers 版本下，先走 load_in_8bit 或
+            # low_cpu_mem_usage + device_map=auto 分支会触发 meta tensor 状态污染。
+            # 因此这些系列统一使用稳定参数加载，完全跳过 8bit 尝试。
             is_internvl2_family = self.model_name.lower().startswith('internvl2')
+            is_internvl3_family = self.model_name.lower().startswith('internvl3')
 
-            if is_internvl2_family:
-                print("  ℹ️ InternVL2/2.5 使用稳定加载模式（跳过 load_in_8bit）")
+            if is_internvl2_family or is_internvl3_family:
+                family_name = 'InternVL3' if is_internvl3_family else 'InternVL2/2.5'
+                print(f"  ℹ️ {family_name} 使用稳定加载模式（跳过 load_in_8bit）")
                 stable_load_kwargs = {
-                    'torch_dtype': torch.float16,
+                    'torch_dtype': torch.bfloat16 if is_internvl3_family else torch.float16,
                     'low_cpu_mem_usage': False,
                     'use_flash_attn': False,
                     'trust_remote_code': True,
-                    'device_map': None,
+                    'device_map': 'cpu' if is_internvl3_family else None,
                     '_fast_init': False,
                     'local_files_only': (model_path is not None),
                 }
@@ -214,7 +320,7 @@ class InternVLRunner:
                 ).eval()
                 if self.device == 'cuda':
                     self.model = self.model.to(self.device)
-                print("  ✓ 使用稳定参数加载 InternVL2/2.5 成功")
+                print(f"  ✓ 使用稳定参数加载 {family_name} 成功")
             else:
                 common_load_kwargs = {
                     'torch_dtype': torch.bfloat16,
