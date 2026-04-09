@@ -14,7 +14,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 
-DEFAULT_MODELS="internvl3-2b,internvl3-8b"
+DEFAULT_MODELS="llava-ov-7b"
 MODELS_CSV="${MODELS_CSV:-${DEFAULT_MODELS}}"
 
 export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"

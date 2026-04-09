@@ -43,10 +43,10 @@ class LLaVAOneVisionRunner:
             print(f"  ❌ 加载失败: {e}")
             raise
 
-    def predict(self, video_number: str, prompt: str, video_frames: np.ndarray) -> List[int]:
+    def predict(self, video_number: str, prompt: str, video_frames: np.ndarray, num_options: int = 4, expected_count: int = 1) -> List[int]:
         if self.model is None or self.processor is None:
             print("  ❌ 模型未加载")
-            return [0] * 6
+            return [0] * expected_count
 
         try:
             # 均匀采样至最多50帧
@@ -62,7 +62,7 @@ class LLaVAOneVisionRunner:
                 messages = [
                     {
                         "role": "system",
-                        "content": "You are an expert traffic safety analyst. Answer ONLY with option numbers in the format A1=1 A2=2 ... . No explanations, no extra text.",
+                        "content": "You are an expert traffic safety analyst. Answer the question by outputting ONLY ONE single option number. No explanations, no extra text.",
                     },
                     {
                         "role": "user",
@@ -92,7 +92,7 @@ class LLaVAOneVisionRunner:
                 messages = [
                     {
                         "role": "system",
-                        "content": "You are an expert traffic safety analyst. Answer ONLY with option numbers in the format A1=1 A2=2 ... . No explanations, no extra text.",
+                        "content": "You are an expert traffic safety analyst. Answer the question by outputting ONLY ONE single option number. No explanations, no extra text.",
                     },
                     {
                         "role": "user",
@@ -126,8 +126,7 @@ class LLaVAOneVisionRunner:
             new_tokens = output_ids[0][input_token_count:]
             response = self.processor.tokenizer.decode(new_tokens, skip_special_tokens=True)
 
-            num_questions = self._detect_num_questions(prompt)
-            choices = self._parse_choices(response, num_questions)
+            choices = self._parse_single_choice(response, num_options)
 
             print(f"  🔍 DEBUG - 原始响应: {response[:200]}")
             print(f"  🔍 DEBUG - 解析结果: {choices}")
@@ -135,44 +134,24 @@ class LLaVAOneVisionRunner:
             return choices
         except Exception as e:
             print(f"  ❌ 推理失败: {e}")
-            return [0] * 6
+            return [0] * expected_count
 
-    @staticmethod
-    def _detect_num_questions(prompt: str) -> int:
-        matches = re.findall(r"Q(\d+):", prompt)
-        return len(matches) if matches else 6
-
-    def _parse_choices(self, response: str, num_questions: int) -> List[int]:
-        response = response.strip()
-
-        # A1=1 或 A1: 1 格式
-        matches = re.findall(r"A\d+\s*[=:：]\s*(\d+)", response)
-        filtered = [int(m) for m in matches if m in {'1','2','3','4'}]
-        if filtered:
-            return filtered[:num_questions] + [0] * (num_questions - len(filtered))
-
-        # Answers: 1 2 3 ...
-        ans_match = re.search(r"[Aa]nswers?\s*[:：]\s*([\d\s,]+)", response)
-        if ans_match:
-            nums = re.findall(r"(\d+)", ans_match.group(1))
-            filtered = [int(n) for n in nums if n in {'1','2','3','4'}]
-            if filtered:
-                return filtered[:num_questions] + [0] * (num_questions - len(filtered))
-
-        # 题号:答案  1:1 2:2 ...
-        pairs = re.findall(r"(\d+)\s*[:：]\s*(\d+)", response)
-        filtered = [int(p[1]) for p in pairs if p[1] in {'1','2','3','4'}]
-        if filtered:
-            return filtered[:num_questions] + [0] * (num_questions - len(filtered))
-
-        # 宽松：独立数字或数字后接句点
-        all_nums = re.findall(r"\b(\d)(?:\b|\.)", response)
-        filtered = [int(n) for n in all_nums if n in {'1','2','3','4'}]
-        if filtered:
-            return filtered[:num_questions] + [0] * (num_questions - len(filtered))
-
-        print(f"  ⚠️ WARNING: 无法解析 - {response[:150]}")
-        return [0] * num_questions
+    def _parse_single_choice(self, response: str, num_options: int) -> List[int]:
+        max_opt = str(num_options)
+        opt_char_class = f'[1-{max_opt}]'
+        
+        # 1. 类似 X: [answer] 或 Answer: [answer]
+        pattern1 = rf'(?:答案|选项|option|answer)\s*[：:]*\s*({opt_char_class})'
+        matches1 = re.findall(pattern1, response.lower())
+        if matches1:
+            return [int(matches1[0])]
+            
+        # 2. 只有数字
+        numbers = re.findall(rf'\b({opt_char_class})\b', response)
+        if numbers:
+            return [int(numbers[0])]
+            
+        return [0]
 
     def release(self):
         if self.model is not None:

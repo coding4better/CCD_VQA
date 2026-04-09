@@ -21,11 +21,7 @@ def get_model_list():
       * 并行合计: ~26GB（80GB GPU 充足）
     """
     default_models = [
-        # 使用 InternVL3 本地推理（推荐）
-        'internvl3-2b',
-        'internvl3-8b',
-        # Gemini 模型（API 调用，需要设置 GEMINI_API_KEY 环境变量）
-        # 'gemini-2.5-pro',
+        'llava-ov-7b',
     ]
 
     env_models = os.getenv('BENCHMARK_MODELS', '').strip()
