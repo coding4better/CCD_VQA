@@ -1,46 +1,44 @@
-# Benchmark - 视频QA评估
+# Benchmark - Video QA Evaluation
 
-在crash数据集上评估多模态大模型的视频理解能力。
+Evaluate multimodal model video understanding on the crash dataset.
 
-## 快速开始
+## Quick Start
 
-### 1. 下载并配置要运行的模型
+### 1. Download and run the default models
 
-如果你要直接跑 InternVL3-2B 和 InternVL3-8B，推荐先用批处理脚本完成下载和推理：
+If you want to run InternVL3-2B and InternVL3-8B directly, use the batch script to download and infer in one step:
 
 ```bash
 bash batch_download_and_run.sh
 ```
 
-默认会先下载 `OpenGVLab/InternVL3-2B` 和 `OpenGVLab/InternVL3-8B`，然后逐个执行推理。
+This downloads `OpenGVLab/InternVL3-2B` and `OpenGVLab/InternVL3-8B` first, then runs them one by one.
 
-### 运行参数总表
+### Runtime configuration
 
-下表是当前 `batch_download_and_run.sh` + `run_benchmark_v2.py` 的实际生效配置总览：
+The table below summarizes the effective settings used by `batch_download_and_run.sh` and `run_benchmark_v2.py`.
 
-| 参数项 | 当前值 | 说明 | 可改/不建议改 |
+| Item | Current value | Meaning | Editable? |
 |---|---:|---|---|
-| 默认模型 | `internvl3-2b,internvl3-8b` | 只跑这两个 InternVL3 版本 | 可改 |
-| 模型并行 | `0` | 串行执行，避免同时占用显存和系统资源 | 不建议改 |
-| 视频抽帧上限 | `32` | 每个视频先统一抽取最多 32 帧 | 可改 |
-| 抽帧速率 | `5 FPS` | `load_video_frames()` 的采样速率 | 可改 |
-| InternVL3 实际输入帧数 | `10` | `InternVLRunner.predict(..., num_frames=10)` 默认再采样到最多 10 帧 | 可改 |
-| 单题模式 | 开启 | 每个视频按题目逐题推理，而不是一次性回答整组题目 | 不建议改 |
-| 每次返回答案数 | `1` | 当前 `expected_count=1`，每次只解析一个选项编号 | 不建议改 |
-| 选项数 | 动态 | 按 CSV 里的题目选项数传入，通常是 3/4/5 | 不建议改 |
-| 模型下载根目录 | `/root/autodl-tmp/hf_models` | 默认下载到数据盘，避免写入系统盘缓存 | 可改 |
-| 结果目录 | `result/` | 每个模型单独保存 JSON 结果 | 不建议改 |
-| 已完成结果处理 | 自动跳过 | 若结果文件已存在，则直接复用，不重复跑 | 不建议改 |
+| Default models | `internvl3-2b,internvl3-8b` | Only these two InternVL3 variants are run | Yes |
+| Model parallelism | `0` | Runs sequentially to avoid GPU and system contention | Not recommended |
+| Max frames per video | `32` | Extract up to 32 frames per video before inference | Yes |
+| Frame sampling rate | `5 FPS` | Sampling rate used by `load_video_frames()` | Yes |
+| InternVL3 input frames | `10` | `InternVLRunner.predict(..., num_frames=10)` resamples to at most 10 frames | Yes |
+| Single-question mode | Enabled | Each video is answered question by question | Not recommended |
+| Answers returned each step | `1` | `expected_count=1`, so only one option index is parsed each time | Not recommended |
+| Option count | Dynamic | Pulled from the CSV, typically 3/4/5 options | Not recommended |
+| Model download root | `/root/autodl-tmp/hf_models` | Downloads go to the data disk instead of system cache | Yes |
+| Result directory | `result/` | JSON results are saved per model | Not recommended |
+| Existing result handling | Auto-skip | Existing result files are reused instead of rerun | Not recommended |
 
-如果你要临时切换模型列表，可以通过环境变量覆盖：
+To temporarily switch the model list, override it with an environment variable:
 
 ```bash
 MODELS_CSV="internvl3-2b" bash batch_download_and_run.sh
 ```
 
-如果只想手动指定模型，也可以编辑 `models/model_zoo.py` 中的 `get_model_list()`。
-
-手动指定时可以这样写：
+If you want to hard-code a model list, edit `get_model_list()` in `models/model_zoo.py`:
 
 ```python
 def get_model_list():
@@ -50,52 +48,52 @@ def get_model_list():
     ]
 ```
 
-### 2. 运行评估
+### 2. Run evaluation
 
 ```bash
 cd /home/24068286g/UString
 python VRU/src/benchmark/run_benchmark.py
 ```
 
-如果你只评测当前这套 InternVL3 配置，直接在 `VRU/src/benchmark/` 下运行：
+If you only want to evaluate the current InternVL3 setup, run the batch script inside `VRU/src/benchmark/` directly:
 
 ```bash
 bash batch_download_and_run.sh
 ```
 
-## 支持的模型
+## Supported models
 
-### 本地模型
-- **InternVL系列**: `internvl2-2b`, `internvl2-4b`, `internvl2-8b`, `internvl2.5-1b/2b/4b/8b`, `internvl3-1b/2b/4b/8b`
+### Local models
+- **InternVL series**: `internvl2-2b`, `internvl2-4b`, `internvl2-8b`, `internvl2.5-1b/2b/4b/8b`, `internvl3-1b/2b/4b/8b`
 - **LLaVA**: `llava`, `llava-next-7b`
 - **Qwen**: `qwen2-vl-7b`
 
-### API模型（需配置API Key）
-- **Gemini**: `gemini-api` (需环境变量: `GEMINI_API_KEY`)
-- **Qwen API**: `qwen-api` (需环境变量: `DASHSCOPE_API_KEY`)
+### API models (API key required)
+- **Gemini**: `gemini-api` (`GEMINI_API_KEY`)
+- **Qwen API**: `qwen-api` (`DASHSCOPE_API_KEY`)
 
-## 目录结构
+## Directory Layout
 
 ```
 benchmark/
-├── run_benchmark.py          # 主运行脚本
+├── run_benchmark.py          # Main runner
 ├── models/
-│   ├── model_zoo.py         # 模型工厂
-│   ├── llava_runner.py       # LLaVA 推理
-│   ├── internvl_runner.py    # InternVL 推理
-│   ├── qwen_runner.py        # Qwen 推理
-│   ├── gemini_runner.py      # Gemini API 推理
-│   ├── base_runner.py        # 基础 Runner
+│   ├── model_zoo.py         # Model factory
+│   ├── llava_runner.py       # LLaVA inference
+│   ├── internvl_runner.py    # InternVL inference
+│   ├── qwen_runner.py       # Qwen inference
+│   ├── gemini_runner.py      # Gemini API inference
+│   ├── base_runner.py        # Base runner
 │   └── __init__.py
-└── results/                  # 评估结果
+└── results/                  # Evaluation results
     ├── results_llava.json
     ├── results_internvl2.5-4b.json
     └── ...
 ```
 
-## 结果格式
+## Result Format
 
-结果保存为JSON格式，包含整体准确率、视频级别和问题级别的评估：
+Results are stored as JSON and include overall accuracy plus video-level and question-level metrics:
 
 ```json
 {
@@ -108,35 +106,64 @@ benchmark/
 }
 ```
 
-## Runner接口
+## Analysis and Visualization
 
-自定义模型需实现的接口：
+The unified analysis script `analyze_result_suite.py` can produce:
+
+- Aggregation across all results, including `result/` and nested folders such as `phase2/`
+- Leaderboard metrics: Accuracy / BSS / SkillScore
+- Per-question statistics: Q1-Q6
+- Cluster statistics: Q1-3 versus Q4-6, including gaps
+- CSV exports and PNG visualizations
+
+Run it with:
+
+```bash
+cd VRU/src/benchmark
+python analyze_result_suite.py --result-dir result --output-dir analysis_suite
+```
+
+Default outputs:
+
+- `analysis_suite/all_results_metrics.csv`
+- `analysis_suite/leaderboard_5opts.csv`
+- `analysis_suite/cluster_stats_5opts.csv`
+- `analysis_suite/option_sensitivity_summary.csv`
+- `analysis_suite/plot_01_leaderboard_5opts_accuracy_bss.png`
+- `analysis_suite/plot_02_option_sensitivity_accuracy.png`
+- `analysis_suite/plot_03_cluster_q1_3_vs_q4_6_5opts.png`
+- `analysis_suite/plot_04_q1_q6_heatmap_5opts.png`
+- `analysis_suite/ANALYSIS_SUMMARY.md`
+
+## Runner Interface
+
+Custom runners should implement:
 
 ```python
 class MyRunner:
     def __init__(self, model_name: str):
-        """初始化模型"""
+        """Initialize the model."""
         pass
     
     def predict(self, video_number: str, prompt: str, video_frames: np.ndarray) -> list:
         """
-        推理选择题
+        Run multiple-choice inference.
         
         Args:
-            video_number: 视频编号（如"000003"）
-            prompt: 包含题干和选项的完整prompt
-            video_frames: 视频帧数组，shape=(num_frames, H, W, 3)
+            video_number: Video ID, for example "000003"
+            prompt: Full prompt including the question and answer options
+            video_frames: Video frame array with shape=(num_frames, H, W, 3)
         
         Returns:
-            list: 长度为N的列表，每个元素为1-K（选项序号）
+            list: A length-N list, each element is an option index from 1 to K
         """
         pass
     
     def release(self):
-        """释放模型资源"""
+        """Release model resources."""
         pass
 ```
 
-## 数据集
+## Dataset
 
-使用 `VRU/src/option_generate/data/QA_pair_v2_4options.csv` 中的问题和选项进行评估。
+Evaluation uses the questions and options from `VRU/src/option_generate/data/QA_pair_v2_4options.csv`.

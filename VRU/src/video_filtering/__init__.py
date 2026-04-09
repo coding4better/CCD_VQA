@@ -1,5 +1,5 @@
 """
-视频筛选模块
+Video filtering module.
 """
 
 __version__ = "1.0.0"

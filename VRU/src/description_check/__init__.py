@@ -1,7 +1,7 @@
 """
-描述一致性验证模块
+Description consistency validation module.
 
-用于评估生成的视频描述与原始 QA 事实的一致性。
+Used to evaluate consistency between generated video descriptions and the source QA facts.
 """
 
 __version__ = "1.0.0"
@@ -9,11 +9,11 @@ __author__ = "CCD-VQA Team"
 
 from pathlib import Path
 
-# 模块路径
+# Module paths
 MODULE_DIR = Path(__file__).parent
 RESULTS_DIR = MODULE_DIR / "results"
 
-# 确保结果目录存在
+# Ensure the results directory exists
 RESULTS_DIR.mkdir(exist_ok=True)
 
 __all__ = [
